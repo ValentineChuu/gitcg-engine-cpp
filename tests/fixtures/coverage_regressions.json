@@ -1,0 +1,33 @@
+{
+  "description": "Unmodified Node outputs: missing Yelan Breakthrough error; Anemoboxer absorption/counter and overload switch; Kirara optional chain at initial active selection.",
+  "groups": [
+    {
+      "source": "generated/coverage_probe_reference.jsonl.gz",
+      "index": 89,
+      "groupSha256": "e2acfe76d38d141ac83c5faf0ccfca1f4a4032024400af2e7d6ccb2f76ef0af2"
+    },
+    {
+      "source": "generated/coverage_focused_reference.jsonl.gz",
+      "index": 40,
+      "groupSha256": "75d61a952554c6c53febd7ecd969881c807223a32576efbb230366284db64ebb"
+    },
+    {
+      "source": "generated/coverage_focused_reference.jsonl.gz",
+      "index": 41,
+      "groupSha256": "943773d0fddaafabc3b0f28f4def95e23bdea370bfd52f36be93fe876095c34d"
+    },
+    {
+      "source": "generated/sweep_reference.jsonl.gz",
+      "index": 1065,
+      "groupSha256": "a9d7eebcd155ba3c0d0f20b7aa53a8d0eb84e3bb4625441c8a4eb27b1e256c44"
+    }
+  ],
+  "requiredSlots": [
+    2234,
+    5041,
+    5042,
+    5045,
+    5047,
+    5049
+  ]
+}

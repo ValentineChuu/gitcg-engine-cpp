@@ -1,0 +1,9 @@
+{
+ "631": "no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’",
+ "637": "no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’",
+ "2143": "no matching function for call to ‘std::vector<double>::vector(<brace-enclosed initializer list>)’",
+ "3077": "cannot convert ‘const char*’ to ‘const gitcg::QueryExpression&’",
+ "3920": "no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’",
+ "3928": "no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’",
+ "3984": "‘TamakushiCasket’ was not declared in this scope"
+}

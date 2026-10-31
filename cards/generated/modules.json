@@ -1,0 +1,1844 @@
+[
+  {
+    "file": "commons.gts",
+    "functionName": "register_da53f3360341fd21",
+    "definitions": 24,
+    "sha256": "357bb39856bbffda32df68e5bdb9905cfe051bc00d32f17c9c2a61e3ec46aa72"
+  },
+  {
+    "file": "cards/equipment/artifacts.gts",
+    "functionName": "register_0e19a9f6a295d406",
+    "definitions": 70,
+    "sha256": "29decf6e6899b88abcb002078257a96466cff92a526343dbd920a993da5da298"
+  },
+  {
+    "file": "cards/equipment/techniques.gts",
+    "functionName": "register_7624f33b9fe5a1c8",
+    "definitions": 19,
+    "sha256": "172637a02b204d429a2cea00afb5644eeb3d1b8aea68aee9656d57a206270454"
+  },
+  {
+    "file": "cards/equipment/weapon/bow.gts",
+    "functionName": "register_da5e38742a5553e9",
+    "definitions": 13,
+    "sha256": "3b52e4f4a4f3530d6bb92c4af930d097ce4ce92ad5ca0b3e0658333c2c870e86"
+  },
+  {
+    "file": "cards/equipment/weapon/catalyst.gts",
+    "functionName": "register_a1cdc2e383e65e21",
+    "definitions": 17,
+    "sha256": "cf943000f3ddcdf7a913573cdae2e67d561fc9179cb075e4a68a92675814ca5b"
+  },
+  {
+    "file": "cards/equipment/weapon/claymore.gts",
+    "functionName": "register_7a4d07138f0cf8c2",
+    "definitions": 15,
+    "sha256": "efd01471a3990da30ab54ea48e33d2780d9dd65f084c72197ba11e309d615eba"
+  },
+  {
+    "file": "cards/equipment/weapon/pole.gts",
+    "functionName": "register_954c6af1fbeabd30",
+    "definitions": 11,
+    "sha256": "a9883387d0abb16215eb7a24d44bd8ec23f99e0fedd6d0c807f94846fcfffa84"
+  },
+  {
+    "file": "cards/equipment/weapon/sword.gts",
+    "functionName": "register_100cd7e9e57819ce",
+    "definitions": 11,
+    "sha256": "7911826dc5bad88c1ede6d29dfd31f1097e68eb046f72edbc25d18531d54478b"
+  },
+  {
+    "file": "cards/event/food.gts",
+    "functionName": "register_492ccb7216adb9b2",
+    "definitions": 57,
+    "sha256": "9e3c73387215c638f6ab6b204a27a70f5f34428385d9dcedb8d09bf49364f8c5"
+  },
+  {
+    "file": "characters/hydro/nilou.gts",
+    "functionName": "register_d6d0052754f2ecdf",
+    "definitions": 8,
+    "sha256": "48d50febced9c96c41e96cb1e5c828c5ac908a54bde9ab933d33e52ad2a376a5"
+  },
+  {
+    "file": "cards/event/other.gts",
+    "functionName": "register_8c2812603286bc5d",
+    "definitions": 175,
+    "sha256": "154d0be82b652603f35429100b78c2ee463d1eee8ca65847372d8394f2982423"
+  },
+  {
+    "file": "cards/event/legend.gts",
+    "functionName": "register_333499d11d1047c1",
+    "definitions": 24,
+    "sha256": "fe4b1d94d06da73f21922fb271ee3b011c520dd9120512c31a2f4fecf4ec01cb"
+  },
+  {
+    "file": "cards/support/adventure.gts",
+    "functionName": "register_289ae77336f73204",
+    "definitions": 6,
+    "sha256": "2c73422b474ae276f1be2dcaf6ab4786d3c9f08738d7f06371f654d61567a192"
+  },
+  {
+    "file": "cards/support/ally.gts",
+    "functionName": "register_a122d00608fdee50",
+    "definitions": 51,
+    "sha256": "29f510bfbb761cce94e2fee53a440913e0df4972c954b50fc0257c5ba6255ab2"
+  },
+  {
+    "file": "cards/support/blessing.gts",
+    "functionName": "register_c0245b934ab3ca40",
+    "definitions": 28,
+    "sha256": "12b97949eb3090c01d163a6b0cc82ee407d90adec36a25937c1e20893bf5bf87"
+  },
+  {
+    "file": "cards/support/item.gts",
+    "functionName": "register_ef803fbf3befb9b7",
+    "definitions": 11,
+    "sha256": "232e0e2a5eb157d0f2e8049993bc14fc78b3612e125f2a3fd2485ef84a047937"
+  },
+  {
+    "file": "cards/support/place.gts",
+    "functionName": "register_e6cb530f6542aa08",
+    "definitions": 47,
+    "sha256": "9c59c4fcedd1bc07a432e1adeb24e78d49b65e5ba93829b3cfc1b251cfe86652"
+  },
+  {
+    "file": "characters/anemo/black_serpent_knight_windcutter.gts",
+    "functionName": "register_7d2f9bc5fd5a0060",
+    "definitions": 10,
+    "sha256": "801140b7223cf4da32ea6e05899d1cafb172a8fd9856335fdfdecb8fc3ee4f94"
+  },
+  {
+    "file": "characters/anemo/chasca.gts",
+    "functionName": "register_98fff41f3a8ac480",
+    "definitions": 14,
+    "sha256": "c1e6dfb2df5e6c6baef6196df5162dade683500968ed28ac07ba82fc441c3c9b"
+  },
+  {
+    "file": "characters/anemo/consecrated_flying_serpent.gts",
+    "functionName": "register_9255f1d9eafd0495",
+    "definitions": 9,
+    "sha256": "9ec009d42b50335f36c999d198d39f7c34261975b821b10680b719a3278b1f19"
+  },
+  {
+    "file": "characters/anemo/dvalin.gts",
+    "functionName": "register_92ad04d649f522c9",
+    "definitions": 13,
+    "sha256": "90f70ce4997b75a243413c982af1a626b9a7f7ff0e942965ad9db1a1342a2685"
+  },
+  {
+    "file": "characters/anemo/faruzan.gts",
+    "functionName": "register_c20a58de65165248",
+    "definitions": 10,
+    "sha256": "25c0fc3b26bb5705b2d7aad97124b2d3a9d217cbd4b244885c7e59b261ac3df8"
+  },
+  {
+    "file": "characters/anemo/ifa.gts",
+    "functionName": "register_8ceeb9f2761d8be2",
+    "definitions": 11,
+    "sha256": "1c9dcd6737c3bb01a3904b2d13c613891bc13ffd6460ea5ff27fc18be9d949db"
+  },
+  {
+    "file": "characters/anemo/jahoda.gts",
+    "functionName": "register_5d8870432c8fcfde",
+    "definitions": 13,
+    "sha256": "2241fa66a1e10bb3459dd03abc78bb6f8c199b67729e1704b0dece232042d924"
+  },
+  {
+    "file": "characters/anemo/jean.gts",
+    "functionName": "register_0e9f8fbcf722a5a8",
+    "definitions": 6,
+    "sha256": "e5aeecbcc3367d2a0746ec42a3aa56f64faa3311ea698264efb0b26b10007589"
+  },
+  {
+    "file": "characters/anemo/kaedehara_kazuha.gts",
+    "functionName": "register_e6a28e52411e0ffe",
+    "definitions": 16,
+    "sha256": "5d3effa362add4bdca0a634e58f94606c8fb331668c263b44749a4b5fae75ef4"
+  },
+  {
+    "file": "characters/anemo/lan_yan.gts",
+    "functionName": "register_ddae8e7f353e4b3c",
+    "definitions": 6,
+    "sha256": "546b6306053197715b1c77787cbb794cecec7edd7a175b80d04454725f896e36"
+  },
+  {
+    "file": "characters/anemo/lynette.gts",
+    "functionName": "register_9129a9ec27c39a93",
+    "definitions": 8,
+    "sha256": "c3bb589a7fb857434cbd9d0cbebeb18e6066683a681283a3ca615d464340c38d"
+  },
+  {
+    "file": "characters/anemo/maguu_kenki.gts",
+    "functionName": "register_5c8e8568784011a8",
+    "definitions": 9,
+    "sha256": "00b71afc2ead0fe03e8644ead23494c03dc5711212377886f0a92aba49012a11"
+  },
+  {
+    "file": "characters/anemo/sayu.gts",
+    "functionName": "register_ff070766c2e034ec",
+    "definitions": 8,
+    "sha256": "fd7e52801de068c31079bb54ca573df82f94ef94f9e4c461859ac97812c12435"
+  },
+  {
+    "file": "characters/anemo/shikanoin_heizou.gts",
+    "functionName": "register_5389ed219c85d53d",
+    "definitions": 13,
+    "sha256": "2e9b86d4db1124c2f95c2d0d723352c6631fb2f2b2a1c89856c3cec750e14cca"
+  },
+  {
+    "file": "characters/anemo/sucrose.gts",
+    "functionName": "register_95c466dab30f04d1",
+    "definitions": 8,
+    "sha256": "a3b74fe862db38becbeabe480ead5883e1a8a015e0812ed41b8fba3c461ca112"
+  },
+  {
+    "file": "characters/anemo/venti.gts",
+    "functionName": "register_c093aa9d4581ab08",
+    "definitions": 11,
+    "sha256": "807c0c5ae7f9708bb9e211ffa532251d61cd6101b02886acc60920e2bd9b7515"
+  },
+  {
+    "file": "characters/anemo/wanderer.gts",
+    "functionName": "register_71b84854f5552533",
+    "definitions": 7,
+    "sha256": "f9c934195c854ac44e05b8b2178203801da24a6e7014a425d796fdef25e1340a"
+  },
+  {
+    "file": "characters/anemo/xianyun.gts",
+    "functionName": "register_0493cdad5db08a46",
+    "definitions": 9,
+    "sha256": "c3c38f8e83fc68bfbb362137594502c425c3b13f6a257bf03b9139fe7fa449f8"
+  },
+  {
+    "file": "characters/anemo/xiao.gts",
+    "functionName": "register_86d98b8608ad609b",
+    "definitions": 7,
+    "sha256": "49676db0f2c1b385756c4df664ca106ae38ffe1f4ac9bb8ad26a17860d0be38d"
+  },
+  {
+    "file": "characters/anemo/yumemizuki_mizuki.gts",
+    "functionName": "register_1d9047f8d64076a2",
+    "definitions": 8,
+    "sha256": "28f1702a7b99e2060d5f3c91bd4dc1d494b8a7d7e319682bcef7c189b11350e9"
+  },
+  {
+    "file": "characters/cryo/charlotte.gts",
+    "functionName": "register_d1e78ed385179316",
+    "definitions": 7,
+    "sha256": "a749806e12fa79be71b954fc890df14be223672dfa43209af76bcb0547df44ec"
+  },
+  {
+    "file": "characters/cryo/chongyun.gts",
+    "functionName": "register_bbf9465abf4a62d9",
+    "definitions": 7,
+    "sha256": "df01455ca393b282a609a653749f1323b3a0c4595fda7b29753c251a0f2586f1"
+  },
+  {
+    "file": "characters/cryo/citlali.gts",
+    "functionName": "register_9e6a5126534a5ebe",
+    "definitions": 10,
+    "sha256": "5f347457433f6697828660e0ab620b0dd0000d81c9454ec663e201a3fd9b2135"
+  },
+  {
+    "file": "characters/pyro/crimson_witch_of_embers.gts",
+    "functionName": "register_bd0f15b07325b7fb",
+    "definitions": 7,
+    "sha256": "8fa1fa4da5d7d4238a41eebb52cd2f52779bca0d4aab6112aa24688c16c7136d"
+  },
+  {
+    "file": "characters/cryo/la_signora.gts",
+    "functionName": "register_410c1f2a09cd8bc7",
+    "definitions": 12,
+    "sha256": "4353fef734553af48f0a7188e514c9d1632bb2ab1aadfc73cde91599e90fb17c"
+  },
+  {
+    "file": "characters/cryo/cryo_hypostasis.gts",
+    "functionName": "register_e041617fdb0f4e99",
+    "definitions": 11,
+    "sha256": "7a74145698b4dc3b3fa62a35e11b1f5cff2e0600a755da2e0436132ea5837797"
+  },
+  {
+    "file": "characters/cryo/diona.gts",
+    "functionName": "register_74e77c5a0f4050ef",
+    "definitions": 8,
+    "sha256": "9561c79b1092c5631857b4edbd30a8ff9dfa71a76a5ac2a37e7ee5288394df32"
+  },
+  {
+    "file": "characters/cryo/escoffier.gts",
+    "functionName": "register_82d0de22be32687c",
+    "definitions": 15,
+    "sha256": "21350a383d7b49c7676f83d202801aebbaaa79822af474ffd2fb98aa80f3bd9b"
+  },
+  {
+    "file": "characters/cryo/eula.gts",
+    "functionName": "register_68227bf891d3d966",
+    "definitions": 7,
+    "sha256": "06b0779e3d28dfb72d6a94e558d4dca57d4f80cbf3b6905bbc1f6d4f5f615435"
+  },
+  {
+    "file": "characters/cryo/fatui_cryo_cicin_mage.gts",
+    "functionName": "register_abac5434a0f7efad",
+    "definitions": 8,
+    "sha256": "1ae037bcdd13ba3434752ccdae7114ebf58dbccc468ef7407b54149097072af1"
+  },
+  {
+    "file": "characters/cryo/freminet.gts",
+    "functionName": "register_d8b3c20cc946c5c9",
+    "definitions": 8,
+    "sha256": "e5deee4bac79e010622f24224c9ef86aa60ffa9f70f9980bc242bb8d714f15cb"
+  },
+  {
+    "file": "characters/cryo/frost_operative.gts",
+    "functionName": "register_e56b5fd50e415279",
+    "definitions": 7,
+    "sha256": "23120a9009165c7ecfd3ff2abffee311da795b2a99de8722167049048bcb7fae"
+  },
+  {
+    "file": "characters/cryo/ganyu.gts",
+    "functionName": "register_a32be6c6f93e8845",
+    "definitions": 9,
+    "sha256": "2f144c26b1a533d12000834375b265d348ff01b0f52eae31e1d5d9144e19eb67"
+  },
+  {
+    "file": "characters/cryo/kaeya.gts",
+    "functionName": "register_c723a71cf79b7419",
+    "definitions": 6,
+    "sha256": "fd298d1e4a3d661b4befe4371339548cd9f878240f5cc74918528f21c20c6f16"
+  },
+  {
+    "file": "characters/cryo/kamisato_ayaka.gts",
+    "functionName": "register_b43a1f43cd017499",
+    "definitions": 11,
+    "sha256": "0ee758bd2cdb21ad362ba2d2743d6d5bc5af6f85c20d017262c731bc931a4eda"
+  },
+  {
+    "file": "characters/cryo/layla.gts",
+    "functionName": "register_f1ff2c1b17fe5a62",
+    "definitions": 8,
+    "sha256": "44f83c849f2449c0cdbc49226fef769112dcad2d9cd02ba9b7207a671cfab532"
+  },
+  {
+    "file": "characters/cryo/mika.gts",
+    "functionName": "register_019f135e2bb1d28f",
+    "definitions": 12,
+    "sha256": "8fd9cddc9e05356b24c5d894d546fdcb925b246f0ef1044cb20a6720e2233fe7"
+  },
+  {
+    "file": "characters/cryo/qiqi.gts",
+    "functionName": "register_78814d1bb2c1bac0",
+    "definitions": 8,
+    "sha256": "e6a104ef858398227016b11b80eee15a6bdd9458fb7309bf2bf1407c72ec7db3"
+  },
+  {
+    "file": "characters/cryo/rosaria.gts",
+    "functionName": "register_d6bc60b2776e97e0",
+    "definitions": 8,
+    "sha256": "80f2851fbc9ce891b065a0515e7225bc449172b010eccbf54df5502d47fba558"
+  },
+  {
+    "file": "characters/cryo/shenhe.gts",
+    "functionName": "register_fa4b75e25846c209",
+    "definitions": 8,
+    "sha256": "812adc25e94e20fdb59c9e48f9ae8078cd52675c27d12758ec3034657077d145"
+  },
+  {
+    "file": "characters/cryo/skirk.gts",
+    "functionName": "register_c99494438b45b17c",
+    "definitions": 14,
+    "sha256": "6c7c574c4fb957dd15ab0391b74a3b432a23cbfd30b619850bfd669580ad952c"
+  },
+  {
+    "file": "characters/cryo/wayward_hermetic_spiritspeaker.gts",
+    "functionName": "register_00213cb817ed39c8",
+    "definitions": 22,
+    "sha256": "d54f987b50511c698cb15a905ac9cbf15546be455ffe46ea86ff05505e3dcca0"
+  },
+  {
+    "file": "characters/cryo/wriothesley.gts",
+    "functionName": "register_6d285a37b6377543",
+    "definitions": 10,
+    "sha256": "b18499de5df170f88ce882bdc2e46d8346a5548e89cce56781fd5857862a21d4"
+  },
+  {
+    "file": "characters/dendro/alhaitham.gts",
+    "functionName": "register_177e37666dbdc67a",
+    "definitions": 6,
+    "sha256": "3bc5c2d251b40b3047157c94afdbb44ce5d50142accd9a15a94813e8b96d31cd"
+  },
+  {
+    "file": "characters/dendro/baizhu.gts",
+    "functionName": "register_3d5b50f4b344cca0",
+    "definitions": 8,
+    "sha256": "c2a2a1ff1e22041ea4307847a3ab80a46284bf224d42573ad6183291823969f2"
+  },
+  {
+    "file": "characters/dendro/collei.gts",
+    "functionName": "register_2c2a1add078dc856",
+    "definitions": 8,
+    "sha256": "644e3811b3d201f8c0ae122394a762cf39f7f7dd917e4ec4fe08b1aacfb95b33"
+  },
+  {
+    "file": "characters/dendro/consecrated_fanged_beast.gts",
+    "functionName": "register_83442f89cd196eb0",
+    "definitions": 9,
+    "sha256": "4042f652d614c993debca8c1bd1827bc4dfb76eaccd00ff25ed9a2aaaca06226"
+  },
+  {
+    "file": "characters/dendro/emilie.gts",
+    "functionName": "register_8597efdcd2f5f8d6",
+    "definitions": 11,
+    "sha256": "0eec17d4d28983b2dd0bc1cdf9cc2085065a31f7dd108bcc12de8853471683bf"
+  },
+  {
+    "file": "characters/dendro/eremite_floral_ringdancer.gts",
+    "functionName": "register_69fc01991b4689da",
+    "definitions": 8,
+    "sha256": "27500c9a327615d27fd6ac4b3e6ddc6c2a22047c0f14992fb890c3e1d514abcd"
+  },
+  {
+    "file": "characters/dendro/gluttonous_yumkasaur_mountain_king.gts",
+    "functionName": "register_a8b4357b2a40da1a",
+    "definitions": 9,
+    "sha256": "31b1bc94be75bb298fb2b913137fdb3efd07c25e04a5c8f1b174e2f4aa1070eb"
+  },
+  {
+    "file": "characters/dendro/guardian_of_apeps_oasis.gts",
+    "functionName": "register_a755c85734b44b76",
+    "definitions": 15,
+    "sha256": "a2a62d5226a74b0726772e2f3d0c2ee38420b75989de6170d1127d68b15dc40e"
+  },
+  {
+    "file": "characters/dendro/jadeplume_terrorshroom.gts",
+    "functionName": "register_292166e8b4729697",
+    "definitions": 7,
+    "sha256": "a850576163686b820519ba518a05b74a0e9050e401b9afad6905b890518c3805"
+  },
+  {
+    "file": "characters/dendro/kaveh.gts",
+    "functionName": "register_a07421100dd14b42",
+    "definitions": 8,
+    "sha256": "a2ada013f4af20444c0426977696026cfcaf9035252bf26d1435a0da73d3fd95"
+  },
+  {
+    "file": "characters/dendro/kinich.gts",
+    "functionName": "register_be3ae6bc8f5f14fd",
+    "definitions": 10,
+    "sha256": "87b2aef673a2f07bbffef56444cd5a1ee643514d7447ec31e4849e99faa33ce7"
+  },
+  {
+    "file": "characters/dendro/kirara.gts",
+    "functionName": "register_0df3b2a8f7bcbb46",
+    "definitions": 8,
+    "sha256": "965819ec12269651b76d8ee072521b7b793acc43bb7e3f1e50e59088c7f459d1"
+  },
+  {
+    "file": "characters/dendro/lauma.gts",
+    "functionName": "register_d496973fdaaf8b73",
+    "definitions": 9,
+    "sha256": "5a570212b8220f7602440211b9997cbf4588450919796eeb62fd9cfa1ed98d6a"
+  },
+  {
+    "file": "characters/dendro/nahida.gts",
+    "functionName": "register_b999e9a06db1dde9",
+    "definitions": 9,
+    "sha256": "99b53766dbb916be4b2294ba76737936db7a71f5b48df0535da6ed4e2bc3d454"
+  },
+  {
+    "file": "characters/dendro/nefer.gts",
+    "functionName": "register_b2178a28db3b51c6",
+    "definitions": 10,
+    "sha256": "185f7eb6b005531ccdb17a00ae9028c7ec29f75b117cd066cfe9897ebcf3be6b"
+  },
+  {
+    "file": "characters/dendro/tighnari.gts",
+    "functionName": "register_e7006bb7e1944469",
+    "definitions": 7,
+    "sha256": "0547f8125097ae33c85050489aa3491bd26bb7bb764bd6e029da21cd59dbc6e0"
+  },
+  {
+    "file": "characters/dendro/yaoyao.gts",
+    "functionName": "register_6b87a69679a75ede",
+    "definitions": 8,
+    "sha256": "6a497d77bcc348345f92c7b00cf79dbfe3dcf2292788987270eaf323e73cbc43"
+  },
+  {
+    "file": "characters/electro/abyss_lector_violet_lightning.gts",
+    "functionName": "register_335ee25478bf2b3e",
+    "definitions": 12,
+    "sha256": "a409e0d5cd2d3dee616a61e00162689cf87e59f4b99a7d57dc864f17015f7766"
+  },
+  {
+    "file": "characters/electro/beidou.gts",
+    "functionName": "register_3f32d33432383462",
+    "definitions": 10,
+    "sha256": "ee80ba38acb77e5a58a4b60b845aab4869a6b0f2d8d4adef0b680d47ad501fcf"
+  },
+  {
+    "file": "characters/electro/clorinde.gts",
+    "functionName": "register_d66b448dd39b8c59",
+    "definitions": 7,
+    "sha256": "c1fe0a62723b022a824a0ee9226d2e486063fadc48b7b14b5d7abc3873e10466"
+  },
+  {
+    "file": "characters/electro/consecrated_scorpion.gts",
+    "functionName": "register_84d31d8895fe93e6",
+    "definitions": 7,
+    "sha256": "9fd9d50c0cb24b8c34e4b77e6aebb00e7f788583d5e916ee5b11ce9124a7f617"
+  },
+  {
+    "file": "characters/electro/cyno.gts",
+    "functionName": "register_2464f4b70dc60922",
+    "definitions": 7,
+    "sha256": "c0957df52ae224c24aaed9bc8589abab7b1f1b3327f3d55ee339278b30103dfd"
+  },
+  {
+    "file": "characters/electro/dori.gts",
+    "functionName": "register_c44a07292f7a3b92",
+    "definitions": 8,
+    "sha256": "cfe15ec56efa40bbb1e180c913bd7c59701a59807487316b7a2d17805f5ef698"
+  },
+  {
+    "file": "characters/electro/electro_hypostasis.gts",
+    "functionName": "register_cd3b25bde3509bae",
+    "definitions": 14,
+    "sha256": "8d08925889cccec68ba5de1766c76451e37a995d67e17df9985c7cb2a2697587"
+  },
+  {
+    "file": "characters/electro/fatui_electro_cicin_mage.gts",
+    "functionName": "register_f8fa701836726433",
+    "definitions": 10,
+    "sha256": "0591281da23c9062e593e7a2038ae4f78f1d3b5d21ae905fa98f8b3b180d8834"
+  },
+  {
+    "file": "characters/electro/fischl.gts",
+    "functionName": "register_14a8882f290f3d24",
+    "definitions": 8,
+    "sha256": "9735eb47776445033cc970c1cfbe0cd38c20fecd7b335a72c2b15e097d9bb256"
+  },
+  {
+    "file": "characters/electro/flins.gts",
+    "functionName": "register_34b03ccc7726c6fa",
+    "definitions": 11,
+    "sha256": "09f9235e66a22718747f23d85742a0def06dcffb53247466bab0d8a435749666"
+  },
+  {
+    "file": "characters/electro/iansan.gts",
+    "functionName": "register_03b868d677cc3977",
+    "definitions": 10,
+    "sha256": "1070f4c52c0dc016096d86d30cfb44bed6356a45d1e4d2ee2277d3bf6f46c605"
+  },
+  {
+    "file": "characters/electro/ineffa.gts",
+    "functionName": "register_51742b6662e45348",
+    "definitions": 8,
+    "sha256": "77d14ee6d420fa7e59010e85dad5f97c75a8ddd7f4092fc79ed1d2931dd86c9d"
+  },
+  {
+    "file": "characters/electro/keqing.gts",
+    "functionName": "register_345893973d05d033",
+    "definitions": 8,
+    "sha256": "c5b5835831c99d84f16308b2b40ee9bc1dc9f020193f186c75a30c05de909d51"
+  },
+  {
+    "file": "characters/electro/kujou_sara.gts",
+    "functionName": "register_92b5518bc7f7a455",
+    "definitions": 8,
+    "sha256": "6d60f0800118064fb9900dfb9b4a693a4185b417c654868cb7169b3176c5d093"
+  },
+  {
+    "file": "characters/electro/kuki_shinobu.gts",
+    "functionName": "register_6c773715e7842a54",
+    "definitions": 6,
+    "sha256": "d7f4b4ae28ea0ccf249e50634ec7dca1bff6587689fd9a5881012551165c0825"
+  },
+  {
+    "file": "characters/electro/lisa.gts",
+    "functionName": "register_7fcd97549fa43b8f",
+    "definitions": 7,
+    "sha256": "38d24f48124ed381968a8242d63a2667eab42a8fd1d65ffd8826855f823520ae"
+  },
+  {
+    "file": "characters/electro/millennial_pearl_seahorse.gts",
+    "functionName": "register_28f04a18387c2aae",
+    "definitions": 10,
+    "sha256": "7bbabb3f7165ca53c995ee351bb2d855702bcfdd10445192a0cef9179aae9a69"
+  },
+  {
+    "file": "characters/electro/ororon.gts",
+    "functionName": "register_0b5d8b8779197545",
+    "definitions": 10,
+    "sha256": "040b58f3bffe96c62a08d7190442bfda02757d5557a218b54cf8230eec19a3ef"
+  },
+  {
+    "file": "characters/electro/raiden_shogun.gts",
+    "functionName": "register_50c015b1539df4b2",
+    "definitions": 8,
+    "sha256": "1f4523dab7cc189e03301eb71264e9ecd95924fe02b3a3aa01f62e07c2df9f17"
+  },
+  {
+    "file": "characters/electro/razor.gts",
+    "functionName": "register_c5f3e9ba7d2c26e9",
+    "definitions": 7,
+    "sha256": "839c89e5cb4bd663430307bd0ea4287169f615bd124bba85ac24ddd35e63d69c"
+  },
+  {
+    "file": "characters/electro/sethos.gts",
+    "functionName": "register_7a397394881f3e16",
+    "definitions": 8,
+    "sha256": "3172c6ce0616fae5e55c050d5033d2f2bd1e68fac2722212ac16c116c665a27b"
+  },
+  {
+    "file": "characters/electro/thunder_manifestation.gts",
+    "functionName": "register_618cbbfd27e6cc1c",
+    "definitions": 10,
+    "sha256": "59f9aaf1d631a70f2ed218b68e8fcd89deb22f168423c1e2bc2c405d683e7709"
+  },
+  {
+    "file": "characters/electro/varesa.gts",
+    "functionName": "register_ecbe44ceedc46a05",
+    "definitions": 12,
+    "sha256": "a793134eeb7a0d08dcc9fd381438d6d15f02ae5e42933bae0c00e80c91d1c1de"
+  },
+  {
+    "file": "characters/electro/yae_miko.gts",
+    "functionName": "register_26ce9f9e3c50a47d",
+    "definitions": 8,
+    "sha256": "6811c8212fbd7a262ec999a09e2b0a6eadd211b494291dd783c0af73ddadaddb"
+  },
+  {
+    "file": "characters/geo/albedo.gts",
+    "functionName": "register_5bdaa734e8846995",
+    "definitions": 8,
+    "sha256": "3bdba715beefef2841490a71ab43b690b15f06b6fe54029da0f45a15d56b36c9"
+  },
+  {
+    "file": "characters/geo/arataki_itto.gts",
+    "functionName": "register_61b77909168458e3",
+    "definitions": 8,
+    "sha256": "88e04d4b71af879d1bd9ea7d2722cb0d0926929a115faf7f7d587c1b4551f2e9"
+  },
+  {
+    "file": "characters/geo/azhdaha.gts",
+    "functionName": "register_d4a46b16455e2fee",
+    "definitions": 18,
+    "sha256": "5ced39c813462a6f9e54b7ce90989f9c322487754676f7af1faa5b702fcd3935"
+  },
+  {
+    "file": "characters/geo/black_serpent_knight_rockbreaker_ax.gts",
+    "functionName": "register_2aea3de362f55b62",
+    "definitions": 12,
+    "sha256": "9fb58c72ea1edd29b45e1a7cbb29da7f77553e013f777bb471babe09b989c03b"
+  },
+  {
+    "file": "characters/geo/chiori.gts",
+    "functionName": "register_7150a58ae39e15f4",
+    "definitions": 13,
+    "sha256": "14b63e20af01d04ce531a224cc4df9ae97bd285e41a14321c8fbbf4f2c5172ca"
+  },
+  {
+    "file": "characters/geo/experimental_field_generator.gts",
+    "functionName": "register_014f76468d14ee95",
+    "definitions": 9,
+    "sha256": "783b5d979706dbcdcbcb6cf8ed0d36d7c24eb090c9c1f624d65218f9dce41e0e"
+  },
+  {
+    "file": "characters/geo/golden_wolflord.gts",
+    "functionName": "register_17ae27b67505b318",
+    "definitions": 7,
+    "sha256": "e9716937852e04b5e50d0b12df4b5a70c190b079ed733613665d42459fa1698d"
+  },
+  {
+    "file": "characters/geo/gorou.gts",
+    "functionName": "register_c1da84c4873091ce",
+    "definitions": 7,
+    "sha256": "7e586971627d4602af179e08d70f6bf5b73cc84e13eb5b8a5de201c3aa63ad8e"
+  },
+  {
+    "file": "characters/geo/illuga.gts",
+    "functionName": "register_693620b1858e08a5",
+    "definitions": 8,
+    "sha256": "0a768e9b4e818f8f5f8d869afefa57c596aea78f97b74e1fd54fcddc89fae072"
+  },
+  {
+    "file": "characters/geo/kachina.gts",
+    "functionName": "register_02911cfe9d51c06d",
+    "definitions": 9,
+    "sha256": "36e4de11f0088917f8adaeea5f96892d989ffe47d6f5b99f3111da2b1a1a3738"
+  },
+  {
+    "file": "characters/geo/navia.gts",
+    "functionName": "register_66ec7a120ff3d7de",
+    "definitions": 9,
+    "sha256": "b6336a53f1dfda38041b9f05ef2def40370976a0aaa8ed43f61d82f2afbfb8bd"
+  },
+  {
+    "file": "characters/geo/ningguang.gts",
+    "functionName": "register_9db55bf242a29bbc",
+    "definitions": 6,
+    "sha256": "9243a3623d9d0435286334ddee576626001a597ad36166d5c67781632c832b97"
+  },
+  {
+    "file": "characters/geo/noelle.gts",
+    "functionName": "register_52a2ad8daffed036",
+    "definitions": 7,
+    "sha256": "7e8166760ede9d5f60bb6a579fbb6b534dfc19ff17d83598baa426a6b00c9bbe"
+  },
+  {
+    "file": "characters/geo/stonehide_lawachurl.gts",
+    "functionName": "register_a6ca65c13e562b59",
+    "definitions": 8,
+    "sha256": "cd67d3c667f32bbdf833e626f8d2f8050953ea588d9a67dd87fe0f97317ac0fb"
+  },
+  {
+    "file": "characters/geo/xilonen.gts",
+    "functionName": "register_2208793acecef60d",
+    "definitions": 18,
+    "sha256": "e5076ce7d2bd739fc00aef5beaa147d19defa3e6ccb1c357d8020935b4a2afe1"
+  },
+  {
+    "file": "characters/geo/yun_jin.gts",
+    "functionName": "register_d3eb42f13112f72b",
+    "definitions": 10,
+    "sha256": "d1e4f0a5b9ded9c2c0836cdb999373336680f0d1643dfb83c4a180612785e17a"
+  },
+  {
+    "file": "characters/geo/zhongli.gts",
+    "functionName": "register_79d0578bd5a05e87",
+    "definitions": 9,
+    "sha256": "1a44b0f65c9a1786a6610f2d13d8e9294f58664f9b4a5eba2a3af8ef7b20687d"
+  },
+  {
+    "file": "characters/hydro/abyss_herald_wicked_torrents.gts",
+    "functionName": "register_df934598f83ccff8",
+    "definitions": 16,
+    "sha256": "09b2b1d4cc55d9be06fde50e28465feea51117cfde1194face317cbb701d4525"
+  },
+  {
+    "file": "characters/hydro/aino.gts",
+    "functionName": "register_e554bad65ee3615f",
+    "definitions": 7,
+    "sha256": "a563e9a5bc4b40ed06068526812d935891cf3801a86e0aa728df68ce74c0e6b4"
+  },
+  {
+    "file": "characters/hydro/alldevouring_narwhal.gts",
+    "functionName": "register_c11af93eb654b034",
+    "definitions": 12,
+    "sha256": "26fe4323338a574bff276185bd224f56e47ed89a5a063e7deb48fa98b50db710"
+  },
+  {
+    "file": "characters/hydro/barbara.gts",
+    "functionName": "register_fb3d8fcd99ec28cd",
+    "definitions": 6,
+    "sha256": "26ddb7d8e6a95770daaa62063e26b93da3f44b05be4260ec605bf99d3a732a59"
+  },
+  {
+    "file": "characters/hydro/candace.gts",
+    "functionName": "register_cb6b159d91dde38b",
+    "definitions": 10,
+    "sha256": "5d1700331e7650a17096d0d8d236f1f602d326cd9fb0e91f461d86f99befcae8"
+  },
+  {
+    "file": "characters/hydro/columbina.gts",
+    "functionName": "register_be3f9a0fd45b84f1",
+    "definitions": 13,
+    "sha256": "00e9acf388c40b20177a245be6b212553eca0d2179c5e6b196060f14dbeace1c"
+  },
+  {
+    "file": "characters/hydro/consecrated_horned_crocodile.gts",
+    "functionName": "register_e94ac5ef0a5d1446",
+    "definitions": 6,
+    "sha256": "c7735a7ae00857172ae93f1670f8ac3e35770ac8e746953b49e53a2cd7af75ac"
+  },
+  {
+    "file": "characters/hydro/dahlia.gts",
+    "functionName": "register_dcbb7e53ff347aa0",
+    "definitions": 7,
+    "sha256": "3760b1ac3cf98c28f09b31e7df19382c5fcda34825e422ce7bda90e21b58bad6"
+  },
+  {
+    "file": "characters/hydro/furina.gts",
+    "functionName": "register_f91147a173efbad6",
+    "definitions": 16,
+    "sha256": "47748f1a20145bc60fb6e498617849bb7a01d46e51529a4590989ec0140f02cc"
+  },
+  {
+    "file": "characters/hydro/hydro_hilichurl_rogue.gts",
+    "functionName": "register_c1c02d788aed4215",
+    "definitions": 9,
+    "sha256": "bd06e48c0027d247b7993e85fc4ce486e347290a0d1010fe10245457b81e0622"
+  },
+  {
+    "file": "characters/hydro/hydro_hypostasis.gts",
+    "functionName": "register_baef6f44250dda51",
+    "definitions": 11,
+    "sha256": "aefefb910b7e4cda58cb9d91464e3121b7dcc6fa27edb90fee81a2ca8fb25671"
+  },
+  {
+    "file": "characters/hydro/hydro_tulpa.gts",
+    "functionName": "register_2cb3c5312a0d9e9e",
+    "definitions": 15,
+    "sha256": "a04b45e5c705ec1e63466fbe21ce073818fdcb21f7ee0bef1c3ae3bbd2a115be"
+  },
+  {
+    "file": "characters/hydro/kamisato_ayato.gts",
+    "functionName": "register_9f5833919c1bffd9",
+    "definitions": 8,
+    "sha256": "83fb2d53663df9f54d9f04cafe40c003c5db04f9e916e01cf113f2f0fdce66dc"
+  },
+  {
+    "file": "characters/hydro/mirror_maiden.gts",
+    "functionName": "register_56e1a2e4f9d1f98f",
+    "definitions": 7,
+    "sha256": "5032407f986ac5753b47f3f362f826a235f22a90f4c5bbc6d1281f9e2de1a153"
+  },
+  {
+    "file": "characters/hydro/mona.gts",
+    "functionName": "register_fc4b41929f8c0ec8",
+    "definitions": 10,
+    "sha256": "822854ad53915edb1b89f78cda42c864d34930d87d0ca8f39c7159e7f79fa2f1"
+  },
+  {
+    "file": "characters/hydro/mualani.gts",
+    "functionName": "register_07e90153be35b626",
+    "definitions": 9,
+    "sha256": "430affc9015d442b8303416ffa7527dc34beffe743109d79a0585abfbe516f94"
+  },
+  {
+    "file": "characters/hydro/neuvillette.gts",
+    "functionName": "register_56c86540d38ac698",
+    "definitions": 10,
+    "sha256": "ec84b637c9009308a8f6063865feae5115deb8cd915123c365946f6f11715850"
+  },
+  {
+    "file": "characters/hydro/rhodeia_of_loch.gts",
+    "functionName": "register_f2d55285d5585788",
+    "definitions": 11,
+    "sha256": "05522181b33e8a5b952fe31d7a02042e37160974f655d6e7ffd5c47ca377004c"
+  },
+  {
+    "file": "characters/hydro/sangonomiya_kokomi.gts",
+    "functionName": "register_0fa9f57a2f3b18b7",
+    "definitions": 7,
+    "sha256": "13432b16fdc2a24446a9028bb74386cdcb31eef3afecf28e1a63260798747df4"
+  },
+  {
+    "file": "characters/hydro/sigewinne.gts",
+    "functionName": "register_d58bc639dfb16800",
+    "definitions": 15,
+    "sha256": "30ea78f352518df7e2cd4030982d58c55c100dfdaccad91d48ddda5ad47086b8"
+  },
+  {
+    "file": "characters/hydro/tartaglia.gts",
+    "functionName": "register_620607d1193193d9",
+    "definitions": 12,
+    "sha256": "06d08b3c77d0e55b2ec2a34e53f10a8007dbcc462b07ba49cc846bbaba8bed55"
+  },
+  {
+    "file": "characters/hydro/xingqiu.gts",
+    "functionName": "register_a68eca1be1af2a99",
+    "definitions": 8,
+    "sha256": "444ba8322e3f7c61e30412c03a9cf148237dda63383f81abb1cad3fed84ddd64"
+  },
+  {
+    "file": "characters/hydro/yelan.gts",
+    "functionName": "register_4fb697aef39d08b2",
+    "definitions": 8,
+    "sha256": "ddf605dbf24c39d495a14107cc8a40c120674e55b141082adb445993cdf7d20a"
+  },
+  {
+    "file": "characters/pyro/abyss_lector_fathomless_flames.gts",
+    "functionName": "register_a3e779388f294c7d",
+    "definitions": 13,
+    "sha256": "55584f2f5770fd9832fa57b4a99315b99deb3d43831290784da113b8fd5e6b6e"
+  },
+  {
+    "file": "characters/pyro/amber.gts",
+    "functionName": "register_5c8e68ea70c6fa43",
+    "definitions": 6,
+    "sha256": "e4fc6c762f163fde5458bc55c3e467c23daa6a4d37e8edbc1b146843b9be6ff3"
+  },
+  {
+    "file": "characters/pyro/arlecchino.gts",
+    "functionName": "register_753f99ff16e95469",
+    "definitions": 9,
+    "sha256": "b4b03c3eca19d8316d510c1d45c54743084a06aca73cd85bae10227c669f94fd"
+  },
+  {
+    "file": "characters/pyro/bennett.gts",
+    "functionName": "register_f180e16d6fb4d009",
+    "definitions": 7,
+    "sha256": "25e5fc1ae618f86e070da4135815293248f49ab5b3a59cc498c86de5f637c14a"
+  },
+  {
+    "file": "characters/pyro/chevreuse.gts",
+    "functionName": "register_c0fa31d58a092fb8",
+    "definitions": 11,
+    "sha256": "6a29e5cbc7a1afabd79d27837fa84541e40dbc51b43befe4344214ffb32a52d1"
+  },
+  {
+    "file": "characters/pyro/dehya.gts",
+    "functionName": "register_aa6a18d9582e7013",
+    "definitions": 11,
+    "sha256": "b901d9a6a4bd331f743d4730197200c03ed8fbec627e089d01bb2f4129975b94"
+  },
+  {
+    "file": "characters/pyro/diluc.gts",
+    "functionName": "register_5370a8b535d06e72",
+    "definitions": 6,
+    "sha256": "efd20584127b8ddb94d5562acf62a3dff6810eb170186824de0030c8663fba55"
+  },
+  {
+    "file": "characters/pyro/durin.gts",
+    "functionName": "register_9a05ff448f796e65",
+    "definitions": 13,
+    "sha256": "d5cfbc681bea77cb0c910cf8166267003934d55a15ab2d0ae63094f87459dba0"
+  },
+  {
+    "file": "characters/pyro/emperor_of_fire_and_iron.gts",
+    "functionName": "register_38a5dac7f406b1ac",
+    "definitions": 11,
+    "sha256": "7468350f1e6bbdade92e58cace96773917e4228c89dbe0223c96e4d439134afd"
+  },
+  {
+    "file": "characters/pyro/eremite_scorching_loremaster.gts",
+    "functionName": "register_2088ef1cf24b8f8a",
+    "definitions": 10,
+    "sha256": "49eb9e0c071130af0f655e6edd74bc1f42df866c2db20564f6c41ba40c5ef215"
+  },
+  {
+    "file": "characters/pyro/fatui_pyro_agent.gts",
+    "functionName": "register_82df78f603ca777f",
+    "definitions": 8,
+    "sha256": "bf2ac448568935976b836ed65decce5974114f7c552355dc245142a0f6dda66a"
+  },
+  {
+    "file": "characters/pyro/gaming.gts",
+    "functionName": "register_4a95eb0651ffc54a",
+    "definitions": 10,
+    "sha256": "9d6d3fccf9aa284b5ee3c658c974d560e41cd5b083c768e9aa0f22fb08c25b7d"
+  },
+  {
+    "file": "characters/pyro/goldflame_qucusaur_tyrant.gts",
+    "functionName": "register_f5cca56c408ad474",
+    "definitions": 8,
+    "sha256": "69ecf2b8d92227d8ed8c0445939473028f18ebbaf071012228a2015b74391239"
+  },
+  {
+    "file": "characters/pyro/hu_tao.gts",
+    "functionName": "register_5975bd3cab627522",
+    "definitions": 7,
+    "sha256": "ecb17227894fd97f2b9ae32b6c697c20a65529f22e326a3024923e7effc6598e"
+  },
+  {
+    "file": "characters/pyro/klee.gts",
+    "functionName": "register_20ec0b3bd8107e95",
+    "definitions": 9,
+    "sha256": "c8008c3d664d2d4c6559be695e05571e3921e6d00fc500ac0ce452c2fc75080d"
+  },
+  {
+    "file": "characters/pyro/lord_of_eroded_primal_fire.gts",
+    "functionName": "register_8a02b5451fb47325",
+    "definitions": 10,
+    "sha256": "e3bcec0b86fb164e1bde03546b6d12db3fb2ee8e0348e25ba1d8d68cf227850e"
+  },
+  {
+    "file": "characters/pyro/lyney.gts",
+    "functionName": "register_cb7e8399881b0d85",
+    "definitions": 8,
+    "sha256": "d19e3152f5746402863938d77d7255b0131c44bb22cb71e8f3752ace93f137cf"
+  },
+  {
+    "file": "characters/pyro/mavuika.gts",
+    "functionName": "register_336445a24e13664f",
+    "definitions": 15,
+    "sha256": "c909d552a0bf0c5bb0c5d472114a96ce9bd1a8e8a6731a9561152b0da8cffd37"
+  },
+  {
+    "file": "characters/pyro/thoma.gts",
+    "functionName": "register_9b09260aedde7145",
+    "definitions": 8,
+    "sha256": "af2593c8282dc412dc806d53860d82cfb4b7076fe1341a8447ab15d58084d3ac"
+  },
+  {
+    "file": "characters/pyro/xiangling.gts",
+    "functionName": "register_3f696171166c7618",
+    "definitions": 7,
+    "sha256": "8a24a441f6a8dfec5a38f445ab1bf5430ac92ecbeaba827e8b9a18301310416e"
+  },
+  {
+    "file": "characters/pyro/xinyan.gts",
+    "functionName": "register_4408e586cd9c40fd",
+    "definitions": 7,
+    "sha256": "be2c62a5bcd6abe352e710bee1cac9390997d1c4b7f942358efb8cd5acb04228"
+  },
+  {
+    "file": "characters/pyro/yanfei.gts",
+    "functionName": "register_e4b5d1f170285648",
+    "definitions": 7,
+    "sha256": "75c9ef6b0d628fe7af2cd041d2bbda94375033097fbc7e906dbc7bb4dc650312"
+  },
+  {
+    "file": "characters/pyro/yoimiya.gts",
+    "functionName": "register_2dcf7ff53eed17f9",
+    "definitions": 8,
+    "sha256": "d642c27e07d03ef49934224174575bd5c9d76113317701ab5f1be5a541f41346"
+  },
+  {
+    "file": "old_versions/v3.3.0.gts",
+    "functionName": "register_292a48767a1c626f",
+    "definitions": 7,
+    "sha256": "23dccc9c298f3cc708fd7ca3f767f125abd0b92f0ecd0fc520444490b41a4744"
+  },
+  {
+    "file": "old_versions/v3.4.0.gts",
+    "functionName": "register_7c4d47faf2182686",
+    "definitions": 0,
+    "sha256": "53823357ccbe985c67cf80032a943e3ad12b44a164d0a91e01c1f97d3c606894"
+  },
+  {
+    "file": "old_versions/v3.5.0.gts",
+    "functionName": "register_2ac9dcad8aa76dc3",
+    "definitions": 10,
+    "sha256": "ff3fa48f51f4639862f7a3da9bcc7a0ce2da1cf01c6f75891673d845ccd9d0f6"
+  },
+  {
+    "file": "old_versions/v3.6.0.gts",
+    "functionName": "register_3513283776776cca",
+    "definitions": 7,
+    "sha256": "83219efa4f31fe922250c8263803459a675b3e6b8988a066b4984cff15c9ef5d"
+  },
+  {
+    "file": "old_versions/v3.7.0.gts",
+    "functionName": "register_838133ff698e151c",
+    "definitions": 9,
+    "sha256": "47c01e225fe4f26d41568b853c9aa22ddef7ce3132b3ae38bd0fa28655302405"
+  },
+  {
+    "file": "old_versions/v3.8.0.gts",
+    "functionName": "register_10180430d693f071",
+    "definitions": 23,
+    "sha256": "d61a43cd8264414dae339ce9f42266026aa5e335aef838abbf4f40d85b47a706"
+  },
+  {
+    "file": "old_versions/v4.0.0.gts",
+    "functionName": "register_239f15e537f064a2",
+    "definitions": 19,
+    "sha256": "6030af56f47dc91304fde9dd2d94acf66ec78e435aef54ca24dfa7e321231901"
+  },
+  {
+    "file": "old_versions/v4.1.0.gts",
+    "functionName": "register_b40d5910b88413a5",
+    "definitions": 30,
+    "sha256": "72c0a12703d1f9e146c425d72f79380429bf4a5af8f40b87c026275c55697b78"
+  },
+  {
+    "file": "old_versions/v4.2.0.gts",
+    "functionName": "register_9e5f6c39fb66c425",
+    "definitions": 11,
+    "sha256": "a9d8afa953a5e1082ce64b7e4c286ef1ff1a588abf30e736f1def89921623eae"
+  },
+  {
+    "file": "old_versions/v4.3.0.gts",
+    "functionName": "register_c53492af8571f662",
+    "definitions": 4,
+    "sha256": "da50bd3f0b435206e85aff31a8eb1048ada45f0570573514eb78eb48fea4388a"
+  },
+  {
+    "file": "old_versions/v4.4.0.gts",
+    "functionName": "register_451c7b97690a7060",
+    "definitions": 3,
+    "sha256": "a90687dd2b024240069b9542cc9d26686d52efc00d78c85f23f85eb7fbce4742"
+  },
+  {
+    "file": "old_versions/v4.5.0.gts",
+    "functionName": "register_980f2d59280b58b5",
+    "definitions": 9,
+    "sha256": "c211c8460cbfaebfcc4cdd1b445cd9f013a1cc90f94055b7191f377b460b8eca"
+  },
+  {
+    "file": "old_versions/v4.6.0.gts",
+    "functionName": "register_afb0adf56ae5e0a8",
+    "definitions": 3,
+    "sha256": "6fd6db104703551932d155031b08c9b853e90836085b64be6efab29e5b106783"
+  },
+  {
+    "file": "old_versions/v4.6.1.gts",
+    "functionName": "register_e4fc19ab8eb2bee7",
+    "definitions": 7,
+    "sha256": "98bf0a0f96ad76a778b180559cf6f0f726aa3b28ee5273873add0c0c0810e648"
+  },
+  {
+    "file": "old_versions/v4.7.0.gts",
+    "functionName": "register_b2f0ffbdf6dc8b02",
+    "definitions": 27,
+    "sha256": "a8b046796c8c95045b6a4dc6e3cf69e22b4781e19b87dfdb4850330f545c91ae"
+  },
+  {
+    "file": "old_versions/v4.8.0.gts",
+    "functionName": "register_5ed8144eb197ffec",
+    "definitions": 5,
+    "sha256": "76c5db7e11163590c76f6b2791d79c8e020a61d7d52ec5310a2f1086b52f4091"
+  },
+  {
+    "file": "old_versions/v5.0.0.gts",
+    "functionName": "register_461ab2246b9cd09c",
+    "definitions": 12,
+    "sha256": "706af6502e3b9f85ba0c9bcbcfb5f1cb8829042f8bbc71e0e21a2a3949180279"
+  },
+  {
+    "file": "old_versions/v5.1.0.gts",
+    "functionName": "register_0404e4f297ddf126",
+    "definitions": 0,
+    "sha256": "3598ce34a4069ca1fdb4fc83a9f5e83cd3340268cf627f4b50824eb503280bca"
+  },
+  {
+    "file": "old_versions/v5.2.0.gts",
+    "functionName": "register_fedc983c9868823d",
+    "definitions": 8,
+    "sha256": "eea9e1cfdc9457e5a0c31b95f197b8c1623169cbdda23017a880d71f27e589d9"
+  },
+  {
+    "file": "old_versions/v5.3.0.gts",
+    "functionName": "register_bdfeaec37426eb88",
+    "definitions": 4,
+    "sha256": "53d41ff1467097a4abee45898d89e747fa8e8f4891dd5a6b3ca8302273c2a69c"
+  },
+  {
+    "file": "old_versions/v5.4.0.gts",
+    "functionName": "register_8e81ef6814705128",
+    "definitions": 14,
+    "sha256": "456036924649934f03b3c7d2c76487a6977b8614c90482b18c2111ed6e7ef037"
+  },
+  {
+    "file": "old_versions/v5.5.0.gts",
+    "functionName": "register_d34ddb1368894021",
+    "definitions": 3,
+    "sha256": "f308b34ce9a1634033ffa441e1c96a23fd2b9547e5bd3580f8237ee4e9d325ca"
+  },
+  {
+    "file": "old_versions/v5.6.0.gts",
+    "functionName": "register_a116e8a251cfbbd7",
+    "definitions": 11,
+    "sha256": "efeca5a52bc8eee713f7de7673a7b73e1bcc2c806ba6ac9558aba6544cb3365e"
+  },
+  {
+    "file": "old_versions/v5.7.0.gts",
+    "functionName": "register_35d125df1cfd1bab",
+    "definitions": 10,
+    "sha256": "3e727d0cceae494680e0518171b07865e55656b211b43012cd10f9650b11f305"
+  },
+  {
+    "file": "old_versions/v5.8.0.gts",
+    "functionName": "register_3c65885153799050",
+    "definitions": 19,
+    "sha256": "d1e0dad0c4c306fc6c3008b24d7209802453dd44858bb761c471055f74432818"
+  },
+  {
+    "file": "old_versions/v6.0.0.gts",
+    "functionName": "register_7ab641f97e05460a",
+    "definitions": 9,
+    "sha256": "d0c67079d1b9e049c9dfec0379dd97b2eafc442ebf66929dee1ffb00040e092f"
+  },
+  {
+    "file": "old_versions/v6.1.0.gts",
+    "functionName": "register_1b0593cfe69ab70d",
+    "definitions": 9,
+    "sha256": "6bac539126dbed6585dca76942738df719969cbdf3feaf5ec581c5c186b32e19"
+  },
+  {
+    "file": "old_versions/v6.2.0.gts",
+    "functionName": "register_a61c180a55a4ee85",
+    "definitions": 16,
+    "sha256": "72d47d182e016e51a9a459c464f0c8c18973493f87230c2efb797bc5fbc5132e"
+  },
+  {
+    "file": "old_versions/v6.3.0.gts",
+    "functionName": "register_cbcf40b788d0a920",
+    "definitions": 13,
+    "sha256": "f546c3a7098392724d09a133bcf84c61cc6d9b0cb27af1b487175e98ddee4237"
+  },
+  {
+    "file": "old_versions/v6.4.0.gts",
+    "functionName": "register_8562f6af43ba6726",
+    "definitions": 7,
+    "sha256": "82614d276698a822f415b406164151c44cc59b7d892379643440f913f27b4f3c"
+  },
+  {
+    "file": "old_versions/v6.5.0.gts",
+    "functionName": "register_48e0f651ec26823d",
+    "definitions": 14,
+    "sha256": "d1c115ba8af23c0aa1e3cfa9bf6f8fd5d7ad19e685038d195e073dd3a2da0ea2"
+  },
+  {
+    "file": "old_versions/v6.6.0.gts",
+    "functionName": "register_585b4b5fed0393e1",
+    "definitions": 3,
+    "sha256": "c4d58a1c9d5f7bb1519784ad67c045f4188dd22ffc6ec2293f67fe23c52739ff"
+  },
+  {
+    "file": "old_versions/v6.7.0.gts",
+    "functionName": "register_b60e6a657f8c6869",
+    "definitions": 7,
+    "sha256": "4463362c4699fa83ff444e2bdba3bbb5fefb0ed28a7ecf681c5e3438b452acab"
+  },
+  {
+    "file": "old_versions/v7.0.0.gts",
+    "functionName": "register_17f7722ade139856",
+    "definitions": 5,
+    "sha256": "2318255a79bce85c99a0fb6c8f25f72d2ca9dcc50dc6cfcfd0f4fd3337ff68cd"
+  },
+  {
+    "file": "autogitcg/open_world_a/annihilation_specialist_mek_pneuma.gts",
+    "functionName": "register_1775b51ac7046e00",
+    "definitions": 8,
+    "sha256": "918fc928d3e6a75ab581f5f37a4cab0fde880de85ef455d48d221bc0222475d8"
+  },
+  {
+    "file": "autogitcg/open_world_a/arithmetic_enhancer_mek_ousia.gts",
+    "functionName": "register_77e5202d713313e4",
+    "definitions": 8,
+    "sha256": "c261018a584d344aeef3c4c8f9a131caed2684f79011545b4fd82cd93f2b8c0e"
+  },
+  {
+    "file": "autogitcg/open_world_a/arithmetic_enhancer_mek_pneuma.gts",
+    "functionName": "register_ceb570db7c29600a",
+    "definitions": 8,
+    "sha256": "6ecd86fc5a45c4173c988e736110deabd6790fa20b380ce79d9be3cd34b66d0f"
+  },
+  {
+    "file": "autogitcg/open_world_a/assault_specialist_mek_ousia.gts",
+    "functionName": "register_f7cc1cba00653628",
+    "definitions": 8,
+    "sha256": "58ed20755101aaeea8d4e0c794e784d91eb41008ec667ac45c58e9386f29dd1c"
+  },
+  {
+    "file": "autogitcg/weekly_b/winged_dendroshroom.gts",
+    "functionName": "register_a226dfeb9d1acbae",
+    "definitions": 8,
+    "sha256": "898c86f8400a9ebe6de83dd0cad4264cdcf3920e00238f16396de2567e4ae9b6"
+  },
+  {
+    "file": "autogitcg/open_world_a/grounded_hydroshroom.gts",
+    "functionName": "register_803bfd048ed5e361",
+    "definitions": 6,
+    "sha256": "41da307e505217254b669fdc93273ea91cc408120f5f73c96c58868c7cc13aa5"
+  },
+  {
+    "file": "autogitcg/open_world_a/grounded_geoshroom.gts",
+    "functionName": "register_7f7cca730794c498",
+    "definitions": 5,
+    "sha256": "e19c9f8d4e76bceabb3ca1aa2885d3fac43f03158f67a76d4ee671bfd2822ccd"
+  },
+  {
+    "file": "autogitcg/open_world_a/hydro_samachurl.gts",
+    "functionName": "register_f985192fae9e90b7",
+    "definitions": 5,
+    "sha256": "e6503f9dafa73e7eca90ee296a6096dc725efc86363418239619217c1b283a84"
+  },
+  {
+    "file": "autogitcg/open_world_a/whopperflowers_disguise.gts",
+    "functionName": "register_be8cdb7c58a3b163",
+    "definitions": 15,
+    "sha256": "21592396ab587fc4b1bd3307a52c4a5eecbc97871c734ab3de99589deadc05db"
+  },
+  {
+    "file": "autogitcg/open_world_a/pyro_whopperflower.gts",
+    "functionName": "register_a875fe5d752f0024",
+    "definitions": 6,
+    "sha256": "803c44b9b57b311b53b0eb43cb6610ee5d2718cd3bdd0fc846be17f318384c4e"
+  },
+  {
+    "file": "autogitcg/open_world_a/suppression_specialist_mek_ousia.gts",
+    "functionName": "register_f8d395f199cf2709",
+    "definitions": 10,
+    "sha256": "b272f8dd7fd5585df5bce67bd82d359d32ea189d8e3c33e77b0a989cc6ca9776"
+  },
+  {
+    "file": "autogitcg/open_world_a/winged_cryoshroom.gts",
+    "functionName": "register_24ce8161cd09f580",
+    "definitions": 5,
+    "sha256": "0c50f52bd5cbbc1a84afc2e14f619d8a6f8dfa2abf3d31fee1f4e4145e6b0eeb"
+  },
+  {
+    "file": "autogitcg/open_world_b/corrosion.gts",
+    "functionName": "register_1f964cfcaf541ed1",
+    "definitions": 1,
+    "sha256": "ee7136ca01be2f60e76959139f0ea1306d2ae15284ec5999c2632f13fb8c2913"
+  },
+  {
+    "file": "autogitcg/weekly_a/stun.gts",
+    "functionName": "register_ac222774f108641b",
+    "definitions": 1,
+    "sha256": "569f1b9d0ef0d0616ce4ea019a2587b808c2570e288ae160f6199dc80bcb1cd5"
+  },
+  {
+    "file": "autogitcg/open_world_b/fatui_skirmisher_electrohammer_vanguard.gts",
+    "functionName": "register_d3e507799cbe7207",
+    "definitions": 6,
+    "sha256": "4794df51804546d022935e4c4b6105786fb00328acfdf44dc998beca7ee0ab8c"
+  },
+  {
+    "file": "autogitcg/open_world_b/fatui_skirmisher_geochanter_bracer.gts",
+    "functionName": "register_c685d713323e1ed0",
+    "definitions": 7,
+    "sha256": "30e3c5cadac6cd54914df56d606b77c302ab06d235b8b5b22b1a3fed76c8e080"
+  },
+  {
+    "file": "autogitcg/open_world_b/geo_samachurl.gts",
+    "functionName": "register_9741aeb971649ad1",
+    "definitions": 5,
+    "sha256": "08ce0b8d05c5d41a94bc9bd2190d7c63219f2bced36c1537d8af516b82537554"
+  },
+  {
+    "file": "autogitcg/weekly_a/hydro_abyss_mage.gts",
+    "functionName": "register_e75eba7b85896ed1",
+    "definitions": 7,
+    "sha256": "d7ce973a06c3bf96d4c3a99a84ac83a011dea338f2dd0df8912bc16b3b27d18d"
+  },
+  {
+    "file": "autogitcg/open_world_b/hydro_abyss_mage_open_world.gts",
+    "functionName": "register_e1582411cf20b60a",
+    "definitions": 2,
+    "sha256": "ac6b4522385394421ee07736fbba0d72674cc0fbc7c8b45a0ede2ef62f91fbf8"
+  },
+  {
+    "file": "autogitcg/tavern_a/cryo_hypostasis.gts",
+    "functionName": "register_5014770bfece78d3",
+    "definitions": 10,
+    "sha256": "cc979e5edff0c4a5ffc62f5c28d9f0a90a038ea4cb801d2886650428b046c2de"
+  },
+  {
+    "file": "autogitcg/open_world_b/large_cryo_slime.gts",
+    "functionName": "register_fe06dbb3d4424f26",
+    "definitions": 4,
+    "sha256": "819d2c76e6c1c8e1cf0ce749e052feac69da2de5319aae9282fd9f3d79f48e17"
+  },
+  {
+    "file": "autogitcg/weekly_a/pyro_abyss_mage.gts",
+    "functionName": "register_e9299cb48e30a94b",
+    "definitions": 6,
+    "sha256": "07e556557bf89b268c0d0ffe93558d2e97a5ddc84cdc5840c8ae1a98abb970f7"
+  },
+  {
+    "file": "autogitcg/open_world_b/pyro_abyss_mage_open_world.gts",
+    "functionName": "register_61b83bb46c8acd21",
+    "definitions": 2,
+    "sha256": "6ce63c2dd32e3009dd6df304a130441c492074ca99fdae4d72d11e51fcf0a79e"
+  },
+  {
+    "file": "autogitcg/open_world_b/rockfond_rifthound.gts",
+    "functionName": "register_f129592c88ba8ed9",
+    "definitions": 6,
+    "sha256": "935aa88fab6b0b91e2e334cd7de74712af8615a41430c65d1f4039d8278d84e8"
+  },
+  {
+    "file": "autogitcg/weekly_a/hydro_slime.gts",
+    "functionName": "register_6a57440813c707ef",
+    "definitions": 5,
+    "sha256": "5506314856264ccf236e105016bea3c1d4b08303f2b18c6202de742a235eaac3"
+  },
+  {
+    "file": "autogitcg/open_world_b/tainted_hydro_phantasm.gts",
+    "functionName": "register_dffa1275000b9688",
+    "definitions": 6,
+    "sha256": "c36382f4a2dd58c7470a5e0495268c296d755cd8936ad76a463a9dc29db60c1b"
+  },
+  {
+    "file": "autogitcg/open_world_b/thundercraven_rifthound.gts",
+    "functionName": "register_b436cdbcfe53363a",
+    "definitions": 6,
+    "sha256": "a9c2125c645de5c46f71ef1adf4fda38bd327b229bb1e845e6db0bf4470b4800"
+  },
+  {
+    "file": "autogitcg/open_world_b/wooden_shieldwall_mitachurl.gts",
+    "functionName": "register_0f699b40d0d17bd0",
+    "definitions": 6,
+    "sha256": "73100f08b3208936f73ca8c408a42a4613d88aeacecdc29ddece55f824e6b027"
+  },
+  {
+    "file": "autogitcg/tavern_a/abyss_herald_wicked_torrents.gts",
+    "functionName": "register_132c488427f3e310",
+    "definitions": 4,
+    "sha256": "ec924aab15da7224782319c506c145a0bb455e939d3da470c5ecf99cd600382b"
+  },
+  {
+    "file": "autogitcg/tavern_a/eremite_desert_clearwater.gts",
+    "functionName": "register_985a0e282fad187e",
+    "definitions": 10,
+    "sha256": "2bb24cd3959283c6359f4b1ec9dafdf5d4719ddc0d9c4c8af7b3cb827ad3d39c"
+  },
+  {
+    "file": "autogitcg/tavern_a/eremite_stone_enchanter.gts",
+    "functionName": "register_beb94374901406c0",
+    "definitions": 8,
+    "sha256": "1f4b28daebe44a14e90a0a3a0a1b103571f0d70656c76caa64623d5451b59b61"
+  },
+  {
+    "file": "autogitcg/tavern_a/eremite_sunfrost.gts",
+    "functionName": "register_05ece512297d0941",
+    "definitions": 10,
+    "sha256": "fd1b23d520799446c645c370fd094f2aaa721aec88e76fedb2d0ab9a27eee712"
+  },
+  {
+    "file": "autogitcg/tavern_a/fatui_pyro_agent.gts",
+    "functionName": "register_a300274f666f1ea8",
+    "definitions": 1,
+    "sha256": "806f10157dab4f9947a723961409b47405a7598a31190f351d23b70fcccafad6"
+  },
+  {
+    "file": "autogitcg/tavern_a/hydro_hilichurl_rogue.gts",
+    "functionName": "register_9a95ba65094af236",
+    "definitions": 2,
+    "sha256": "99cf6fb7886040f9f6b9ada908734dab61e90a4535e83921f1c3a3da1230be2a"
+  },
+  {
+    "file": "autogitcg/tavern_a/la_signora.gts",
+    "functionName": "register_90a76f14f26c9108",
+    "definitions": 6,
+    "sha256": "68cbb480e3de520546fba4d92915d9828dc328b15f505dbf22988614c44400f6"
+  },
+  {
+    "file": "autogitcg/tavern_a/nobushi_iai.gts",
+    "functionName": "register_03c05eb7a67406e9",
+    "definitions": 6,
+    "sha256": "d1b1886067dc8ea86045d3b4a2aa3fb7bb8a14d16579d1581e0db37eacf4ade6"
+  },
+  {
+    "file": "autogitcg/tavern_a/nobushi_hitsukeban.gts",
+    "functionName": "register_1c6588a08580526f",
+    "definitions": 3,
+    "sha256": "5e4a7ad0d667006b62aba772884f6dabc0f86f971dc2d4a8bd7a0fb094b6f348"
+  },
+  {
+    "file": "autogitcg/tavern_a/nobushi_kikouban.gts",
+    "functionName": "register_1e5423ef5821a5e8",
+    "definitions": 3,
+    "sha256": "58893b112a1126b14f6e4f09a166ca768f617736d609ea6d736fd277abfcb1c4"
+  },
+  {
+    "file": "autogitcg/tavern_a/rhodeia_of_loch.gts",
+    "functionName": "register_80c80e2a21be5966",
+    "definitions": 2,
+    "sha256": "b3f9d1c8b3aee3f70680e7a0117df7a64251b6f8cc6143742556e1a368e78454"
+  },
+  {
+    "file": "autogitcg/tavern_b/abyss_lector_fathomless_flames.gts",
+    "functionName": "register_49324cb39f4bb5c3",
+    "definitions": 4,
+    "sha256": "6aea9b18214042e2d3c9731a08f4b0ffac5711506b5f2c380639eefb7b3546d6"
+  },
+  {
+    "file": "autogitcg/tavern_b/abyss_lector_violet_lightning.gts",
+    "functionName": "register_e3a25e37335b8a8a",
+    "definitions": 5,
+    "sha256": "9773cc572d54e8dd7e94cd7b93b5cfc84c52e42244474fa66a72023aedf1fa7a"
+  },
+  {
+    "file": "autogitcg/tavern_b/elemental_lifeform_electro.gts",
+    "functionName": "register_f4f08b967333422f",
+    "definitions": 2,
+    "sha256": "387269a4b6cc33d30478698f22da798c210d7f39d5516ff8d01f715cea1bf41c"
+  },
+  {
+    "file": "autogitcg/tavern_b/electro_hypostasis.gts",
+    "functionName": "register_a9cbbaef11a13811",
+    "definitions": 6,
+    "sha256": "5659e9b94966ad5607c7cb0df6d3bb914f2156df6b2cb0f3b5d4dc2732b37af1"
+  },
+  {
+    "file": "autogitcg/tavern_b/emperor_of_fire_and_iron.gts",
+    "functionName": "register_1da1fc82af0e6306",
+    "definitions": 4,
+    "sha256": "f266d3fc163ee8f1662d23745a02815fb7eabf45f614e4dcf01aace362b8e681"
+  },
+  {
+    "file": "autogitcg/tavern_b/eremite_floral_ringdancer.gts",
+    "functionName": "register_48f0408ec712e43a",
+    "definitions": 2,
+    "sha256": "94112498eef7517983bd450cc104855ff1d1236d1eacd13b8a91443fb5b356d5"
+  },
+  {
+    "file": "autogitcg/tavern_b/eremite_scorching_loremaster.gts",
+    "functionName": "register_939954aa7920358a",
+    "definitions": 2,
+    "sha256": "cf88b32773b2cd36bde6d997d6e8a98fc488b60079b21faf77e012d098fbafc5"
+  },
+  {
+    "file": "autogitcg/tavern_b/goldflame_qucusaur_tyrant.gts",
+    "functionName": "register_5bce6046996e9b04",
+    "definitions": 3,
+    "sha256": "7cac33335e4f7b3c647ac5c7c754c918cb5d288c6fe492787a678f179a20f1aa"
+  },
+  {
+    "file": "autogitcg/tavern_b/lord_of_eroded_primal_fire.gts",
+    "functionName": "register_8c399a40ebb349b3",
+    "definitions": 3,
+    "sha256": "f0c315bf4b7d7a0685e509f2200583cf70c3525523c5a6fae67edbc1737b36c1"
+  },
+  {
+    "file": "autogitcg/tavern_b/millennial_pearl_seahorse.gts",
+    "functionName": "register_1a63f15a1a03025d",
+    "definitions": 6,
+    "sha256": "bfa311785d47a46be4f6a38dc1977513f899ec4c7df71f68ce01be17ba91bd2f"
+  },
+  {
+    "file": "autogitcg/tavern_b/thunder_manifestation.gts",
+    "functionName": "register_856be4bee72dda4f",
+    "definitions": 3,
+    "sha256": "65792725e358cd2a640b244bc58cf5702b494bd766144fd0f8a9fa74058aa582"
+  },
+  {
+    "file": "autogitcg/variants/npc_4101.gts",
+    "functionName": "register_051e4716e45a1d5d",
+    "definitions": 1,
+    "sha256": "494507869f2aa73522eec252285f67f6ec6e8c7ec5d7c8c792de79acfc56dcf5"
+  },
+  {
+    "file": "autogitcg/variants/npc_4109.gts",
+    "functionName": "register_9f39ef8987e7d275",
+    "definitions": 1,
+    "sha256": "8356d1a2e33c69658c21cea9faba6979e3fde138233e6ae359bfefd72bdf4526"
+  },
+  {
+    "file": "autogitcg/variants/npc_4203.gts",
+    "functionName": "register_963323f0f62161b6",
+    "definitions": 1,
+    "sha256": "eaed9ee0e9b6eddfbecb24930d4f5f96bb957209c11598060408e6d82264cf83"
+  },
+  {
+    "file": "autogitcg/variants/npc_4204.gts",
+    "functionName": "register_9a9324a57ac61ce0",
+    "definitions": 1,
+    "sha256": "e085e2e13d013f859e9592cd26c809db44971e263e13d95a7421382855062697"
+  },
+  {
+    "file": "autogitcg/variants/npc_4207.gts",
+    "functionName": "register_8daaf97ee29bd97d",
+    "definitions": 1,
+    "sha256": "d959bac2f7d92cf5853face3791181ecd1516e0b3f137a843c24a7bd588c68fa"
+  },
+  {
+    "file": "autogitcg/variants/npc_4208.gts",
+    "functionName": "register_d3a20e8358d5af8f",
+    "definitions": 1,
+    "sha256": "b631f71856d0bc2eed40130d202e3317c16bf360fa9c4e5fa79a25fe3fd4604d"
+  },
+  {
+    "file": "autogitcg/variants/npc_4210.gts",
+    "functionName": "register_84d8665c7555e3ac",
+    "definitions": 1,
+    "sha256": "54bc3f8fcf235a86d6bea9aa926f09988b4614154936f5698b9d277b31345f74"
+  },
+  {
+    "file": "autogitcg/variants/npc_4211.gts",
+    "functionName": "register_8083ef5246794f71",
+    "definitions": 1,
+    "sha256": "70869370837095e90338bb453da3215b676e81c55c1bc75ac93bd45db71296bb"
+  },
+  {
+    "file": "autogitcg/variants/npc_4213.gts",
+    "functionName": "register_8b60da40d6b0e8fd",
+    "definitions": 1,
+    "sha256": "3932e20db0a208a04149c77f59a876eebae38e2acfc4762b8742dc9e8e4dc426"
+  },
+  {
+    "file": "autogitcg/variants/npc_4214.gts",
+    "functionName": "register_774cd39d5504b951",
+    "definitions": 1,
+    "sha256": "8cf46afecbf55eceec348c95050bc77e51ca1d70aa8619290507800385d7a5bd"
+  },
+  {
+    "file": "autogitcg/variants/npc_4302.gts",
+    "functionName": "register_f5f34e503fce2a80",
+    "definitions": 1,
+    "sha256": "2b91459dc9f65b1d3ae5bee83df5cc380c4806c779c3104dc54c139ad6072914"
+  },
+  {
+    "file": "autogitcg/variants/npc_4304.gts",
+    "functionName": "register_507882dc85b04bc8",
+    "definitions": 1,
+    "sha256": "9d7078c51ec4d7117cc1769ca517b0b6c700c08a81d6ebcd2e56af082e168eed"
+  },
+  {
+    "file": "autogitcg/variants/npc_4408.gts",
+    "functionName": "register_f3149bc03cffb385",
+    "definitions": 1,
+    "sha256": "5b3b8209ee4b10bcbe90e8a145fc1f957576f9d5751f3da65872c106582618be"
+  },
+  {
+    "file": "autogitcg/variants/npc_4501.gts",
+    "functionName": "register_b69d513932060a61",
+    "definitions": 1,
+    "sha256": "5b73f16b39288ea3e7cf888012ece6c1750ce3cb0079f6497f3df93f59465dcd"
+  },
+  {
+    "file": "autogitcg/variants/npc_4502.gts",
+    "functionName": "register_c4205689f1277b6d",
+    "definitions": 1,
+    "sha256": "b28ce59786019d5e72e94dc5bae558cc93a3cd364f65e250c5517e8fa4e678d1"
+  },
+  {
+    "file": "autogitcg/variants/npc_4504.gts",
+    "functionName": "register_a99c2a0f8b0c9b87",
+    "definitions": 1,
+    "sha256": "5464ae08fb25a7272b8c8ba49bdc29664bb118c60bb5b3c304dbc2b1d3600411"
+  },
+  {
+    "file": "autogitcg/variants/npc_4505.gts",
+    "functionName": "register_b65786c3af576a1a",
+    "definitions": 1,
+    "sha256": "b8857fcbb0e0711bbff0b2302696e125e9f25e371ccb05ed39349e98070ac8a3"
+  },
+  {
+    "file": "autogitcg/variants/npc_4507.gts",
+    "functionName": "register_62a95ac88cc60732",
+    "definitions": 1,
+    "sha256": "201b0f2118b34c4bbabc44d6abab88ac50d9648788cfd4125b6d652f8eca4c12"
+  },
+  {
+    "file": "autogitcg/variants/npc_4602.gts",
+    "functionName": "register_363a0d137310b384",
+    "definitions": 1,
+    "sha256": "86a91a7064c2445ee3b261005c7a6ea07a3fd42dcf7f74ec169dc2ae468bd9f3"
+  },
+  {
+    "file": "autogitcg/variants/npc_4603.gts",
+    "functionName": "register_8af19ed42814cb58",
+    "definitions": 1,
+    "sha256": "4c54dfe63ef1b57826e7b0221bc943396a860fa12691fc8234434a495bf17e90"
+  },
+  {
+    "file": "autogitcg/variants/npc_4604.gts",
+    "functionName": "register_f83202821c81285b",
+    "definitions": 1,
+    "sha256": "0b1eea999270fb887731feb14cbabe0c1d3b30c9287daf0c1289684a5102ebaf"
+  },
+  {
+    "file": "autogitcg/variants/npc_4605.gts",
+    "functionName": "register_2158185680ab540a",
+    "definitions": 1,
+    "sha256": "103d8bba9be7b5f11914eb5e00749458fa5fa0d570bac1cdc6a07d34d173f00f"
+  },
+  {
+    "file": "autogitcg/variants/npc_4606.gts",
+    "functionName": "register_24c0a247f1a061f6",
+    "definitions": 1,
+    "sha256": "427664d36b727bf9b8aec5722d6d42efaf7d5a7307c85328339bf3122d1aa4a8"
+  },
+  {
+    "file": "autogitcg/variants/npc_4607.gts",
+    "functionName": "register_8f7931e358f9639c",
+    "definitions": 1,
+    "sha256": "2d3335960d0878de410d35090fdef026f16ee910b5674c5550d48cd80fc50e56"
+  },
+  {
+    "file": "autogitcg/variants/npc_4608.gts",
+    "functionName": "register_fa292c2154fd28d3",
+    "definitions": 1,
+    "sha256": "5dedb7829eb67ef4a7d3e68958e13fb4ba1aaaeec031535d34012c4b91627701"
+  },
+  {
+    "file": "autogitcg/variants/npc_4609.gts",
+    "functionName": "register_a20248dbbd61b7a1",
+    "definitions": 1,
+    "sha256": "ee3bba0cb5c8d37081c9c63a3cb977afa5f3463edbcdc6652ddc957fe4bc8357"
+  },
+  {
+    "file": "autogitcg/variants/npc_4610.gts",
+    "functionName": "register_4903c5047bb44d87",
+    "definitions": 1,
+    "sha256": "bdebaab5b2247a2d948f3876fa4b9fb124bf61f2a15a40bf3618ebe0cf8080ee"
+  },
+  {
+    "file": "autogitcg/variants/npc_4701.gts",
+    "functionName": "register_042e3df8c1d72f59",
+    "definitions": 1,
+    "sha256": "94a2bb6fb540a1e5fbde758bae8618903e06536f143fc75ef50436ce7318bb56"
+  },
+  {
+    "file": "autogitcg/variants/npc_4702.gts",
+    "functionName": "register_2a2107844ea00618",
+    "definitions": 1,
+    "sha256": "17fad974458d7d4d19a69e3620f487b0d28c6db9bb24a23931625ce6268e3249"
+  },
+  {
+    "file": "autogitcg/variants/npc_4704.gts",
+    "functionName": "register_9540f1a7eca2e4aa",
+    "definitions": 1,
+    "sha256": "744301f5d129df03c4f398906645ce14883cee877c884fd4f0885f4ac9e5508e"
+  },
+  {
+    "file": "autogitcg/variants/npc_4705.gts",
+    "functionName": "register_7f8e8eec0a8374bc",
+    "definitions": 1,
+    "sha256": "e6f1cd8276f005fbf84dd924eb1c2ade8f50883c38ab895795650e671c6e56f6"
+  },
+  {
+    "file": "autogitcg/variants/npc_4706.gts",
+    "functionName": "register_b76fcaa07fdda87f",
+    "definitions": 1,
+    "sha256": "6605afbabaa35e73059fc4b17dd36108989f7e417538025a3a29194c0fb24c60"
+  },
+  {
+    "file": "autogitcg/variants/npc_4708.gts",
+    "functionName": "register_45f6091580f53b36",
+    "definitions": 1,
+    "sha256": "39f90b66f6c06254f3ede44d930f50b206fee84a8254f8224d5b88b6b885a714"
+  },
+  {
+    "file": "autogitcg/variants/npc_4709.gts",
+    "functionName": "register_75458c3da81526db",
+    "definitions": 1,
+    "sha256": "4cc5f5b535b70856020d77881880a794fefbded1e468f311c8849a767588855b"
+  },
+  {
+    "file": "autogitcg/weekly_a/blazing_axe_mitachurl.gts",
+    "functionName": "register_63edc5dfc6c57c9d",
+    "definitions": 6,
+    "sha256": "549ca70b2ad268911189c701e9e3c87e5dc10d940cb9a4ad97c6775c6dc97950"
+  },
+  {
+    "file": "autogitcg/weekly_a/cryo_abyss_mage.gts",
+    "functionName": "register_7205441742c7284c",
+    "definitions": 6,
+    "sha256": "e863ba0b14d83d44d195ab3a28a189739e931874a1dc992276dce9e122dfa491"
+  },
+  {
+    "file": "autogitcg/weekly_a/cryo_hilichurl_shooter.gts",
+    "functionName": "register_a252403ee987fb44",
+    "definitions": 4,
+    "sha256": "561698c8dc0db19f3d90b4d7b0c90785cfdf53386b8e02a024c5fe03725048e3"
+  },
+  {
+    "file": "autogitcg/weekly_a/fatui_cryogunner_legionnaire.gts",
+    "functionName": "register_a75fa7835e0984c7",
+    "definitions": 6,
+    "sha256": "d685c11dca6670f7fb5c52128ea1c5ec2463718801806f0a972c35a195dce529"
+  },
+  {
+    "file": "autogitcg/weekly_a/fatui_hydrogunner_legionnaire.gts",
+    "functionName": "register_af958d465f015f05",
+    "definitions": 6,
+    "sha256": "dfde33d88ebf91987677c56f5a334809f310894dbe74d29c5fbd9e89d025532b"
+  },
+  {
+    "file": "autogitcg/weekly_a/hilichurl_fighter.gts",
+    "functionName": "register_b77ef2ca0bc1d9bf",
+    "definitions": 4,
+    "sha256": "53686fcfbedfb2bdbe007f3b47da670786bb5348376a6bf7dddddd02a421beba"
+  },
+  {
+    "file": "autogitcg/weekly_a/hilichurl_shooter.gts",
+    "functionName": "register_f34d6f9b627c0b07",
+    "definitions": 4,
+    "sha256": "c165735609a65f9ab05ac437149c55c7584e44e7b6c584eb68fee573cdfb6140"
+  },
+  {
+    "file": "autogitcg/weekly_a/ice_shieldwall_mitachurl.gts",
+    "functionName": "register_1e06613630ccedb9",
+    "definitions": 6,
+    "sha256": "b7b2167e5b60158a233b8fccbc78e262d9e0dd590d3f158f1951972e2d8fd1f1"
+  },
+  {
+    "file": "autogitcg/weekly_a/kairagi_fiery_might.gts",
+    "functionName": "register_28a5160a9472c121",
+    "definitions": 12,
+    "sha256": "b6c5056d26c379c5721200eec8b5bc099b6b3219e16fca6cb84c9869db51beb9"
+  },
+  {
+    "file": "autogitcg/weekly_a/nobushi_jintouban.gts",
+    "functionName": "register_19084eed6500f492",
+    "definitions": 3,
+    "sha256": "a5941558f0114142fe5b72b321579a1c910b57da62fcc3bec13fc81956ad4e74"
+  },
+  {
+    "file": "autogitcg/weekly_a/ruin_drake_earthguard.gts",
+    "functionName": "register_fa5971dc7863bfe1",
+    "definitions": 13,
+    "sha256": "e49891ef793f367548cd91df48c01472522f586c83d51abc29c88c0fd38bff79"
+  },
+  {
+    "file": "autogitcg/weekly_a/ruin_guard.gts",
+    "functionName": "register_4e93f6b60a893b3d",
+    "definitions": 10,
+    "sha256": "37f0389a72242cc5e3bea2e44ee01abd53555c693014ac9f34a04d59095d6986"
+  },
+  {
+    "file": "autogitcg/weekly_b/anemo_samachurl.gts",
+    "functionName": "register_6e4028ce8b304d3d",
+    "definitions": 5,
+    "sha256": "d508962b17cbb5f86ec52fcb601d8abaada540d09144ac11a5311948e871d458"
+  },
+  {
+    "file": "autogitcg/weekly_b/assault_specialist_mek_pneuma.gts",
+    "functionName": "register_6c4575b62a5b4502",
+    "definitions": 8,
+    "sha256": "62023383ff540a070ab7f8c760eb15e43d5d7f78f2aa47a8a99d56b6d0bec03a"
+  },
+  {
+    "file": "autogitcg/weekly_b/crackling_axe_mitachurl.gts",
+    "functionName": "register_c0f99bdda9475fca",
+    "definitions": 6,
+    "sha256": "5a8991d039895c69d961dfc33374fc7ac0c1ea24a3b697245b1419e64d2d2214"
+  },
+  {
+    "file": "autogitcg/weekly_b/dendro_samachurl.gts",
+    "functionName": "register_e19ad2a2ec9f26fc",
+    "definitions": 5,
+    "sha256": "618f36c3de4c2fd2821b45d4b44ebf00a3ed3260ddec118ff4257b13a5693ceb"
+  },
+  {
+    "file": "autogitcg/weekly_b/electro_abyss_mage.gts",
+    "functionName": "register_139da0e86bdbeada",
+    "definitions": 8,
+    "sha256": "738f91d107fa79bcd6088e94ed8a6fbc50b4e41fdd1ca690d4db901dc4b5d573"
+  },
+  {
+    "file": "autogitcg/weekly_b/electro_hilichurl_shooter.gts",
+    "functionName": "register_62c1b8784c14ccdc",
+    "definitions": 4,
+    "sha256": "b3e2d0cf6be2c64d382b21438c654d2eeda6632320101bef46229bb879d813c2"
+  },
+  {
+    "file": "autogitcg/weekly_b/electro_slime.gts",
+    "functionName": "register_57d48649b8b53708",
+    "definitions": 3,
+    "sha256": "761c3732660a5754ed0c03cb38881ffb4ea29989f1d9c3f7a04a96c754f3a07d"
+  },
+  {
+    "file": "autogitcg/weekly_b/fatui_skirmisher_anemoboxer_vanguard.gts",
+    "functionName": "register_da1c1a6e4253aa0e",
+    "definitions": 6,
+    "sha256": "1f5adea1e557e2a7f669bd1c84fb1b27b4245016d2d2fcc0938122d1f388cc6b"
+  },
+  {
+    "file": "autogitcg/weekly_b/fatui_skirmisher_pyroslinger_bracer.gts",
+    "functionName": "register_d558f938d7309a47",
+    "definitions": 7,
+    "sha256": "c6a7ea0a5eb1a406845b8c2fad352d8fcb28faa147476f18abfbb8fb8a369c76"
+  },
+  {
+    "file": "autogitcg/weekly_b/hilichurl_berserker.gts",
+    "functionName": "register_fd64d8f56750eeff",
+    "definitions": 4,
+    "sha256": "b6c3174130054b2d26198ae50829ebdcab27af535ebee866ad14e78bda732ab7"
+  },
+  {
+    "file": "autogitcg/weekly_b/kairagi_dancing_thunder.gts",
+    "functionName": "register_82f292fbaf00f50d",
+    "definitions": 12,
+    "sha256": "72df8e16ebfc50640873e249f277626b61c82bb4d26acd8e36f42ebe7e7e40a5"
+  },
+  {
+    "file": "autogitcg/weekly_b/rock_shieldwall_mitachurl.gts",
+    "functionName": "register_5f67ea38e88bfd70",
+    "definitions": 6,
+    "sha256": "ca70f762fc7ec74697a34f8755ca53f6a81f0e9d6b7c8188e1049f8f311cb842"
+  },
+  {
+    "file": "autogitcg/weekly_b/suppression_specialist_mek_pneuma.gts",
+    "functionName": "register_f9f9902219186545",
+    "definitions": 7,
+    "sha256": "0fcd4c6650c0520a2885c68d360873dd13121f9882642fc6a127fc44e67a77a5"
+  }
+]

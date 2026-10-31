@@ -1,0 +1,8 @@
+// Generated from autogitcg/tavern_b/emperor_of_fire_and_iron.gts; AGPL-3.0. Run tools/translator/translate.mjs to regenerate.
+#include "definitions/registry/registry.h"
+
+namespace gitcg {
+void register_1da1fc82af0e6306(DefinitionRegistry& registry) {
+  registry.addModule(R"GTS([{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[23048],"attributes":[]},{"name":"skillType","positionals":["burst"],"attributes":[]},{"name":"cost","positionals":[3,3],"attributes":[]},{"name":"cost","positionals":[9,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4878}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[23049],"attributes":[]},{"name":"skillType","positionals":["burst"],"attributes":[]},{"name":"cost","positionals":[3,3],"attributes":[]},{"name":"cost","positionals":[9,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4879}],"attributes":[]}]},{"name":"character","positionals":[],"attributes":[{"name":"id","positionals":[4306],"attributes":[]},{"name":"tags","positionals":["pyro","monster"],"attributes":[]},{"name":"health","positionals":[15],"attributes":[]},{"name":"energy","positionals":[2],"attributes":[]},{"name":"skills","positionals":[23041,23042,23048,23044,23046],"attributes":[]}]},{"name":"character","positionals":[],"attributes":[{"name":"id","positionals":[4307],"attributes":[]},{"name":"tags","positionals":["pyro","monster"],"attributes":[]},{"name":"health","positionals":[24],"attributes":[]},{"name":"energy","positionals":[2],"attributes":[]},{"name":"skills","positionals":[23041,23042,23049,23044,23046],"attributes":[]}]}])GTS");
+}
+}  // namespace gitcg

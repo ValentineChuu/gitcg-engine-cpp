@@ -1,0 +1,8 @@
+// Generated from autogitcg/weekly_b/hilichurl_berserker.gts; AGPL-3.0. Run tools/translator/translate.mjs to regenerate.
+#include "definitions/registry/registry.h"
+
+namespace gitcg {
+void register_fd64d8f56750eeff(DefinitionRegistry& registry) {
+  registry.addModule(R"GTS([{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[33041],"attributes":[]},{"name":"skillType","positionals":["normal"],"attributes":[]},{"name":"cost","positionals":[3,1],"attributes":[]},{"name":"cost","positionals":[0,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":5063}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[33042],"attributes":[]},{"name":"skillType","positionals":["elemental"],"attributes":[]},{"name":"cost","positionals":[3,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":5064}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[33043],"attributes":[]},{"name":"skillType","positionals":["burst"],"attributes":[]},{"name":"cost","positionals":[3,3],"attributes":[]},{"name":"cost","positionals":[9,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":5065}],"attributes":[]}]},{"name":"character","positionals":[],"attributes":[{"name":"id","positionals":[3304],"attributes":[]},{"name":"tags","positionals":["pyro","monster","hilichurl"],"attributes":[]},{"name":"health","positionals":[4],"attributes":[]},{"name":"energy","positionals":[2],"attributes":[]},{"name":"skills","positionals":[33041,33042,33043],"attributes":[]}]}])GTS");
+}
+}  // namespace gitcg

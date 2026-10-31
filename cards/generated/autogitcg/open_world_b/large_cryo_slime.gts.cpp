@@ -1,0 +1,8 @@
+// Generated from autogitcg/open_world_b/large_cryo_slime.gts; AGPL-3.0. Run tools/translator/translate.mjs to regenerate.
+#include "definitions/registry/registry.h"
+
+namespace gitcg {
+void register_fe06dbb3d4424f26(DefinitionRegistry& registry) {
+  registry.addModule(R"GTS([{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[31081],"attributes":[]},{"name":"skillType","positionals":["normal"],"attributes":[]},{"name":"cost","positionals":[1,1],"attributes":[]},{"name":"cost","positionals":[0,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4721}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[31082],"attributes":[]},{"name":"skillType","positionals":["elemental"],"attributes":[]},{"name":"cost","positionals":[1,3],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4722}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[31083],"attributes":[]},{"name":"skillType","positionals":["burst"],"attributes":[]},{"name":"cost","positionals":[1,3],"attributes":[]},{"name":"cost","positionals":[9,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4723}],"attributes":[]}]},{"name":"character","positionals":[],"attributes":[{"name":"id","positionals":[3108],"attributes":[]},{"name":"tags","positionals":["cryo","monster"],"attributes":[]},{"name":"health","positionals":[10],"attributes":[]},{"name":"energy","positionals":[2],"attributes":[]},{"name":"skills","positionals":[31081,31082,31083,31073],"attributes":[]}]}])GTS");
+}
+}  // namespace gitcg

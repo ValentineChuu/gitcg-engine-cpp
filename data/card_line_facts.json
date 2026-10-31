@@ -1,0 +1,4237 @@
+{
+ "211": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "111152": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "111153": {
+  "food": true,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "111154": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "111155": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "111159": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "111161": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "111163": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "112113": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "112131": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "112132": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "112133": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "112142": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "113131": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "113154": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "113155": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "113156": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "114031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115102": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115112": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115113": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115114": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115115": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115116": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115117": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115142": {
+  "food": false,
+  "heals": true,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "115152": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115161": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115162": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115163": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115164": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "115165": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "116081": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "116102": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "116112": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "116121": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "117121": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "121051": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "121054": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "121055": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "121056": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "121057": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "121058": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "121059": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "122051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "123031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "124051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "127021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "127032": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133085": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133086": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133087": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133088": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133089": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133090": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133092": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133093": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133094": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133095": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133096": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133097": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133098": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "133099": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211031": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211101": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211121": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "211131": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211141": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211151": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211161": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "211171": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212032": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212131": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212141": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "212151": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212161": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "212171": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213091": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213121": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213131": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213141": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213151": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "213161": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214121": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214131": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214141": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214151": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214161": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "214171": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "214181": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215032": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215071": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "215081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215121": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215131": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215141": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215151": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "215161": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "216011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216021": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216061": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "216071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216081": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "216091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216101": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "216111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "216121": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217091": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "217101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217111": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "217121": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "221011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "221021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "221031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "221041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "221051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222041": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222071": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "222081": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "223011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "223021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "223031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "223041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "223051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "223061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "224011": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "224021": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "224031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "224041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "224051": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "224061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "225011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "225021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "225031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "225041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "226011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "226022": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "226031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "226041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "226051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "227011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "227021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "227031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "227041": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "227051": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "300006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "300008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "300009": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "301020": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "301033": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "301034": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "301035": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "301036": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "301038": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "301039": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302202": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "302203": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302206": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302207": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302208": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302209": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302210": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302211": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302212": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302213": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302214": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "302215": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "302218": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302220": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302221": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302222": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "302223": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "302224": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "302225": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "302226": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "302227": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "302228": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "302229": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302230": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "302231": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "303041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "303042": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303051": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303052": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303062": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303071": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303072": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303081": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303082": {
+  "food": false,
+  "heals": true,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "303091": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303092": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303102": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303121": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "303122": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "303230": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "311101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311102": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "311103": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311104": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311105": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "311106": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311107": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311108": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311109": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311110": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "311111": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311112": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311201": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311202": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "311203": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311204": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311205": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311206": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311207": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "311208": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311209": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311301": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311302": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "311303": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311304": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311305": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311306": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311307": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311308": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311309": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "311310": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311401": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311402": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311403": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311404": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311405": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311406": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311407": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311408": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311409": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "311501": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311502": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "311503": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311504": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311505": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311506": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "311507": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311508": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "311509": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "312001": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312002": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312003": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312004": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "312005": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "312006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312007": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312009": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312010": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "312011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312012": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312013": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312014": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312015": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312016": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312017": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "312018": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "312019": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "312020": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "312021": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "312022": {
+  "food": false,
+  "heals": true,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "312023": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "312024": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "312025": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312026": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312027": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312028": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "312029": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312030": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312031": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312032": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312033": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312034": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312035": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312036": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312037": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312038": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312039": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312040": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312043": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312044": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312045": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312102": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312201": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312202": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312301": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312302": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312401": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312402": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312501": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312502": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312601": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312602": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312701": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "312702": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "313001": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "313002": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "313003": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "313004": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "313005": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "313006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "313007": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "313008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "313009": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "313010": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": true,
+  "givesDice": false
+ },
+ "321001": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "321002": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321003": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321004": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321005": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321006": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321007": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321009": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321010": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321012": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321013": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321014": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321015": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "321016": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "321017": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321018": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "321019": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321020": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "321022": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "321023": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "321024": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "321025": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321026": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321027": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "321028": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321029": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "321030": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321032": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "321033": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "321034": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": true,
+  "givesDice": false
+ },
+ "321035": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "321036": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "321037": {
+  "food": false,
+  "heals": true,
+  "draws": true,
+  "random": true,
+  "givesDice": false
+ },
+ "321038": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "321039": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": true,
+  "givesDice": false
+ },
+ "321040": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": true,
+  "givesDice": true
+ },
+ "321041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322001": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "322002": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322003": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322004": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322005": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": true,
+  "givesDice": true
+ },
+ "322006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322007": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "322008": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "322009": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322010": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322012": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322013": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322014": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "322015": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322016": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322017": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "322018": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322019": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322020": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "322022": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322023": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322024": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322025": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "322026": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322027": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "322028": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322029": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "322030": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322032": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322033": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "322034": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "323001": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "323002": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "323003": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "323004": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "323005": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "323006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "323007": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "323008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330001": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330002": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "330003": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330004": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330005": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "330006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330007": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330009": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330010": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330011": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "330012": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "330013": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "330014": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331004": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331005": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331007": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331009": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331010": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331101": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331102": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331201": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331202": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331301": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331302": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331401": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331402": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331501": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331502": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331601": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331602": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331701": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "331702": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331721": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "331801": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331802": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331803": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331804": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "331805": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331806": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "331807": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332001": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "332002": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332003": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332004": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332005": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": true
+ },
+ "332006": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332007": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332008": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332009": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332010": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332012": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332013": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332014": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332015": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332016": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332017": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332018": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332019": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "332020": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332021": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332022": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332023": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332024": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332025": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332026": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332027": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332028": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332029": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332030": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332031": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332032": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332033": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332034": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332035": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332036": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332037": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332039": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332040": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332041": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332042": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332043": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332044": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332045": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332046": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332048": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332049": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332050": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332051": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332052": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332053": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332054": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "332055": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": true
+ },
+ "332056": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332057": {
+  "food": false,
+  "heals": true,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332058": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332059": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332060": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332061": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332062": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": true
+ },
+ "332063": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "332064": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "332065": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "332066": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333001": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333002": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333003": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333004": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333005": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333006": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333007": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333008": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333009": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333010": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333011": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333012": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333013": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333014": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333015": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333016": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333017": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333018": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333019": {
+  "food": false,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333020": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "333021": {
+  "food": true,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333022": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333023": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333024": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333025": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333026": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333027": {
+  "food": false,
+  "heals": false,
+  "draws": true,
+  "random": false,
+  "givesDice": false
+ },
+ "333028": {
+  "food": true,
+  "heals": true,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333029": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "333030": {
+  "food": true,
+  "heals": true,
+  "draws": false,
+  "random": true,
+  "givesDice": false
+ },
+ "333031": {
+  "food": true,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ },
+ "3003112": {
+  "food": false,
+  "heals": false,
+  "draws": false,
+  "random": false,
+  "givesDice": false
+ }
+}

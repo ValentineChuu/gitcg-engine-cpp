@@ -1,0 +1,16 @@
+{
+  "name": "gitcg-engine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node reference/patches/apply_core_patches.mjs",
+    "build:data": "node reference/tools/build_custom_data.mjs"
+  },
+  "dependencies": {
+    "@gi-tcg/core": "0.21.0",
+    "@gi-tcg/data": "0.21.0"
+  },
+  "optionalDependencies": {
+    "@pnpm/exe.linux-x64": "12.0.0"
+  }
+}

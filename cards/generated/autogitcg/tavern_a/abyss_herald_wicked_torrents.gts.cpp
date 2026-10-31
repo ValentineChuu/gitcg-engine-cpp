@@ -1,0 +1,8 @@
+// Generated from autogitcg/tavern_a/abyss_herald_wicked_torrents.gts; AGPL-3.0. Run tools/translator/translate.mjs to regenerate.
+#include "definitions/registry/registry.h"
+
+namespace gitcg {
+void register_132c488427f3e310(DefinitionRegistry& registry) {
+  registry.addModule(R"GTS([{"name":"status","positionals":[],"attributes":[{"name":"id","positionals":[122036],"attributes":[]},{"name":"tags","positionals":["disableSkill"],"attributes":[]},{"name":"on","positionals":["endPhase"],"attributes":[{"name":"~action","positionals":[{"$lambda":4786}],"attributes":[]}]}]},{"name":"status","positionals":[],"attributes":[{"name":"id","positionals":[122035],"attributes":[]},{"name":"variable","positionals":["hydroApplications",2],"attributes":[]},{"name":"on","positionals":["decreaseDamaged"],"attributes":[{"name":"~action","positionals":[{"$lambda":4787}],"attributes":[]}]},{"name":"on","positionals":["reaction"],"attributes":[{"name":"~action","positionals":[{"$lambda":4788}],"attributes":[]}]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[22036],"attributes":[]},{"name":"skillType","positionals":["passive"],"attributes":[{"name":"on","positionals":["entityDispose"],"attributes":[{"name":"when","positionals":[{"$lambda":4789}],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4790}],"attributes":[]}]}]}]},{"name":"character","positionals":[],"attributes":[{"name":"id","positionals":[4206],"attributes":[]},{"name":"tags","positionals":["hydro","monster"],"attributes":[]},{"name":"health","positionals":[6],"attributes":[]},{"name":"energy","positionals":[2],"attributes":[]},{"name":"skills","positionals":[22031,22032,22033,22034,22035,22036,22038],"attributes":[]}]}])GTS");
+}
+}  // namespace gitcg

@@ -1,0 +1,2346 @@
+[
+ {
+  "id": 10,
+  "file": "commons.gts",
+  "line": 131,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.healInfo",
+   "??.healKind"
+  ]
+ },
+ {
+  "id": 11,
+  "file": "commons.gts",
+  "line": 136,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.expectedValue",
+   "call ??.decreaseHeal"
+  ]
+ },
+ {
+  "id": 13,
+  "file": "commons.gts",
+  "line": 144,
+  "kind": "function",
+  "reasons": [
+   "context.rawEventArg"
+  ]
+ },
+ {
+  "id": 121,
+  "file": "cards/equipment/artifacts.gts",
+  "line": 861,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 225,
+  "file": "cards/equipment/techniques.gts",
+  "line": 138,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 236,
+  "file": "cards/equipment/techniques.gts",
+  "line": 272,
+  "kind": "function",
+  "reasons": [
+   "event argument type never",
+   "??.targets",
+   "index into ??",
+   "call context.characterStatus"
+  ]
+ },
+ {
+  "id": 240,
+  "file": "cards/equipment/techniques.gts",
+  "line": 338,
+  "kind": "function",
+  "reasons": [
+   "parameters (c, e)"
+  ]
+ },
+ {
+  "id": 250,
+  "file": "cards/equipment/techniques.gts",
+  "line": 453,
+  "kind": "function",
+  "reasons": [
+   "call ?ObjectConstructor.groupBy",
+   "call ?ObjectConstructor.keys",
+   "call ??.map",
+   "index into ?Partial",
+   "call context.drawCards"
+  ]
+ },
+ {
+  "id": 252,
+  "file": "cards/equipment/techniques.gts",
+  "line": 456,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 343,
+  "file": "cards/equipment/weapon/claymore.gts",
+  "line": 248,
+  "kind": "function",
+  "reasons": [
+   "parameters (c, e)"
+  ]
+ },
+ {
+  "id": 344,
+  "file": "cards/equipment/weapon/claymore.gts",
+  "line": 251,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 365,
+  "file": "cards/equipment/weapon/pole.gts",
+  "line": 126,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 366,
+  "file": "cards/equipment/weapon/pole.gts",
+  "line": 128,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 489,
+  "file": "cards/event/food.gts",
+  "line": 921,
+  "kind": "function",
+  "reasons": [
+   "array literal of ?__function",
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 490,
+  "file": "cards/event/food.gts",
+  "line": 924,
+  "kind": "function",
+  "reasons": [
+   "parameters ()"
+  ]
+ },
+ {
+  "id": 491,
+  "file": "cards/event/food.gts",
+  "line": 925,
+  "kind": "function",
+  "reasons": [
+   "parameters ()"
+  ]
+ },
+ {
+  "id": 492,
+  "file": "cards/event/food.gts",
+  "line": 926,
+  "kind": "function",
+  "reasons": [
+   "parameters ()"
+  ]
+ },
+ {
+  "id": 493,
+  "file": "cards/event/food.gts",
+  "line": 927,
+  "kind": "function",
+  "reasons": [
+   "parameters ()"
+  ]
+ },
+ {
+  "id": 507,
+  "file": "characters/hydro/nilou.gts",
+  "line": 108,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 545,
+  "file": "cards/event/other.gts",
+  "line": 315,
+  "kind": "function",
+  "reasons": [
+   "boolean.source",
+   "??.who"
+  ]
+ },
+ {
+  "id": 588,
+  "file": "cards/event/other.gts",
+  "line": 676,
+  "kind": "function",
+  "reasons": [
+   "parameters (acc, ch)"
+  ]
+ },
+ {
+  "id": 631,
+  "file": "cards/event/other.gts",
+  "line": 985,
+  "kind": "function",
+  "reasons": [
+   "compile: no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’"
+  ]
+ },
+ {
+  "id": 632,
+  "file": "cards/event/other.gts",
+  "line": 986,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 633,
+  "file": "cards/event/other.gts",
+  "line": 987,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 634,
+  "file": "cards/event/other.gts",
+  "line": 989,
+  "kind": "function",
+  "reasons": [
+   "call entity.resetUsagePerRound",
+   "expression ObjectLiteralExpression",
+   "call context.moveEntity"
+  ]
+ },
+ {
+  "id": 637,
+  "file": "cards/event/other.gts",
+  "line": 1016,
+  "kind": "function",
+  "reasons": [
+   "compile: no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’"
+  ]
+ },
+ {
+  "id": 638,
+  "file": "cards/event/other.gts",
+  "line": 1016,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 639,
+  "file": "cards/event/other.gts",
+  "line": 1016,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 640,
+  "file": "cards/event/other.gts",
+  "line": 1018,
+  "kind": "function",
+  "reasons": [
+   "call entity.resetUsagePerRound",
+   "expression ObjectLiteralExpression",
+   "call context.moveEntity"
+  ]
+ },
+ {
+  "id": 649,
+  "file": "cards/event/other.gts",
+  "line": 1097,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 650,
+  "file": "cards/event/other.gts",
+  "line": 1097,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 653,
+  "file": "cards/event/other.gts",
+  "line": 1125,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 654,
+  "file": "cards/event/other.gts",
+  "line": 1125,
+  "kind": "function",
+  "reasons": [
+   "parameters (cs)"
+  ]
+ },
+ {
+  "id": 676,
+  "file": "cards/event/other.gts",
+  "line": 1316,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 677,
+  "file": "cards/event/other.gts",
+  "line": 1317,
+  "kind": "function",
+  "reasons": [
+   "parameters (c, e)"
+  ]
+ },
+ {
+  "id": 733,
+  "file": "cards/event/other.gts",
+  "line": 1852,
+  "kind": "function",
+  "reasons": [
+   "context.data",
+   "??.entities",
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 734,
+  "file": "cards/event/other.gts",
+  "line": 1871,
+  "kind": "function",
+  "reasons": [
+   "context.data",
+   "??.entities",
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 737,
+  "file": "cards/event/other.gts",
+  "line": 1920,
+  "kind": "function",
+  "reasons": [
+   "call context.mutate"
+  ]
+ },
+ {
+  "id": 750,
+  "file": "cards/event/other.gts",
+  "line": 2124,
+  "kind": "function",
+  "reasons": [
+   "definition.varConfigs",
+   "??.usage"
+  ]
+ },
+ {
+  "id": 753,
+  "file": "cards/event/other.gts",
+  "line": 2177,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 754,
+  "file": "cards/event/other.gts",
+  "line": 2178,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 755,
+  "file": "cards/event/other.gts",
+  "line": 2179,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 794,
+  "file": "cards/event/other.gts",
+  "line": 2635,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 821,
+  "file": "cards/event/other.gts",
+  "line": 2867,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 822,
+  "file": "cards/event/other.gts",
+  "line": 2868,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 823,
+  "file": "cards/event/other.gts",
+  "line": 2869,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 826,
+  "file": "cards/event/other.gts",
+  "line": 2892,
+  "kind": "function",
+  "reasons": [
+   "call context.mutate"
+  ]
+ },
+ {
+  "id": 830,
+  "file": "cards/event/other.gts",
+  "line": 2932,
+  "kind": "function",
+  "reasons": [
+   "call context.queryAll"
+  ]
+ },
+ {
+  "id": 833,
+  "file": "cards/event/other.gts",
+  "line": 2954,
+  "kind": "function",
+  "reasons": [
+   "parameters (a, b)"
+  ]
+ },
+ {
+  "id": 835,
+  "file": "cards/event/other.gts",
+  "line": 2973,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 837,
+  "file": "cards/event/other.gts",
+  "line": 2993,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 838,
+  "file": "cards/event/other.gts",
+  "line": 3001,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 841,
+  "file": "cards/event/other.gts",
+  "line": 3047,
+  "kind": "function",
+  "reasons": [
+   "parameters (att)"
+  ]
+ },
+ {
+  "id": 853,
+  "file": "cards/event/other.gts",
+  "line": 3140,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 854,
+  "file": "cards/event/other.gts",
+  "line": 3144,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 857,
+  "file": "cards/event/other.gts",
+  "line": 1833,
+  "kind": "function",
+  "reasons": [
+   "parameters (cards)"
+  ]
+ },
+ {
+  "id": 858,
+  "file": "cards/event/other.gts",
+  "line": 1835,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 859,
+  "file": "cards/event/other.gts",
+  "line": 1836,
+  "kind": "function",
+  "reasons": [
+   "parameters (def)"
+  ]
+ },
+ {
+  "id": 860,
+  "file": "cards/event/other.gts",
+  "line": 1837,
+  "kind": "function",
+  "reasons": [
+   "parameters (def)"
+  ]
+ },
+ {
+  "id": 861,
+  "file": "cards/event/other.gts",
+  "line": 2487,
+  "kind": "query",
+  "reasons": [
+   "query SpreadElement"
+  ]
+ },
+ {
+  "id": 862,
+  "file": "cards/event/other.gts",
+  "line": 2487,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 863,
+  "file": "cards/event/other.gts",
+  "line": 2487,
+  "kind": "query",
+  "reasons": [
+   "query identifier id"
+  ]
+ },
+ {
+  "id": 881,
+  "file": "cards/event/legend.gts",
+  "line": 132,
+  "kind": "function",
+  "reasons": [
+   "context.phase",
+   "player.defeatedSwitching"
+  ]
+ },
+ {
+  "id": 885,
+  "file": "cards/event/legend.gts",
+  "line": 165,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 886,
+  "file": "cards/event/legend.gts",
+  "line": 166,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 888,
+  "file": "cards/event/legend.gts",
+  "line": 175,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 889,
+  "file": "cards/event/legend.gts",
+  "line": 176,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 907,
+  "file": "cards/event/legend.gts",
+  "line": 379,
+  "kind": "function",
+  "reasons": [
+   "expression NullKeyword",
+   "statement TypeAliasDeclaration"
+  ]
+ },
+ {
+  "id": 921,
+  "file": "cards/event/legend.gts",
+  "line": 516,
+  "kind": "function",
+  "reasons": [
+   "call array.indexOf",
+   "call array.shift",
+   "call context.setVariable"
+  ]
+ },
+ {
+  "id": 922,
+  "file": "cards/event/legend.gts",
+  "line": 516,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 923,
+  "file": "cards/event/legend.gts",
+  "line": 519,
+  "kind": "function",
+  "reasons": [
+   "parameters (a, b)"
+  ]
+ },
+ {
+  "id": 925,
+  "file": "cards/event/legend.gts",
+  "line": 534,
+  "kind": "function",
+  "reasons": [
+   "statement ContinueStatement"
+  ]
+ },
+ {
+  "id": 959,
+  "file": "cards/support/adventure.gts",
+  "line": 226,
+  "kind": "function",
+  "reasons": [
+   "context.data",
+   "??.entities",
+   "call ??.get"
+  ]
+ },
+ {
+  "id": 962,
+  "file": "cards/support/adventure.gts",
+  "line": 260,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 963,
+  "file": "cards/support/adventure.gts",
+  "line": 262,
+  "kind": "function",
+  "reasons": [
+   "parameters (tag)"
+  ]
+ },
+ {
+  "id": 971,
+  "file": "cards/support/ally.gts",
+  "line": 106,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 976,
+  "file": "cards/support/ally.gts",
+  "line": 144,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 977,
+  "file": "cards/support/ally.gts",
+  "line": 145,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 991,
+  "file": "cards/support/ally.gts",
+  "line": 280,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 1004,
+  "file": "cards/support/ally.gts",
+  "line": 404,
+  "kind": "function",
+  "reasons": [
+   "call context.moveEntity"
+  ]
+ },
+ {
+  "id": 1027,
+  "file": "cards/support/ally.gts",
+  "line": 578,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1028,
+  "file": "cards/support/ally.gts",
+  "line": 579,
+  "kind": "function",
+  "reasons": [
+   "parameters (tag)"
+  ]
+ },
+ {
+  "id": 1031,
+  "file": "cards/support/ally.gts",
+  "line": 613,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 1039,
+  "file": "cards/support/ally.gts",
+  "line": 676,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 1093,
+  "file": "cards/support/ally.gts",
+  "line": 821,
+  "kind": "function",
+  "reasons": [
+   "parameters ()"
+  ]
+ },
+ {
+  "id": 1140,
+  "file": "cards/support/blessing.gts",
+  "line": 410,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 1197,
+  "file": "cards/support/item.gts",
+  "line": 36,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 1210,
+  "file": "cards/support/item.gts",
+  "line": 174,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 1211,
+  "file": "cards/support/item.gts",
+  "line": 200,
+  "kind": "function",
+  "reasons": [
+   "call json.includes"
+  ]
+ },
+ {
+  "id": 1239,
+  "file": "cards/support/place.gts",
+  "line": 180,
+  "kind": "function",
+  "reasons": [
+   "expression NewExpression",
+   "call ?Set.add",
+   "?Set.size"
+  ]
+ },
+ {
+  "id": 1262,
+  "file": "cards/support/place.gts",
+  "line": 435,
+  "kind": "function",
+  "reasons": [
+   "statement FunctionDeclaration",
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 1264,
+  "file": "cards/support/place.gts",
+  "line": 441,
+  "kind": "function",
+  "reasons": [
+   "parameters (entity)"
+  ]
+ },
+ {
+  "id": 1265,
+  "file": "cards/support/place.gts",
+  "line": 442,
+  "kind": "function",
+  "reasons": [
+   "parameters (a, b)"
+  ]
+ },
+ {
+  "id": 1267,
+  "file": "cards/support/place.gts",
+  "line": 444,
+  "kind": "function",
+  "reasons": [
+   "parameters (entity)"
+  ]
+ },
+ {
+  "id": 1268,
+  "file": "cards/support/place.gts",
+  "line": 445,
+  "kind": "function",
+  "reasons": [
+   "parameters (a, b)"
+  ]
+ },
+ {
+  "id": 1274,
+  "file": "cards/support/place.gts",
+  "line": 491,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1287,
+  "file": "cards/support/place.gts",
+  "line": 701,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1293,
+  "file": "cards/support/place.gts",
+  "line": 761,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 1303,
+  "file": "cards/support/place.gts",
+  "line": 829,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1304,
+  "file": "cards/support/place.gts",
+  "line": 852,
+  "kind": "function",
+  "reasons": [
+   "event EnterEventArg.overridden (optional)"
+  ]
+ },
+ {
+  "id": 1312,
+  "file": "cards/support/place.gts",
+  "line": 918,
+  "kind": "function",
+  "reasons": [
+   "call context.query"
+  ]
+ },
+ {
+  "id": 1313,
+  "file": "cards/support/place.gts",
+  "line": 920,
+  "kind": "function",
+  "reasons": [
+   "call context.queryAll"
+  ]
+ },
+ {
+  "id": 1334,
+  "file": "cards/support/place.gts",
+  "line": 1107,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1338,
+  "file": "cards/support/place.gts",
+  "line": 1138,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1391,
+  "file": "characters/anemo/consecrated_flying_serpent.gts",
+  "line": 90,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1453,
+  "file": "characters/anemo/jahoda.gts",
+  "line": 53,
+  "kind": "function",
+  "reasons": [
+   "expression ObjectLiteralExpression",
+   "index into ?Partial"
+  ]
+ },
+ {
+  "id": 1471,
+  "file": "characters/anemo/jahoda.gts",
+  "line": 193,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1476,
+  "file": "characters/anemo/jahoda.gts",
+  "line": 255,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 1620,
+  "file": "characters/anemo/sucrose.gts",
+  "line": 184,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 1621,
+  "file": "characters/anemo/sucrose.gts",
+  "line": 184,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 1724,
+  "file": "characters/cryo/citlali.gts",
+  "line": 72,
+  "kind": "function",
+  "reasons": [
+   "call anyState.getVariable"
+  ]
+ },
+ {
+  "id": 1763,
+  "file": "characters/cryo/la_signora.gts",
+  "line": 154,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 1873,
+  "file": "characters/cryo/ganyu.gts",
+  "line": 87,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 1877,
+  "file": "characters/cryo/ganyu.gts",
+  "line": 116,
+  "kind": "function",
+  "reasons": [
+   "parameters (st)"
+  ]
+ },
+ {
+  "id": 1942,
+  "file": "characters/cryo/qiqi.gts",
+  "line": 66,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 1947,
+  "file": "characters/cryo/qiqi.gts",
+  "line": 112,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 1949,
+  "file": "characters/cryo/qiqi.gts",
+  "line": 139,
+  "kind": "function",
+  "reasons": [
+   "parameters (st)"
+  ]
+ },
+ {
+  "id": 1953,
+  "file": "characters/cryo/rosaria.gts",
+  "line": 47,
+  "kind": "function",
+  "reasons": [
+   "call ?ArrayConstructor.from"
+  ]
+ },
+ {
+  "id": 1954,
+  "file": "characters/cryo/rosaria.gts",
+  "line": 48,
+  "kind": "function",
+  "reasons": [
+   "parameters (_, i)"
+  ]
+ },
+ {
+  "id": 2003,
+  "file": "characters/cryo/skirk.gts",
+  "line": 173,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 2034,
+  "file": "characters/cryo/wayward_hermetic_spiritspeaker.gts",
+  "line": 302,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 2074,
+  "file": "characters/dendro/baizhu.gts",
+  "line": 63,
+  "kind": "function",
+  "reasons": [
+   "event EnterEventArg.overridden (optional)"
+  ]
+ },
+ {
+  "id": 2084,
+  "file": "characters/dendro/collei.gts",
+  "line": 45,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 2121,
+  "file": "characters/dendro/emilie.gts",
+  "line": 239,
+  "kind": "query",
+  "reasons": [
+   "query identifier id"
+  ]
+ },
+ {
+  "id": 2143,
+  "file": "characters/dendro/gluttonous_yumkasaur_mountain_king.gts",
+  "line": 119,
+  "kind": "function",
+  "reasons": [
+   "compile: no matching function for call to ‘std::vector<double>::vector(<brace-enclosed initializer list>)’"
+  ]
+ },
+ {
+  "id": 2175,
+  "file": "characters/dendro/jadeplume_terrorshroom.gts",
+  "line": 35,
+  "kind": "function",
+  "reasons": [
+   "event argument type PlainCharacterState",
+   "call context.get",
+   "call ??.hasEquipment"
+  ]
+ },
+ {
+  "id": 2177,
+  "file": "characters/dendro/jadeplume_terrorshroom.gts",
+  "line": 44,
+  "kind": "function",
+  "reasons": [
+   "context.callSnippet",
+   "call ??.addVitality"
+  ]
+ },
+ {
+  "id": 2179,
+  "file": "characters/dendro/jadeplume_terrorshroom.gts",
+  "line": 50,
+  "kind": "function",
+  "reasons": [
+   "context.callSnippet",
+   "call ??.addVitality"
+  ]
+ },
+ {
+  "id": 2185,
+  "file": "characters/dendro/jadeplume_terrorshroom.gts",
+  "line": 105,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 2193,
+  "file": "characters/dendro/kaveh.gts",
+  "line": 49,
+  "kind": "function",
+  "reasons": [
+   "event DisposeEventArg.via (optional)",
+   "??.caller",
+   "??.id"
+  ]
+ },
+ {
+  "id": 2209,
+  "file": "characters/dendro/kaveh.gts",
+  "line": 192,
+  "kind": "function",
+  "reasons": [
+   "event CustomEventEventArg.arg (unknown)",
+   "??.definition"
+  ]
+ },
+ {
+  "id": 2210,
+  "file": "characters/dendro/kinich.gts",
+  "line": 38,
+  "kind": "function",
+  "reasons": [
+   "event argument type PlainCharacterState",
+   "call context.get"
+  ]
+ },
+ {
+  "id": 2212,
+  "file": "characters/dendro/kinich.gts",
+  "line": 52,
+  "kind": "function",
+  "reasons": [
+   "call context.callSnippet"
+  ]
+ },
+ {
+  "id": 2214,
+  "file": "characters/dendro/kinich.gts",
+  "line": 58,
+  "kind": "function",
+  "reasons": [
+   "call context.callSnippet"
+  ]
+ },
+ {
+  "id": 2215,
+  "file": "characters/dendro/kinich.gts",
+  "line": 63,
+  "kind": "function",
+  "reasons": [
+   "call context.callSnippet"
+  ]
+ },
+ {
+  "id": 2222,
+  "file": "characters/dendro/kinich.gts",
+  "line": 118,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 2268,
+  "file": "characters/dendro/nahida.gts",
+  "line": 62,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 2300,
+  "file": "characters/dendro/nefer.gts",
+  "line": 50,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 2358,
+  "file": "characters/electro/beidou.gts",
+  "line": 47,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 2369,
+  "file": "characters/electro/clorinde.gts",
+  "line": 32,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.via",
+   "??.definition",
+   "??.id"
+  ]
+ },
+ {
+  "id": 2370,
+  "file": "characters/electro/clorinde.gts",
+  "line": 33,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.expectedValue",
+   "call ??.cancel"
+  ]
+ },
+ {
+  "id": 2381,
+  "file": "characters/electro/clorinde.gts",
+  "line": 175,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 2388,
+  "file": "characters/electro/consecrated_scorpion.gts",
+  "line": 81,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 2504,
+  "file": "characters/electro/ineffa.gts",
+  "line": 99,
+  "kind": "function",
+  "reasons": [
+   "call context.get"
+  ]
+ },
+ {
+  "id": 2516,
+  "file": "characters/electro/keqing.gts",
+  "line": 86,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 2584,
+  "file": "characters/electro/ororon.gts",
+  "line": 217,
+  "kind": "function",
+  "reasons": [
+   "index into query",
+   "??.character"
+  ]
+ },
+ {
+  "id": 2585,
+  "file": "characters/electro/ororon.gts",
+  "line": 218,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 2596,
+  "file": "characters/electro/raiden_shogun.gts",
+  "line": 108,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 2623,
+  "file": "characters/electro/sethos.gts",
+  "line": 58,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 2721,
+  "file": "characters/geo/azhdaha.gts",
+  "line": 48,
+  "kind": "function",
+  "reasons": [
+   "event TransformDefinitionEventArg.oldDefinition (unknown)",
+   "??.id",
+   "event TransformDefinitionEventArg.newDefinition (unknown)"
+  ]
+ },
+ {
+  "id": 2722,
+  "file": "characters/geo/azhdaha.gts",
+  "line": 49,
+  "kind": "function",
+  "reasons": [
+   "extension setter"
+  ]
+ },
+ {
+  "id": 2723,
+  "file": "characters/geo/azhdaha.gts",
+  "line": 64,
+  "kind": "function",
+  "reasons": [
+   "parameters (st)"
+  ]
+ },
+ {
+  "id": 2738,
+  "file": "characters/geo/azhdaha.gts",
+  "line": 397,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 2739,
+  "file": "characters/geo/black_serpent_knight_rockbreaker_ax.gts",
+  "line": 32,
+  "kind": "function",
+  "reasons": [
+   "character.entities"
+  ]
+ },
+ {
+  "id": 2741,
+  "file": "characters/geo/black_serpent_knight_rockbreaker_ax.gts",
+  "line": 34,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 2752,
+  "file": "characters/geo/black_serpent_knight_rockbreaker_ax.gts",
+  "line": 162,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 2866,
+  "file": "characters/geo/navia.gts",
+  "line": 97,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 2930,
+  "file": "characters/geo/xilonen.gts",
+  "line": 257,
+  "kind": "function",
+  "reasons": [
+   "for-of pattern"
+  ]
+ },
+ {
+  "id": 2931,
+  "file": "characters/geo/xilonen.gts",
+  "line": 261,
+  "kind": "query",
+  "reasons": [
+   "query identifier def"
+  ]
+ },
+ {
+  "id": 2933,
+  "file": "characters/geo/xilonen.gts",
+  "line": 303,
+  "kind": "function",
+  "reasons": [
+   "call ?ObjectConstructor.keys",
+   "call ??.map",
+   "call ?ObjectConstructor.fromEntries",
+   "index into ?Record",
+   "binary InKeyword",
+   "expression PostfixUnaryExpression",
+   "for-of pattern"
+  ]
+ },
+ {
+  "id": 2934,
+  "file": "characters/geo/xilonen.gts",
+  "line": 304,
+  "kind": "function",
+  "reasons": [
+   "parameters (k)"
+  ]
+ },
+ {
+  "id": 2936,
+  "file": "characters/geo/xilonen.gts",
+  "line": 308,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 2937,
+  "file": "characters/geo/xilonen.gts",
+  "line": 325,
+  "kind": "function",
+  "reasons": [
+   "for-of pattern"
+  ]
+ },
+ {
+  "id": 2938,
+  "file": "characters/geo/xilonen.gts",
+  "line": 328,
+  "kind": "query",
+  "reasons": [
+   "query identifier def"
+  ]
+ },
+ {
+  "id": 2947,
+  "file": "characters/geo/yun_jin.gts",
+  "line": 44,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 3014,
+  "file": "characters/hydro/alldevouring_narwhal.gts",
+  "line": 309,
+  "kind": "function",
+  "reasons": [
+   "event CustomEventEventArg.arg (unknown)",
+   "call context.get",
+   "call ??.diceCost"
+  ]
+ },
+ {
+  "id": 3027,
+  "file": "characters/hydro/candace.gts",
+  "line": 30,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 3065,
+  "file": "characters/hydro/columbina.gts",
+  "line": 234,
+  "kind": "function",
+  "reasons": [
+   "parameters (st, e)"
+  ]
+ },
+ {
+  "id": 3077,
+  "file": "characters/hydro/columbina.gts",
+  "line": 343,
+  "kind": "query",
+  "reasons": [
+   "compile: cannot convert ‘const char*’ to ‘const gitcg::QueryExpression&’"
+  ]
+ },
+ {
+  "id": 3081,
+  "file": "characters/hydro/consecrated_horned_crocodile.gts",
+  "line": 65,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 3134,
+  "file": "characters/hydro/furina.gts",
+  "line": 224,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 3210,
+  "file": "characters/hydro/hydro_tulpa.gts",
+  "line": 329,
+  "kind": "function",
+  "reasons": [
+   "context.state",
+   "??.config",
+   "??.maxSummonsCount"
+  ]
+ },
+ {
+  "id": 3292,
+  "file": "characters/hydro/neuvillette.gts",
+  "line": 201,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 3307,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 160,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 3308,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 161,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 3309,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 163,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 3311,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 185,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 3312,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 186,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 3313,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 189,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 3316,
+  "file": "characters/hydro/rhodeia_of_loch.gts",
+  "line": 216,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 3409,
+  "file": "characters/hydro/yelan.gts",
+  "line": 162,
+  "kind": "function",
+  "reasons": [
+   "parameters (char)"
+  ]
+ },
+ {
+  "id": 3427,
+  "file": "characters/pyro/amber.gts",
+  "line": 45,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 3446,
+  "file": "characters/pyro/arlecchino.gts",
+  "line": 116,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.via",
+   "??.definition",
+   "??.id"
+  ]
+ },
+ {
+  "id": 3447,
+  "file": "characters/pyro/arlecchino.gts",
+  "line": 117,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "call ??.cancel"
+  ]
+ },
+ {
+  "id": 3452,
+  "file": "characters/pyro/arlecchino.gts",
+  "line": 164,
+  "kind": "function",
+  "reasons": [
+   "event CustomEventEventArg.arg (unknown)",
+   "??.via",
+   "??.definition",
+   "??.id"
+  ]
+ },
+ {
+  "id": 3481,
+  "file": "characters/pyro/chevreuse.gts",
+  "line": 176,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 3485,
+  "file": "characters/pyro/chevreuse.gts",
+  "line": 221,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 3539,
+  "file": "characters/pyro/emperor_of_fire_and_iron.gts",
+  "line": 32,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 3542,
+  "file": "characters/pyro/emperor_of_fire_and_iron.gts",
+  "line": 99,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 3598,
+  "file": "characters/pyro/goldflame_qucusaur_tyrant.gts",
+  "line": 33,
+  "kind": "function",
+  "reasons": [
+   "expression NullKeyword"
+  ]
+ },
+ {
+  "id": 3643,
+  "file": "characters/pyro/lord_of_eroded_primal_fire.gts",
+  "line": 101,
+  "kind": "function",
+  "reasons": [
+   "array literal of ?__type",
+   "?__type.pile",
+   "call ??.slice",
+   "call ??.toReversed"
+  ]
+ },
+ {
+  "id": 3717,
+  "file": "characters/pyro/xinyan.gts",
+  "line": 91,
+  "kind": "function",
+  "reasons": [
+   "parameters (a, b)"
+  ]
+ },
+ {
+  "id": 3790,
+  "file": "old_versions/v3.6.0.gts",
+  "line": 48,
+  "kind": "function",
+  "reasons": [
+   "parameters (st)"
+  ]
+ },
+ {
+  "id": 3920,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 345,
+  "kind": "function",
+  "reasons": [
+   "compile: no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’"
+  ]
+ },
+ {
+  "id": 3921,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 346,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 3922,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 347,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 3923,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 348,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 3924,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 349,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 3925,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 351,
+  "kind": "function",
+  "reasons": [
+   "expression ObjectLiteralExpression",
+   "call context.moveEntity"
+  ]
+ },
+ {
+  "id": 3928,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 376,
+  "kind": "function",
+  "reasons": [
+   "compile: no matching function for call to ‘truthy(std::vector<gitcg::CharacterHandle>)’"
+  ]
+ },
+ {
+  "id": 3929,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 376,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 3930,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 376,
+  "kind": "query",
+  "reasons": [
+   "query ElementAccessExpression"
+  ]
+ },
+ {
+  "id": 3931,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 376,
+  "kind": "function",
+  "reasons": [
+   "parameters (c)"
+  ]
+ },
+ {
+  "id": 3932,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 380,
+  "kind": "function",
+  "reasons": [
+   "expression ObjectLiteralExpression",
+   "call context.moveEntity"
+  ]
+ },
+ {
+  "id": 3937,
+  "file": "old_versions/v4.0.0.gts",
+  "line": 434,
+  "kind": "function",
+  "reasons": [
+   "context.phase",
+   "player.defeatedSwitching"
+  ]
+ },
+ {
+  "id": 3984,
+  "file": "old_versions/v4.1.0.gts",
+  "line": 499,
+  "kind": "function",
+  "reasons": [
+   "compile: ‘TamakushiCasket’ was not declared in this scope"
+  ]
+ },
+ {
+  "id": 4011,
+  "file": "old_versions/v4.1.0.gts",
+  "line": 730,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 4029,
+  "file": "old_versions/v4.2.0.gts",
+  "line": 72,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 4030,
+  "file": "old_versions/v4.2.0.gts",
+  "line": 73,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4031,
+  "file": "old_versions/v4.2.0.gts",
+  "line": 78,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4033,
+  "file": "old_versions/v4.2.0.gts",
+  "line": 97,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 4034,
+  "file": "old_versions/v4.2.0.gts",
+  "line": 98,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4035,
+  "file": "old_versions/v4.2.0.gts",
+  "line": 104,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4064,
+  "file": "old_versions/v4.4.0.gts",
+  "line": 19,
+  "kind": "function",
+  "reasons": [
+   "parameters (ch)"
+  ]
+ },
+ {
+  "id": 4119,
+  "file": "old_versions/v4.7.0.gts",
+  "line": 64,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4129,
+  "file": "old_versions/v4.7.0.gts",
+  "line": 123,
+  "kind": "function",
+  "reasons": [
+   "event DisposeEventArg.via (optional)",
+   "??.caller",
+   "??.id"
+  ]
+ },
+ {
+  "id": 4216,
+  "file": "old_versions/v4.8.0.gts",
+  "line": 172,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.healInfo",
+   "??.healKind"
+  ]
+ },
+ {
+  "id": 4217,
+  "file": "old_versions/v4.8.0.gts",
+  "line": 177,
+  "kind": "function",
+  "reasons": [
+   "event argument type context",
+   "??.expectedValue",
+   "call ??.decreaseHeal"
+  ]
+ },
+ {
+  "id": 4219,
+  "file": "old_versions/v4.8.0.gts",
+  "line": 185,
+  "kind": "function",
+  "reasons": [
+   "context.rawEventArg"
+  ]
+ },
+ {
+  "id": 4289,
+  "file": "old_versions/v5.4.0.gts",
+  "line": 94,
+  "kind": "function",
+  "reasons": [
+   "parameters (e)"
+  ]
+ },
+ {
+  "id": 4325,
+  "file": "old_versions/v5.6.0.gts",
+  "line": 253,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 4326,
+  "file": "old_versions/v5.6.0.gts",
+  "line": 253,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 4338,
+  "file": "old_versions/v5.7.0.gts",
+  "line": 153,
+  "kind": "query",
+  "reasons": [
+   "query identifier id"
+  ]
+ },
+ {
+  "id": 4344,
+  "file": "old_versions/v5.8.0.gts",
+  "line": 133,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 4345,
+  "file": "old_versions/v5.8.0.gts",
+  "line": 134,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4346,
+  "file": "old_versions/v5.8.0.gts",
+  "line": 139,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4348,
+  "file": "old_versions/v5.8.0.gts",
+  "line": 158,
+  "kind": "function",
+  "reasons": [
+   "parameters (s)"
+  ]
+ },
+ {
+  "id": 4349,
+  "file": "old_versions/v5.8.0.gts",
+  "line": 159,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4350,
+  "file": "old_versions/v5.8.0.gts",
+  "line": 165,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4401,
+  "file": "old_versions/v6.0.0.gts",
+  "line": 244,
+  "kind": "function",
+  "reasons": [
+   "parameters (a, b)"
+  ]
+ },
+ {
+  "id": 4464,
+  "file": "old_versions/v6.4.0.gts",
+  "line": 112,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4517,
+  "file": "old_versions/v6.5.0.gts",
+  "line": 306,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4550,
+  "file": "old_versions/v6.7.0.gts",
+  "line": 148,
+  "kind": "function",
+  "reasons": [
+   "parameters (id)"
+  ]
+ },
+ {
+  "id": 4568,
+  "file": "old_versions/v6.7.0.gts",
+  "line": 258,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4569,
+  "file": "old_versions/v6.7.0.gts",
+  "line": 259,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4571,
+  "file": "old_versions/v6.7.0.gts",
+  "line": 268,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4572,
+  "file": "old_versions/v6.7.0.gts",
+  "line": 269,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4644,
+  "file": "autogitcg/open_world_a/pyro_whopperflower.gts",
+  "line": 35,
+  "kind": "function",
+  "reasons": [
+   "call context.allCardDefinitions",
+   "call array.splice"
+  ]
+ },
+ {
+  "id": 4650,
+  "file": "autogitcg/open_world_a/pyro_whopperflower.gts",
+  "line": 102,
+  "kind": "function",
+  "reasons": [
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 4652,
+  "file": "autogitcg/open_world_a/pyro_whopperflower.gts",
+  "line": 18,
+  "kind": "function",
+  "reasons": [
+   "parameters (character)"
+  ]
+ },
+ {
+  "id": 4717,
+  "file": "autogitcg/tavern_a/cryo_hypostasis.gts",
+  "line": 79,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 4760,
+  "file": "autogitcg/open_world_b/tainted_hydro_phantasm.gts",
+  "line": 84,
+  "kind": "query",
+  "reasons": [
+   "query identifier __gts_fnArg"
+  ]
+ },
+ {
+  "id": 4882,
+  "file": "autogitcg/tavern_b/goldflame_qucusaur_tyrant.gts",
+  "line": 21,
+  "kind": "function",
+  "reasons": [
+   "?definition|unknown.skillType",
+   "?definition|unknown.initiativeSkillConfig",
+   "??.computed$diceCostSize",
+   "definition.skills",
+   "call ??.some"
+  ]
+ },
+ {
+  "id": 4883,
+  "file": "autogitcg/tavern_b/goldflame_qucusaur_tyrant.gts",
+  "line": 24,
+  "kind": "function",
+  "reasons": [
+   "parameters (card)"
+  ]
+ },
+ {
+  "id": 4884,
+  "file": "autogitcg/tavern_b/goldflame_qucusaur_tyrant.gts",
+  "line": 27,
+  "kind": "function",
+  "reasons": [
+   "parameters (skill)"
+  ]
+ },
+ {
+  "id": 4886,
+  "file": "autogitcg/tavern_b/lord_of_eroded_primal_fire.gts",
+  "line": 24,
+  "kind": "function",
+  "reasons": [
+   "array literal of ?__type",
+   "?__type.pile",
+   "call ??.slice",
+   "call ??.toReversed"
+  ]
+ },
+ {
+  "id": 4988,
+  "file": "autogitcg/weekly_a/ruin_drake_earthguard.gts",
+  "line": 163,
+  "kind": "function",
+  "reasons": [
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 4991,
+  "file": "autogitcg/weekly_a/ruin_drake_earthguard.gts",
+  "line": 199,
+  "kind": "function",
+  "reasons": [
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 4992,
+  "file": "autogitcg/weekly_a/ruin_drake_earthguard.gts",
+  "line": 200,
+  "kind": "function",
+  "reasons": [
+   "call of a non-member"
+  ]
+ },
+ {
+  "id": 4993,
+  "file": "autogitcg/weekly_a/ruin_drake_earthguard.gts",
+  "line": 118,
+  "kind": "function",
+  "reasons": [
+   "parameters ([status])"
+  ]
+ },
+ {
+  "id": 4994,
+  "file": "autogitcg/weekly_a/ruin_drake_earthguard.gts",
+  "line": 122,
+  "kind": "function",
+  "reasons": [
+   "parameters ([, absorbedElement])"
+  ]
+ }
+]

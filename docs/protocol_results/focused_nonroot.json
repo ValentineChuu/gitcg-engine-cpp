@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "games": 7,
+    "identical": 7,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 129,
+    "seconds": 1.126634906
+  },
+  "results": [
+    {
+      "index": 0,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 20,
+      "messages": 20,
+      "status": "identical"
+    },
+    {
+      "index": 1,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 18,
+      "messages": 18,
+      "status": "identical"
+    },
+    {
+      "index": 2,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 18,
+      "messages": 18,
+      "status": "identical"
+    },
+    {
+      "index": 3,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 18,
+      "messages": 29,
+      "status": "identical"
+    },
+    {
+      "index": 4,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 18,
+      "messages": 18,
+      "status": "identical"
+    },
+    {
+      "index": 5,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 18,
+      "messages": 18,
+      "status": "identical"
+    },
+    {
+      "index": 6,
+      "origins": [
+        "npc:focused",
+        "npc:focused"
+      ],
+      "decisions": 19,
+      "messages": 19,
+      "status": "identical"
+    }
+  ]
+}

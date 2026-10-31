@@ -1,0 +1,8 @@
+// Generated from autogitcg/weekly_a/cryo_hilichurl_shooter.gts; AGPL-3.0. Run tools/translator/translate.mjs to regenerate.
+#include "definitions/registry/registry.h"
+
+namespace gitcg {
+void register_a252403ee987fb44(DefinitionRegistry& registry) {
+  registry.addModule(R"GTS([{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[31021],"attributes":[]},{"name":"skillType","positionals":["normal"],"attributes":[]},{"name":"cost","positionals":[1,1],"attributes":[]},{"name":"cost","positionals":[0,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4912}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[31022],"attributes":[]},{"name":"skillType","positionals":["burst"],"attributes":[]},{"name":"cost","positionals":[1,3],"attributes":[]},{"name":"cost","positionals":[9,2],"attributes":[]},{"name":"~action","positionals":[{"$lambda":4913}],"attributes":[]}]},{"name":"skill","positionals":[],"attributes":[{"name":"id","positionals":[31023],"attributes":[]},{"name":"skillType","positionals":["passive"],"attributes":[{"name":"on","positionals":["useSkill"],"attributes":[{"name":"~action","positionals":[{"$lambda":4914}],"attributes":[]}]}]}]},{"name":"character","positionals":[],"attributes":[{"name":"id","positionals":[3102],"attributes":[]},{"name":"tags","positionals":["cryo","monster","hilichurl"],"attributes":[]},{"name":"health","positionals":[3],"attributes":[]},{"name":"energy","positionals":[2],"attributes":[]},{"name":"skills","positionals":[31021,31022,31023],"attributes":[]}]}])GTS");
+}
+}  // namespace gitcg

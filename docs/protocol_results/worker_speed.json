@@ -1,0 +1,302 @@
+[
+  {
+    "backend": "node",
+    "mode": "plain",
+    "attempted": 8,
+    "finished": 8,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 820,
+    "actions": 594,
+    "replies": 0,
+    "seconds": 0.6985509019996243,
+    "decisionsPerSecond": 1173.8586231192655,
+    "actionsPerSecond": 850.331734308346,
+    "hashes": [
+      "3db9b255880836a0f57e5f518c6cfa3d9579885de4968efd84fe2a003d735d12",
+      "ff3d1e4154456f753d13368ac5af23c8f7648cb348521487a96c4a5683ed2455",
+      "2c0cebdefd0e02576cde427284455c91e390aa2f0feed08ed4ce2b78625e5ce3",
+      "0a976ba3f8fab735ad6b282daf2efc4c71021bb643e620b4135629a7ac4a63f8",
+      "09798225cd016083a3c559d37c24b0844f45c6dbb5b1549803f696d0b7d7fda8",
+      "9355201fb5faec449f952a972ece33f32980e9fcff7cd9198a8b03240b195169",
+      "3427cd676769b553abf196aabeb4c6009f1c98c763b3c429a60e885fe9e42064",
+      "18b39b70455ee8711f297caf12ab418502258cb43b10f413191ea230e4c76fd6"
+    ],
+    "gameplayHashes": [
+      "c7a1dee269591a4ca103a407bf34c2415afcae78358888adcb0d4a78ebd2d1ab",
+      "29a67ebbb07bf4d4280c877cfdc43019468a055b6990b2142da323877fb88c61",
+      "4d2474dc34db520c2442cf31ac5dde429335abda9d4c50e8d6ce398521fec041",
+      "3cb25c9689715431345fa56f327d3f73aa99d485a1bce3616cc11ec922ddec0e",
+      "e03996fa2a410f3678151037f96c972ab471437fe4f198bcd6bc06474779eebe",
+      "363eb312fc631869e01eefa4c2648d4a7ab933aaacdf145d7a61efcbafc8a535",
+      "b14d96a21dafc107c82e558b1ce3a94777f906d078a4ed5fcc77b489119f66a8",
+      "d4364c930bf5b9e239a5ea4b878faf3d8b1786f4b8d207d75b8a5a48c494e71b"
+    ],
+    "engineWork": {
+      "decisions": 661,
+      "replies": {
+        "searches": 0,
+        "plays": 0,
+        "overBudget": 0
+      },
+      "followUps": {
+        "searches": 0,
+        "plays": 0,
+        "overBudget": 0
+      },
+      "endOfRound": {
+        "copies": 0
+      }
+    }
+  },
+  {
+    "backend": "cpp",
+    "mode": "plain",
+    "attempted": 8,
+    "finished": 8,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 820,
+    "actions": 594,
+    "replies": 0,
+    "seconds": 0.20765983400087862,
+    "decisionsPerSecond": 3948.765556638799,
+    "actionsPerSecond": 2860.44724468713,
+    "hashes": [
+      "3db9b255880836a0f57e5f518c6cfa3d9579885de4968efd84fe2a003d735d12",
+      "ff3d1e4154456f753d13368ac5af23c8f7648cb348521487a96c4a5683ed2455",
+      "2c0cebdefd0e02576cde427284455c91e390aa2f0feed08ed4ce2b78625e5ce3",
+      "0a976ba3f8fab735ad6b282daf2efc4c71021bb643e620b4135629a7ac4a63f8",
+      "09798225cd016083a3c559d37c24b0844f45c6dbb5b1549803f696d0b7d7fda8",
+      "9355201fb5faec449f952a972ece33f32980e9fcff7cd9198a8b03240b195169",
+      "3427cd676769b553abf196aabeb4c6009f1c98c763b3c429a60e885fe9e42064",
+      "18b39b70455ee8711f297caf12ab418502258cb43b10f413191ea230e4c76fd6"
+    ],
+    "gameplayHashes": [
+      "c7a1dee269591a4ca103a407bf34c2415afcae78358888adcb0d4a78ebd2d1ab",
+      "29a67ebbb07bf4d4280c877cfdc43019468a055b6990b2142da323877fb88c61",
+      "4d2474dc34db520c2442cf31ac5dde429335abda9d4c50e8d6ce398521fec041",
+      "3cb25c9689715431345fa56f327d3f73aa99d485a1bce3616cc11ec922ddec0e",
+      "e03996fa2a410f3678151037f96c972ab471437fe4f198bcd6bc06474779eebe",
+      "363eb312fc631869e01eefa4c2648d4a7ab933aaacdf145d7a61efcbafc8a535",
+      "b14d96a21dafc107c82e558b1ce3a94777f906d078a4ed5fcc77b489119f66a8",
+      "d4364c930bf5b9e239a5ea4b878faf3d8b1786f4b8d207d75b8a5a48c494e71b"
+    ],
+    "engineWork": {
+      "decisions": 661,
+      "replies": {
+        "searches": 0,
+        "plays": 0,
+        "overBudget": 0
+      },
+      "followUps": {
+        "searches": 0,
+        "plays": 0,
+        "overBudget": 0
+      },
+      "endOfRound": {
+        "copies": 0
+      }
+    }
+  },
+  {
+    "backend": "node",
+    "mode": "replies",
+    "attempted": 8,
+    "finished": 8,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 820,
+    "actions": 594,
+    "replies": 0,
+    "seconds": 73.5270355340017,
+    "decisionsPerSecond": 11.152360407904665,
+    "actionsPerSecond": 8.078661075969965,
+    "hashes": [
+      "2677cc0b5caafb71833c13dd3d01c75deba776eee2fbbf48fa12dbfd28cfc5b2",
+      "e5e58f454402162f8219ab652753d7c26cb1232362015ececa66a233afee76ab",
+      "74cbf8d4fafcd50671a58b6069da7559177e7f234099016ff13a223722812149",
+      "efd1ff87b28f530cb1e8424773da4b32a884a414230536d53cb242f943bca684",
+      "40a4ac6c60d6d2154175db175922d8b8fc2b12db1c9171ca2ee5998f6ccb0275",
+      "b2c291f7d3f3a0657721a79a2e57896fa263778f921ea5408b91c9428b7c6d48",
+      "1bebf22ac06cee44c1e67ed49569c328e9a04422bd3f117251a7acdf161bd085",
+      "db8122582890d2ae6be5b3f233246644af9a5c2b6ff4201ab0e72fa0ce3d4c32"
+    ],
+    "gameplayHashes": [
+      "c7a1dee269591a4ca103a407bf34c2415afcae78358888adcb0d4a78ebd2d1ab",
+      "29a67ebbb07bf4d4280c877cfdc43019468a055b6990b2142da323877fb88c61",
+      "4d2474dc34db520c2442cf31ac5dde429335abda9d4c50e8d6ce398521fec041",
+      "3cb25c9689715431345fa56f327d3f73aa99d485a1bce3616cc11ec922ddec0e",
+      "e03996fa2a410f3678151037f96c972ab471437fe4f198bcd6bc06474779eebe",
+      "363eb312fc631869e01eefa4c2648d4a7ab933aaacdf145d7a61efcbafc8a535",
+      "b14d96a21dafc107c82e558b1ce3a94777f906d078a4ed5fcc77b489119f66a8",
+      "d4364c930bf5b9e239a5ea4b878faf3d8b1786f4b8d207d75b8a5a48c494e71b"
+    ],
+    "engineWork": {
+      "decisions": 661,
+      "replies": {
+        "searches": 2310,
+        "plays": 63105,
+        "overBudget": 16
+      },
+      "followUps": {
+        "searches": 0,
+        "plays": 0,
+        "overBudget": 0
+      },
+      "endOfRound": {
+        "copies": 633
+      }
+    }
+  },
+  {
+    "backend": "cpp",
+    "mode": "replies",
+    "attempted": 8,
+    "finished": 8,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 820,
+    "actions": 594,
+    "replies": 0,
+    "seconds": 7.960877003999485,
+    "decisionsPerSecond": 103.00372679894917,
+    "actionsPerSecond": 74.614894778751,
+    "hashes": [
+      "2677cc0b5caafb71833c13dd3d01c75deba776eee2fbbf48fa12dbfd28cfc5b2",
+      "e5e58f454402162f8219ab652753d7c26cb1232362015ececa66a233afee76ab",
+      "74cbf8d4fafcd50671a58b6069da7559177e7f234099016ff13a223722812149",
+      "efd1ff87b28f530cb1e8424773da4b32a884a414230536d53cb242f943bca684",
+      "40a4ac6c60d6d2154175db175922d8b8fc2b12db1c9171ca2ee5998f6ccb0275",
+      "b2c291f7d3f3a0657721a79a2e57896fa263778f921ea5408b91c9428b7c6d48",
+      "1bebf22ac06cee44c1e67ed49569c328e9a04422bd3f117251a7acdf161bd085",
+      "db8122582890d2ae6be5b3f233246644af9a5c2b6ff4201ab0e72fa0ce3d4c32"
+    ],
+    "gameplayHashes": [
+      "c7a1dee269591a4ca103a407bf34c2415afcae78358888adcb0d4a78ebd2d1ab",
+      "29a67ebbb07bf4d4280c877cfdc43019468a055b6990b2142da323877fb88c61",
+      "4d2474dc34db520c2442cf31ac5dde429335abda9d4c50e8d6ce398521fec041",
+      "3cb25c9689715431345fa56f327d3f73aa99d485a1bce3616cc11ec922ddec0e",
+      "e03996fa2a410f3678151037f96c972ab471437fe4f198bcd6bc06474779eebe",
+      "363eb312fc631869e01eefa4c2648d4a7ab933aaacdf145d7a61efcbafc8a535",
+      "b14d96a21dafc107c82e558b1ce3a94777f906d078a4ed5fcc77b489119f66a8",
+      "d4364c930bf5b9e239a5ea4b878faf3d8b1786f4b8d207d75b8a5a48c494e71b"
+    ],
+    "engineWork": {
+      "decisions": 661,
+      "replies": {
+        "searches": 2310,
+        "plays": 63105,
+        "overBudget": 16
+      },
+      "followUps": {
+        "searches": 0,
+        "plays": 0,
+        "overBudget": 0
+      },
+      "endOfRound": {
+        "copies": 633
+      }
+    }
+  },
+  {
+    "backend": "node",
+    "mode": "onDemand",
+    "attempted": 8,
+    "finished": 8,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 820,
+    "actions": 594,
+    "replies": 569,
+    "seconds": 55.9274340130014,
+    "decisionsPerSecond": 14.661856287012476,
+    "actionsPerSecond": 10.620905651811476,
+    "hashes": [
+      "ad841432d6c2f53c1eeb66bbf3fe001728198fa9b738aff450108adab9b454a7",
+      "051ace82454a42789c79cc8c83df489b1f66711bbf46bb33a77cf25b57ed674a",
+      "2a85bf6c0635fcf20a920810e731dd9302a990e30ecc78541d3db0c4113ac53c",
+      "a20efbef4d469e61f111151e5bc3e3678b72472762401d89e4682e6e8be5e4eb",
+      "8b0bd16e080b6db19aadae24b83ba561dedd97d0b46a967636f388dcbcb21f51",
+      "82e5fb8b0c3daab210562b43e0bbebd1708d21292f400043f876a505df347023",
+      "a6ba6617059cec2a2d2f373fe73b0ae9a8bee76a059f3a901610fd18ec49c91d",
+      "6686354d20a626fe62410a9e8d9e7d10d6d5fd16cb760a1569c2131fc26ef99e"
+    ],
+    "gameplayHashes": [
+      "c7a1dee269591a4ca103a407bf34c2415afcae78358888adcb0d4a78ebd2d1ab",
+      "29a67ebbb07bf4d4280c877cfdc43019468a055b6990b2142da323877fb88c61",
+      "4d2474dc34db520c2442cf31ac5dde429335abda9d4c50e8d6ce398521fec041",
+      "3cb25c9689715431345fa56f327d3f73aa99d485a1bce3616cc11ec922ddec0e",
+      "e03996fa2a410f3678151037f96c972ab471437fe4f198bcd6bc06474779eebe",
+      "363eb312fc631869e01eefa4c2648d4a7ab933aaacdf145d7a61efcbafc8a535",
+      "b14d96a21dafc107c82e558b1ce3a94777f906d078a4ed5fcc77b489119f66a8",
+      "d4364c930bf5b9e239a5ea4b878faf3d8b1786f4b8d207d75b8a5a48c494e71b"
+    ],
+    "engineWork": {
+      "decisions": 661,
+      "replies": {
+        "searches": 962,
+        "plays": 22026,
+        "overBudget": 5
+      },
+      "followUps": {
+        "searches": 1602,
+        "plays": 29947,
+        "overBudget": 126
+      },
+      "endOfRound": {
+        "copies": 633
+      }
+    }
+  },
+  {
+    "backend": "cpp",
+    "mode": "onDemand",
+    "attempted": 8,
+    "finished": 8,
+    "untranslated": 0,
+    "different": 0,
+    "decisions": 820,
+    "actions": 594,
+    "replies": 569,
+    "seconds": 5.667997474000003,
+    "decisionsPerSecond": 144.6719063940076,
+    "actionsPerSecond": 104.79891755858598,
+    "hashes": [
+      "ad841432d6c2f53c1eeb66bbf3fe001728198fa9b738aff450108adab9b454a7",
+      "051ace82454a42789c79cc8c83df489b1f66711bbf46bb33a77cf25b57ed674a",
+      "2a85bf6c0635fcf20a920810e731dd9302a990e30ecc78541d3db0c4113ac53c",
+      "a20efbef4d469e61f111151e5bc3e3678b72472762401d89e4682e6e8be5e4eb",
+      "8b0bd16e080b6db19aadae24b83ba561dedd97d0b46a967636f388dcbcb21f51",
+      "82e5fb8b0c3daab210562b43e0bbebd1708d21292f400043f876a505df347023",
+      "a6ba6617059cec2a2d2f373fe73b0ae9a8bee76a059f3a901610fd18ec49c91d",
+      "6686354d20a626fe62410a9e8d9e7d10d6d5fd16cb760a1569c2131fc26ef99e"
+    ],
+    "gameplayHashes": [
+      "c7a1dee269591a4ca103a407bf34c2415afcae78358888adcb0d4a78ebd2d1ab",
+      "29a67ebbb07bf4d4280c877cfdc43019468a055b6990b2142da323877fb88c61",
+      "4d2474dc34db520c2442cf31ac5dde429335abda9d4c50e8d6ce398521fec041",
+      "3cb25c9689715431345fa56f327d3f73aa99d485a1bce3616cc11ec922ddec0e",
+      "e03996fa2a410f3678151037f96c972ab471437fe4f198bcd6bc06474779eebe",
+      "363eb312fc631869e01eefa4c2648d4a7ab933aaacdf145d7a61efcbafc8a535",
+      "b14d96a21dafc107c82e558b1ce3a94777f906d078a4ed5fcc77b489119f66a8",
+      "d4364c930bf5b9e239a5ea4b878faf3d8b1786f4b8d207d75b8a5a48c494e71b"
+    ],
+    "engineWork": {
+      "decisions": 661,
+      "replies": {
+        "searches": 962,
+        "plays": 22026,
+        "overBudget": 5
+      },
+      "followUps": {
+        "searches": 1602,
+        "plays": 29947,
+        "overBudget": 126
+      },
+      "endOfRound": {
+        "copies": 633
+      }
+    }
+  }
+]

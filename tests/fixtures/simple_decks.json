@@ -1,0 +1,18 @@
+[
+  {
+    "origin": "tournament:starter",
+    "characters": [
+      1301
+    ],
+    "cards": [],
+    "equipment": []
+  },
+  {
+    "origin": "npc:starter",
+    "characters": [
+      1301
+    ],
+    "cards": [],
+    "equipment": []
+  }
+]
