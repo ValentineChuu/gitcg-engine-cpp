@@ -3,6 +3,7 @@
 #include "core/mutations/notifications.h"
 #include "core/expose/expose_state.h"
 
+#include <functional>
 #include <stdexcept>
 #include <string>
 #include <utility>
@@ -158,6 +159,10 @@ void recordHidden() {
 void record(const char* kind, JsonValue value) {
   notificationSink->stateMutation(exposedMutation(kind, std::move(value)));
 }
+// A mutation exposed differently to each seat a person plays: `valueFor(seat)` builds that seat's value.
+void recordPerSeat(const char* kind, const std::function<JsonValue(int seat)>& valueFor) {
+  notificationSink->stateMutation([&](int seat) -> std::optional<JsonValue> { return exposedMutation(kind, valueFor(seat)); });
+}
 JsonValue emptyValue() { return JsonValue::object(); }
 
 }  // namespace
@@ -258,12 +263,14 @@ int createEntity(GameStatePointer& state, const EntityArea& area, EntityState va
 void recordEntityCreated(const GameStatePointer& state, const EntityArea& area, int id) {
   if (!notificationSink) return;
   const EntityState& entity = *getEntityById(*state, id).entity();
-  JsonValue value = JsonValue::object();
-  value["who"] = area.who;
-  value["where"] = exposedArea(area.type);
-  value["entity"] = exposeEntityForMutation(entity, area.who != notificationSink->seat() && area.type == AreaType::Hands);
-  if (area.type == AreaType::Characters) value["masterCharacterId"] = area.characterId;
-  record("createEntity", std::move(value));
+  recordPerSeat("createEntity", [&](int seat) {
+    JsonValue value = JsonValue::object();
+    value["who"] = area.who;
+    value["where"] = exposedArea(area.type);
+    value["entity"] = exposeEntityForMutation(entity, area.who != seat && area.type == AreaType::Hands);
+    if (area.type == AreaType::Characters) value["masterCharacterId"] = area.characterId;
+    return value;
+  });
 }
 
 int createAttachment(GameStatePointer& state, int cardId, EntityState value) {
@@ -303,17 +310,19 @@ void moveEntity(GameStatePointer& state, int id, const EntityArea& area, std::op
     observeMutation("moveEntity", std::move(value));
   }
   if (notificationSink) {
-    JsonValue value = JsonValue::object();
-    value["fromWho"] = from.who;
-    value["fromWhere"] = exposedArea(from.type);
-    value["toWho"] = area.who;
-    value["toWhere"] = exposedArea(area.type);
-    if (area.type == AreaType::Characters) value["toMasterCharacterId"] = area.characterId;
-    if (targetIndex) value["targetIndex"] = *targetIndex;
-    bool hidden = from.who != notificationSink->seat() && (area.type == AreaType::Hands || area.type == AreaType::Pile);
-    value["entity"] = exposeEntityForMutation(passedValue ? *passedValue : *latest, hidden);
-    value["reason"] = exposedMoveReason(reason);
-    record("moveEntity", std::move(value));
+    recordPerSeat("moveEntity", [&](int seat) {
+      JsonValue value = JsonValue::object();
+      value["fromWho"] = from.who;
+      value["fromWhere"] = exposedArea(from.type);
+      value["toWho"] = area.who;
+      value["toWhere"] = exposedArea(area.type);
+      if (area.type == AreaType::Characters) value["toMasterCharacterId"] = area.characterId;
+      if (targetIndex) value["targetIndex"] = *targetIndex;
+      bool hidden = from.who != seat && (area.type == AreaType::Hands || area.type == AreaType::Pile);
+      value["entity"] = exposeEntityForMutation(passedValue ? *passedValue : *latest, hidden);
+      value["reason"] = exposedMoveReason(reason);
+      return value;
+    });
   }
 }
 
@@ -336,14 +345,16 @@ void removeEntity(GameStatePointer& state, int id, int fromWho, RemoveReason rea
     if (removed->definition->type == EntityType::Attachment) {
       recordHidden();
     } else {
-      JsonValue value = JsonValue::object();
-      value["who"] = from.who;
-      value["where"] = exposedArea(from.type);
-      bool hidden = from.who != notificationSink->seat() && (from.type == AreaType::Hands || from.type == AreaType::Pile) &&
-                    (reason == RemoveReason::Overflow || reason == RemoveReason::ElementalTuning);
-      value["entity"] = exposeEntityForMutation(*removed, hidden);
-      value["reason"] = exposedRemoveReason(reason);
-      record("removeEntity", std::move(value));
+      recordPerSeat("removeEntity", [&](int seat) {
+        JsonValue value = JsonValue::object();
+        value["who"] = from.who;
+        value["where"] = exposedArea(from.type);
+        bool hidden = from.who != seat && (from.type == AreaType::Hands || from.type == AreaType::Pile) &&
+                      (reason == RemoveReason::Overflow || reason == RemoveReason::ElementalTuning);
+        value["entity"] = exposeEntityForMutation(*removed, hidden);
+        value["reason"] = exposedRemoveReason(reason);
+        return value;
+      });
     }
   }
 }
@@ -452,15 +463,17 @@ void resetDice(GameStatePointer& state, int who, const std::vector<DiceType>& di
                std::optional<DiceType> conversionTargetHint) {
   std::vector<DiceType> sorted = sortDice(*state->players[who], dice);
   if (notificationSink) {
-    JsonValue values = JsonValue::array();
-    // As passed: the core records the caller's value (paying a cost leaves the remaining dice unsorted).
-    for (DiceType die : dice) values.push(who == notificationSink->seat() ? static_cast<int>(die) : 0);
-    JsonValue value = JsonValue::object();
-    value["who"] = who;
-    value["dice"] = std::move(values);
-    value["reason"] = static_cast<int>(reason);
-    if (conversionTargetHint) value["conversionTargetHint"] = static_cast<int>(*conversionTargetHint);
-    record("resetDice", std::move(value));
+    recordPerSeat("resetDice", [&](int seat) {
+      JsonValue values = JsonValue::array();
+      // As passed: the core records the caller's value (paying a cost leaves the remaining dice unsorted).
+      for (DiceType die : dice) values.push(who == seat ? static_cast<int>(die) : 0);
+      JsonValue value = JsonValue::object();
+      value["who"] = who;
+      value["dice"] = std::move(values);
+      value["reason"] = static_cast<int>(reason);
+      if (conversionTargetHint) value["conversionTargetHint"] = static_cast<int>(*conversionTargetHint);
+      return value;
+    });
   }
   editPlayer(state, who).dice = std::move(sorted);
 }

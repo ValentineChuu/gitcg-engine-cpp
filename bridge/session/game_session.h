@@ -33,11 +33,12 @@ class GameSession : private PlayerIo, private Concurrency {
   // Entities placed in the initial state before the game (a stage's starting equipment, initial_equipment.mjs): the
   // core creates them with pending mutations, so a person's first notification shows them.
   void recordInitialEntities(const std::vector<std::pair<EntityArea, int>>& created);
-  // compactNotifications (with humanSeat): notifications that only mark events opening and closing are merged into
-  // the next one (see sendNotification), for a browser board: the same mutations in order, about a quarter as many
-  // messages. Not part of the reference protocol.
+  // humanSeats: the seats people play (one against the bot, both between two people); each gets its board's
+  // notifications. compactNotifications (with humanSeats): notifications that only mark events opening and closing
+  // are merged into the next one (see sendNotification), for a browser board: the same mutations in order, about a
+  // quarter as many messages. Not part of the reference protocol.
   void configure(bool previews, bool replies, const JsonValue* replyViews, double seed, bool privileged,
-                 std::optional<int> humanSeat = std::nullopt, bool compactNotifications = false);
+                 std::vector<int> humanSeats = {}, bool compactNotifications = false);
   void computeReplies(int who, const JsonValue& indices);
   std::unique_ptr<GameSession> copy(int copyId, int who, const JsonValue& response, double seed,
                                     const JsonValue* opponentCards = nullptr);
@@ -86,12 +87,11 @@ class GameSession : private PlayerIo, private Concurrency {
   bool previews_ = false;
   bool replies_ = false;
   bool privileged_ = false;
-  std::optional<int> humanSeat_;
-  std::unique_ptr<NotificationSink> notifications_;  // with a person's seat: their board's notifications
+  std::unique_ptr<NotificationSink> notifications_;  // with a person's seat: their boards' notifications
   bool compactNotifications_ = false;
-  std::optional<JsonValue> heldNotification_;  // compact mode: the latest held notification, with every held mutation
-  void sendNotification(JsonValue notification);
-  void flushHeldNotification();
+  std::optional<JsonValue> heldNotification_[2];  // compact mode, per seat: the latest held notification, with every held mutation
+  void sendNotification(int who, JsonValue notification);
+  void flushHeldNotifications();
   JsonValue replyViews_[2];
   double replySeed_ = 0;
   std::vector<int> playedCards_[2];

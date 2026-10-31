@@ -63,10 +63,13 @@ void Worker::create(const JsonValue& message) {
         gameId, state, scheduler_, [this](const JsonValue& out) { emit(out); },
         [this](GameSession& waiting, int who) { queuedDecisions_.emplace_back(waiting.gameId(), who); });
     auto enabled = [&](const char* key) { const auto* value = message.find(key); return value && value->isBool() && value->asBool(); };
-    std::optional<int> humanSeat;
-    if (const JsonValue* value = message.find("humanSeat")) humanSeat = value->asInt();
+    std::vector<int> humanSeats;  // "humanSeats": [0, 1] for two people, or "humanSeat": one seat
+    if (const JsonValue* value = message.find("humanSeat")) humanSeats.push_back(value->asInt());
+    if (const JsonValue* value = message.find("humanSeats")) {
+      for (const JsonValue& seat : value->asArray()) humanSeats.push_back(seat.asInt());
+    }
     session->configure(enabled("previews"), enabled("replies"), message.find("replyViews"), seed,
-                       enabled("privileged"), humanSeat, enabled("compactNotifications"));
+                       enabled("privileged"), std::move(humanSeats), enabled("compactNotifications"));
     session->recordInitialEntities(equippedEntities);
     GameSession& started = *session;
     sessions_[gameId] = std::move(session);

@@ -84,6 +84,10 @@ worker sends that seat what the board needs:
 - each `decision` for that seat goes to `io.rpc({request: decision.request})`; it resolves once the person has chosen,
   with `{response: ...}`, and that inner `response` is what the worker's `respond` message takes.
 
+For a game between two people, create it with `"humanSeats": [0, 1]` instead: both seats get their own `notify`
+messages (each message's `who` says whose board it is for), each exposed for that seat, so neither board sees the
+other's hand or dice.
+
 The worker runs on a server, so a small relay between it and the browser is needed (a WebSocket per game is enough);
 it isn't part of this repository. To try Piovium's own engine and board first, see
 <https://standalone.piovium.org>.

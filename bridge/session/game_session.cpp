@@ -32,20 +32,19 @@ GameSession::GameSession(int gameId, GameStatePointer initialState, Scheduler& s
 GameSession::~GameSession() = default;
 
 void GameSession::configure(bool previews, bool replies, const JsonValue* replyViews, double seed, bool privileged,
-                            std::optional<int> humanSeat, bool compactNotifications) {
+                            std::vector<int> humanSeats, bool compactNotifications) {
   compactNotifications_ = compactNotifications;
   previews_ = previews || replies;
   replies_ = replies;
   privileged_ = privileged;
-  if (humanSeat && (*humanSeat < 0 || *humanSeat > 1)) throw std::runtime_error("humanSeat must be 0 or 1");
-  humanSeat_ = humanSeat;
-  if (humanSeat) {
-    notifications_ = std::make_unique<NotificationSink>(*humanSeat, [this](JsonValue notification) {
-      sendNotification(std::move(notification));
+  bool people = !humanSeats.empty();
+  if (people) {
+    notifications_ = std::make_unique<NotificationSink>(std::move(humanSeats), [this](int who, JsonValue notification) {
+      sendNotification(who, std::move(notification));
     });
   }
   replySeed_ = seed;
-  game_->enablePreview = previews_ || humanSeat.has_value();  // a person's board shows previews (game_session.mjs)
+  game_->enablePreview = previews_ || people;  // a person's board shows previews (game_session.mjs)
   for (int who : {0, 1}) {
     if (!replies) replyViews_[who] = {};
     else if (replyViews && !replyViews->isNull()) replyViews_[who] = replyViews->asArray().at(who);
@@ -77,7 +76,7 @@ std::unique_ptr<GameSession> GameSession::copy(int copyId, int who, const JsonVa
   auto result = std::make_unique<GameSession>(copyId, redealHiddenCards(stepStartState_, who, seed, opponentCards),
                                              scheduler_, emit_, queueDecision_,
                                              ForcedAnswer{who, pending_[who]->request.at("value").at("action"), response});
-  result->configure(previews_, false, nullptr, 0, false, std::nullopt);
+  result->configure(previews_, false, nullptr, 0, false);
   return result;
 }
 
@@ -118,14 +117,14 @@ void GameSession::run() {
 
 void GameSession::finish(JsonValue message) {
   done_ = true;
-  flushHeldNotification();
+  flushHeldNotifications();
   emit_(message);
 }
 
 // In compact mode a notification whose mutations only open and close events (handleEvent, which the board uses for
 // the indentation of its history, nothing it animates) is held; its mutations go in front of the
 // next notification's, whose state is newer. Anything held is sent before a decision and at the end.
-void GameSession::sendNotification(JsonValue notification) {
+void GameSession::sendNotification(int who, JsonValue notification) {
   if (compactNotifications_) {
     auto& mutations = notification["mutation"].asArray();
     // A notification without mutations is a plain state the board compares the next one against (the first one at
@@ -133,31 +132,34 @@ void GameSession::sendNotification(JsonValue notification) {
     bool onlyMarkers = !mutations.empty() && std::all_of(mutations.begin(), mutations.end(), [](const JsonValue& entry) {
       return entry.at("mutation").at("$case").asString() == "handleEvent";
     });
-    if (heldNotification_) {
-      auto& held = (*heldNotification_)["mutation"].asArray();
+    std::optional<JsonValue>& heldNotification = heldNotification_[who];
+    if (heldNotification) {
+      auto& held = (*heldNotification)["mutation"].asArray();
       mutations.insert(mutations.begin(), held.begin(), held.end());
-      heldNotification_.reset();
+      heldNotification.reset();
     }
     if (onlyMarkers) {
-      heldNotification_ = std::move(notification);
+      heldNotification = std::move(notification);
       return;
     }
   }
   JsonValue message = JsonValue::object();
   message["type"] = "notify";
   message["game"] = gameId_;
-  message["who"] = *humanSeat_;
+  message["who"] = who;
   message["notification"] = std::move(notification);
   emit_(message);
 }
 
-void GameSession::flushHeldNotification() {
-  if (!heldNotification_) return;
-  JsonValue held = std::move(*heldNotification_);
-  heldNotification_.reset();
-  compactNotifications_ = false;  // sent as it is
-  sendNotification(std::move(held));
-  compactNotifications_ = true;
+void GameSession::flushHeldNotifications() {
+  for (int who : {0, 1}) {
+    if (!heldNotification_[who]) continue;
+    JsonValue held = std::move(*heldNotification_[who]);
+    heldNotification_[who].reset();
+    compactNotifications_ = false;  // sent as it is
+    sendNotification(who, std::move(held));
+    compactNotifications_ = true;
+  }
 }
 
 JsonValue GameSession::askPlayer(int who, JsonValue request) {
@@ -212,7 +214,7 @@ JsonValue GameSession::askPlayer(int who, JsonValue request) {
     }
   }
   pending_[who] = Pending{scheduler_.current(), std::move(request), std::nullopt, std::move(replies), std::move(roundEnd)};
-  flushHeldNotification();
+  flushHeldNotifications();
   queueDecision_(*this, who);
   while (!pending_[who]->response) scheduler_.wait();
   JsonValue response = std::move(*pending_[who]->response);

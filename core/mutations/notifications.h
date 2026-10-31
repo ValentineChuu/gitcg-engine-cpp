@@ -7,6 +7,9 @@
 // exposed mutations reach the outer level as one notification, or are dropped if the skill left the state unchanged.
 // Levels here mirror that: the game at the bottom sends, each running skill above it accumulates.
 //
+// One sink serves every seat a person plays (one in a game against the bot, both in a game between two people): each
+// seat keeps its own pending mutations, exposed for that seat, and receives its own notifications.
+//
 // Games without a person's seat have no sink: recording costs them a null check. The worker runs many games on one
 // thread, so the scheduler points `notificationSink` at the running fiber's sink on every switch.
 #pragma once
@@ -25,18 +28,20 @@ enum class PlayerStatus { Unspecified = 0, ChoosingActive = 1, SwitchingHands = 
 
 class NotificationSink {
  public:
-  using Emit = std::function<void(JsonValue notification)>;
-  NotificationSink(int seat, Emit emit) : seat_(seat), emit_(std::move(emit)) {}
+  using Emit = std::function<void(int who, JsonValue notification)>;
+  using ExposedFor = std::function<std::optional<JsonValue>(int seat)>;
+  NotificationSink(std::vector<int> seats, Emit emit);
 
-  int seat() const { return seat_; }
-
-  // A primitive state mutation (one `mutate` in the core). `exposed` is its exposeMutation for this seat as
-  // {"$case", "value"}, or nullopt when it isn't exposed; it still counts as a mutation to notify.
+  // A primitive state mutation (one `mutate` in the core). `exposed` is its exposeMutation as {"$case", "value"},
+  // the same for every seat, or nullopt when it isn't exposed; it still counts as a mutation to notify.
   void stateMutation(std::optional<JsonValue> exposed);
-  // mutator.notify: at the game level sends the pending mutations followed by `exposed` when there is anything
-  // (or `force`); inside a skill only accumulates.
+  // A state mutation exposed differently per seat (hidden cards, the opponent's dice).
+  void stateMutation(const ExposedFor& exposedFor);
+  // mutator.notify: at the game level sends each seat its pending mutations followed by `exposed` when there is
+  // anything (or `force`); inside a skill only accumulates.
   void notify(const GameStatePointer& state, std::vector<JsonValue> exposed = {}, bool force = false);
-  // game.ts notifyOne for `who`: the state and `exposed` only, sent even when empty; pending mutations stay.
+  // game.ts notifyOne for `who` (when a person plays it): the state and `exposed` only, sent even when empty;
+  // pending mutations stay.
   void notifyOne(int who, const GameStatePointer& state, std::vector<JsonValue> exposed = {});
   // game.ts setPlayerStatus: records the status shown in every later notification and notifies the change.
   void setStatus(int who, PlayerStatus status, const GameStatePointer& state);
@@ -50,13 +55,14 @@ class NotificationSink {
 
  private:
   struct Level {
-    std::vector<std::optional<JsonValue>> stateMutations;
+    std::vector<std::optional<JsonValue>> stateMutations[2];  // per seat a person plays
     std::vector<JsonValue> exposedMutations;
   };
-  void send(const GameStatePointer& state, const std::vector<std::optional<JsonValue>>& stateMutations,
+  void send(int who, const GameStatePointer& state, const std::vector<std::optional<JsonValue>>& stateMutations,
             const std::vector<JsonValue>& exposed);
+  Level& top() { return skills_.empty() ? game_ : skills_.back(); }
 
-  int seat_;
+  std::vector<int> seats_;
   Emit emit_;
   Level game_;                // the mutator's pending state mutations (its exposedMutations stay empty)
   std::vector<Level> skills_; // running skills, innermost last
