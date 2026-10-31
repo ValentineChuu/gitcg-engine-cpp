@@ -14,6 +14,7 @@ namespace gitcg {
 JsonValue exposeState(int who, const GameStatePointer& state);
 JsonValue exposeAction(const ActionInfo& action);
 JsonValue exposeEntityForMutation(const EntityState& entity, bool hide);
+JsonValue exposeAttachmentForMutation(const EntityState& attachment);
 
 JsonValue actionRequest(const std::vector<ActionInfo>& actions);
 JsonValue chooseActiveRequest(const std::vector<int>& candidateIds);

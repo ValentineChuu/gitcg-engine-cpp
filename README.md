@@ -78,7 +78,9 @@ Piovium's board UI is published on npm as [`@gi-tcg/web-ui-core`](https://www.np
 `notify` and `rpc`, the same interface Piovium's own engine calls. Create the game with `"humanSeat": <seat>`, and the
 worker sends that seat what the board needs:
 
-- each `notify` message's `notification` goes to `io.notify(...)` unchanged (the person's view of the board);
+- each `notify` message's `notification` goes to `io.notify(...)` unchanged: the person's view of the board and the
+  mutations that drive its animations (cards played, skills, damage, reactions), the same notifications Piovium's
+  engine sends, at the same points;
 - each `decision` for that seat goes to `io.rpc({request: decision.request})`; it resolves once the person has chosen,
   with `{response: ...}`, and that inner `response` is what the worker's `respond` message takes.
 
@@ -148,6 +150,8 @@ engine is checked out in (`reference/data_paths.mjs`). Standalone, point `GITCG_
 ```sh
 npm install                                 # once, at the engine root (the tests use the reference's packages)
 node tests/replay_reference.mjs tests/fixtures/starter_protocol.jsonl.gz   # this engine against recorded reference games
+node tests/record_reference.mjs --games 20 --human-seat 0 --output /tmp/notify.jsonl.gz   # reference games with a person's seat
+node tests/replay_reference.mjs /tmp/notify.jsonl.gz                       # ...their notifications must match too
 cd reference
 node tests/patch_equivalence.mjs 30        # patched and unpatched reference cores play identical games
 node tests/replies_equivalence.mjs 8       # previews and replies don't change the game

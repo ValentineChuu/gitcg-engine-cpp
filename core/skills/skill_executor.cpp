@@ -1,6 +1,7 @@
 #include "core/skills/skill_executor.h"
 
 #include <algorithm>
+#include <cmath>
 #include <exception>
 
 #include "core/definitions/character_definition.h"
@@ -9,6 +10,7 @@
 #include "core/events/action_event_args.h"
 #include "core/mutations/state_mutations.h"
 #include "core/mutations/mutation_observer.h"
+#include "core/mutations/notifications.h"
 #include "core/rules/costs.h"
 #include "core/rules/entity_lookup.h"
 #include "core/rules/initiative_skills.h"
@@ -25,6 +27,54 @@ std::shared_ptr<SkillInfo> makeSkillInfo(AnyState caller, const SkillDefinition*
   return info;
 }
 
+// skill_executor.ts executeSkill: the skillUsed mutation shown with a skill (the skill's name banner on the board).
+JsonValue skillUsedMutation(const SkillInfo& skill, const EntityArea& callerArea) {
+  const SkillDefinition& definition = *skill.definition;
+  int skillType = 0;  // PbSkillType
+  switch (definition.skillType) {
+    case SkillType::Normal: skillType = 2; break;
+    case SkillType::Elemental: skillType = 3; break;
+    case SkillType::Burst: skillType = 4; break;
+    case SkillType::Technique: skillType = 5; break;
+    default:
+      if (skill.caller.isCharacter()) skillType = 1;
+      else if (skill.caller.entity()->definition->type == EntityType::Attachment) skillType = 6;
+      else skillType = 0;
+  }
+  int callerId = skill.caller.id();
+  int callerDefinitionId = skill.caller.isCharacter() ? skill.caller.character()->definition->id : skill.caller.entity()->definition->id;
+  // An attachment's skill is shown on the card it is attached to.
+  if (!skill.caller.isCharacter() && skill.caller.entity()->definition->type == EntityType::Attachment && callerArea.cardId) {
+    callerId = callerArea.cardId;
+  }
+  JsonValue value = JsonValue::object();
+  value["who"] = callerArea.who;
+  value["callerId"] = callerId;
+  value["callerDefinitionId"] = callerDefinitionId;
+  value["skillDefinitionId"] = static_cast<int>(std::floor(definition.id));
+  value["skillType"] = skillType;
+  value["triggeredOn"] = eventNameText(definition.triggerOn);
+  return exposedMutation("skillUsed", std::move(value));
+}
+
+// createHandleEventNotifies: every handled event is opened and closed in the notifications; the closing one is
+// sent from a `using` disposal, so also while an exception unwinds.
+class HandleEventNotifies {
+ public:
+  HandleEventNotifies(const Mutator& mutator, EventName name) : mutator_(mutator), name_(name) { notifyEvent(false); }
+  ~HandleEventNotifies() { notifyEvent(true); }
+ private:
+  void notifyEvent(bool isClose) {
+    if (!notificationSink) return;
+    JsonValue value = JsonValue::object();
+    value["isClose"] = isClose;
+    value["eventName"] = eventNameText(name_);
+    notificationSink->notify(mutator_.state(), {exposedMutation("handleEvent", std::move(value))});
+  }
+  const Mutator& mutator_;
+  EventName name_;
+};
+
 }  // namespace
 
 bool SkillExecutor::ended() const {
@@ -40,10 +90,27 @@ SkillExecutor::Executed SkillExecutor::executeSkill(const SkillInfo& skill, Skil
   SkillInfo running = skill;
   running.environment = environment_;
   GameStatePointer before = mutator_.state();
+  NotificationSink* sink = notificationSink;
+  EntityArea callerArea;
+  if (sink) {
+    callerArea = getEntityArea(*before, skill.caller.id());
+    sink->notify(before);
+    sink->beginSkill();
+  }
   ObservedSkill observation;
   SkillOutcome outcome = skill.definition->action(mutator_.state(), running, argument);
-  observation.finish(outcome.state != before);
+  bool changed = outcome.state != before;
+  observation.finish(changed);
   mutator_.resetState(outcome.state);
+  if (sink) {
+    std::vector<JsonValue> prepend;
+    const SkillDefinition& definition = *skill.definition;
+    if (definition.ownerType != OwnerType::Extension && definition.skillType != SkillType::PlayCard &&
+        (definition.initiativeSkillConfig || changed)) {
+      prepend.push_back(skillUsedMutation(skill, callerArea));
+    }
+    sink->endSkill(outcome.state, changed, std::move(prepend));
+  }
   if (outcome.error) std::rethrow_exception(outcome.error);
   return {std::move(outcome.emittedEvents), outcome.causeDefeated};
 }
@@ -63,6 +130,7 @@ void SkillExecutor::finalizeSkill(const SkillInfo& skill, SkillArgument& argumen
       double energy = character->variables.valueOr(ENERGY, 0);
       double newEnergy = std::min(energy + 1, character->variables.valueOr(MAX_ENERGY, 0));
       modifyEntityVariable(mutator_.mutableState(), character->id, ENERGY, newEnergy, 1);
+      if (notificationSink) notificationSink->notify(mutator_.state());
     }
   }
   handleEvents(executed.emittedEvents);
@@ -85,6 +153,7 @@ void SkillExecutor::finalizeSkill(const SkillInfo& skill, SkillArgument& argumen
     chooseFor(0);
     chooseFor(1);
   }
+  mutator_.postChooseActive(chosen[0], chosen[1]);
   int currentTurn = mutator_.state()->currentTurn;
   for (int who : {currentTurn, 1 - currentTurn}) {
     if (!chosen[who]) continue;
@@ -96,6 +165,7 @@ void SkillExecutor::finalizeSkill(const SkillInfo& skill, SkillArgument& argumen
 void SkillExecutor::handleEvents(const std::vector<EventAndArgument>& events) {
   for (const EventAndArgument& event : events) {
     if (ended()) return;
+    HandleEventNotifies notifies(mutator_, event.name);
     switch (event.name) {
       case EventName::RequestReroll: {
         auto& request = static_cast<RerollRequestArg&>(*event.argument);
@@ -251,7 +321,7 @@ void SkillExecutor::handleRequestAdventure(const EventAndArgument& event) {
   auto spot = std::find_if(supports.begin(), supports.end(), [](const EntityPointer& support) { return support->definition->hasTag(ADVENTURE_SPOT); });
   if (spot != supports.end()) {
     EntityPointer current = *spot;
-    modifyEntityVariable(mutator_.mutableState(), current->id, EXP, current->variables.valueOr(EXP, 0) + 1);
+    modifyEntityVariable(mutator_.mutableState(), current->id, EXP, current->variables.valueOr(EXP, 0) + 1, 1);
     handleEvent(EventName::OnAdventure, std::make_shared<EntityEventArg>(mutator_.state(), current));
     return;
   }

@@ -28,7 +28,7 @@ std::vector<DiceType> SkillContext::absorbDice(bool different, int count) {
   if (!different) {
     size_t taken = std::min<size_t>(count, sorted.size());
     std::vector<DiceType> absorbed(sorted.begin(), sorted.begin() + taken);
-    resetDice(mutator_.mutableState(), who, std::vector<DiceType>(sorted.begin() + taken, sorted.end()));
+    resetDice(mutator_.mutableState(), who, std::vector<DiceType>(sorted.begin() + taken, sorted.end()), DiceReason::Absorb);
     return absorbed;
   }
   std::vector<DiceType> collected;
@@ -45,14 +45,14 @@ std::vector<DiceType> SkillContext::absorbDice(bool different, int count) {
     }
     if (!found) break;
   }
-  resetDice(mutator_.mutableState(), who, left);
+  resetDice(mutator_.mutableState(), who, left, DiceReason::Absorb);
   return collected;
 }
 
 void SkillContext::convertDice(DiceType target, int count, bool opponent) {
   int who = opponent ? 1 - selfWho() : selfWho();
   std::vector<DiceType> finalDice = computeConvertDice(*state().players[who], target, count);
-  resetDice(mutator_.mutableState(), who, finalDice);
+  resetDice(mutator_.mutableState(), who, finalDice, DiceReason::Convert, target);
 }
 
 void SkillContext::generateDice(DiceType type, int count) {
@@ -62,7 +62,7 @@ void SkillContext::generateDice(DiceType type, int count) {
   int who = selfWho();
   std::vector<DiceType> newDice = player().dice;
   newDice.insert(newDice.end(), inserted.begin(), inserted.end());
-  resetDice(mutator_.mutableState(), who, sortDice(player(), newDice));
+  resetDice(mutator_.mutableState(), who, sortDice(player(), newDice), DiceReason::Generate);
   for (DiceType generated : inserted) {
     emitEvent(EventName::OnGenerateDice, std::make_shared<GenerateDiceEventArg>(rawState(), who, sharedSkillInfo(), generated));
   }
@@ -82,7 +82,7 @@ void SkillContext::generateRandomElementDice(int count, bool includeOmni, bool a
   int who = selfWho();
   std::vector<DiceType> newDice = player().dice;
   newDice.insert(newDice.end(), inserted.begin(), inserted.end());
-  resetDice(mutator_.mutableState(), who, sortDice(player(), newDice));
+  resetDice(mutator_.mutableState(), who, sortDice(player(), newDice), DiceReason::Generate);
   for (DiceType generated : inserted) {
     emitEvent(EventName::OnGenerateDice, std::make_shared<GenerateDiceEventArg>(rawState(), who, sharedSkillInfo(), generated));
   }
@@ -162,10 +162,11 @@ void SkillContext::undrawCards(const std::vector<EntityHandle>& cards, PileInser
 void SkillContext::stealHandCard(const EntityHandle& card) {
   EntityPointer cardState = card.latest();
   int me = selfWho();
-  gitcg::moveEntity(mutator_.mutableState(), cardState->id, EntityArea{AreaType::Hands, me, 0, cardState->id});
+  gitcg::moveEntity(mutator_.mutableState(), cardState->id, EntityArea{AreaType::Hands, me, 0, cardState->id}, std::nullopt,
+                    MoveReason::Steal);
   bool overflowed = false;
   if (static_cast<int>(player().hands.size()) > state().config.maxHandsCount) {
-    removeEntity(mutator_.mutableState(), cardState->id, me);
+    removeEntity(mutator_.mutableState(), cardState->id, me, RemoveReason::Overflow);
     overflowed = true;
   }
   emitEvent(EventName::OnHandCardInserted, std::make_shared<HandCardInsertedEventArg>(rawState(), me, cardState, HandInsertReason::Steal, overflowed));
@@ -176,11 +177,11 @@ void SkillContext::swapPlayerHandCards() {
   std::vector<EntityPointer> myHands = state().players[me]->hands;
   std::vector<EntityPointer> opponentHands = state().players[1 - me]->hands;
   for (const EntityPointer& card : opponentHands) {
-    gitcg::moveEntity(mutator_.mutableState(), card->id, EntityArea{AreaType::Hands, me, 0, card->id});
+    gitcg::moveEntity(mutator_.mutableState(), card->id, EntityArea{AreaType::Hands, me, 0, card->id}, std::nullopt, MoveReason::Swap);
     emitEvent(EventName::OnHandCardInserted, std::make_shared<HandCardInsertedEventArg>(rawState(), me, card, HandInsertReason::Steal, false));
   }
   for (const EntityPointer& card : myHands) {
-    gitcg::moveEntity(mutator_.mutableState(), card->id, EntityArea{AreaType::Hands, 1 - me, 0, card->id});
+    gitcg::moveEntity(mutator_.mutableState(), card->id, EntityArea{AreaType::Hands, 1 - me, 0, card->id}, std::nullopt, MoveReason::Swap);
     emitEvent(EventName::OnHandCardInserted, std::make_shared<HandCardInsertedEventArg>(rawState(), 1 - me, card, HandInsertReason::Steal, false));
   }
 }
@@ -191,7 +192,7 @@ void SkillContext::discard(const std::vector<EntityHandle>& cards) {
     EntityArea area = card.area();
     if (area.type != AreaType::Hands && area.type != AreaType::Pile) throw GameDataError("Cannot discard a card not in hands or pile");
     emitEvent(EventName::OnDispose, std::make_shared<DisposeEventArg>(rawState(), cardState, RemoveReason::Discarded, area, sharedSkillInfo()));
-    removeEntity(mutator_.mutableState(), cardState->id, area.who);
+    removeEntity(mutator_.mutableState(), cardState->id, area.who, RemoveReason::Discarded);
   }
 }
 

@@ -112,6 +112,8 @@ class Mutator {
   EventList switchHands(int who);
   EventList selectCard(int who, std::shared_ptr<const SkillInfo> via, const SelectCardInfo& info);
   CharacterPointer chooseActive(int who);
+  // mutator.ts postChooseActive: tells a person's board each new active character (null: that player didn't choose).
+  void postChooseActive(const CharacterPointer& first, const CharacterPointer& second);
 
  private:
   EventAndArgument recordReaction(const ReactionInfo& info);

@@ -9,6 +9,7 @@ Scheduler::Task* Scheduler::spawn(std::function<void()> body, std::function<void
   auto task = std::make_unique<Task>();
   task->fiber = std::make_unique<Fiber>(std::move(body));
   task->onFinish = std::move(onFinish);
+  task->notifications = current_ ? current_->notifications : nullptr;
   Task* pointer = task.get();
   tasks_.push_back(std::move(task));
   wake(pointer);
@@ -40,9 +41,12 @@ void Scheduler::runUntilIdle() {
     runnable_.pop_front();
     task->queued = false;
     Task* previous = current_;
+    NotificationSink* previousSink = notificationSink;
     current_ = task;
+    notificationSink = task->notifications;
     task->fiber->resume();
     current_ = previous;
+    notificationSink = previousSink;
     if (task->fiber->finished()) {
       if (task->onFinish) task->onFinish(*task);
       std::erase_if(tasks_, [&](const std::unique_ptr<Task>& owned) { return owned.get() == task; });

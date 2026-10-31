@@ -45,6 +45,7 @@ void Worker::create(const JsonValue& message) {
       if (!allowTestStates_) throw std::runtime_error("initialState requires --test-snapshots");
       state = testing::loadGameState(data_, *snapshot);
     }
+    std::vector<std::pair<EntityArea, int>> equippedEntities;
     if (const JsonValue* equipment = message.find("equipment")) {
       for (const JsonValue& item : equipment->asArray()) {
         int who = item.at("who").asInt();
@@ -54,7 +55,8 @@ void Worker::create(const JsonValue& message) {
         EntityState equipped;
         equipped.definition = definition;
         for (const auto& [name, config] : definition->varConfigs) equipped.variables.set(name, config.initialValue);
-        createEntity(state, EntityArea{AreaType::Characters, who, character->id, 0}, std::move(equipped));
+        EntityArea area{AreaType::Characters, who, character->id, 0};
+        equippedEntities.emplace_back(area, createEntity(state, area, std::move(equipped)));
       }
     }
     auto session = std::make_unique<GameSession>(
@@ -64,7 +66,8 @@ void Worker::create(const JsonValue& message) {
     std::optional<int> humanSeat;
     if (const JsonValue* value = message.find("humanSeat")) humanSeat = value->asInt();
     session->configure(enabled("previews"), enabled("replies"), message.find("replyViews"), seed,
-                       enabled("privileged"), humanSeat);
+                       enabled("privileged"), humanSeat, enabled("compactNotifications"));
+    session->recordInitialEntities(equippedEntities);
     GameSession& started = *session;
     sessions_[gameId] = std::move(session);
     started.start();
@@ -82,7 +85,6 @@ void Worker::settle() {
   for (const auto& [gameId, who] : queuedDecisions_) {
     auto session = sessions_.find(gameId);
     if (session == sessions_.end() || session->second->done()) continue;
-    if (auto notification = session->second->notificationMessage()) emit(*notification);
     emit(session->second->decisionMessage(who));
   }
   queuedDecisions_.clear();

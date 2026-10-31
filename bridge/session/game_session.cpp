@@ -1,4 +1,5 @@
 #include "bridge/session/game_session.h"
+#include "core/mutations/state_mutations.h"
 
 #include <algorithm>
 
@@ -31,14 +32,20 @@ GameSession::GameSession(int gameId, GameStatePointer initialState, Scheduler& s
 GameSession::~GameSession() = default;
 
 void GameSession::configure(bool previews, bool replies, const JsonValue* replyViews, double seed, bool privileged,
-                            std::optional<int> humanSeat) {
+                            std::optional<int> humanSeat, bool compactNotifications) {
+  compactNotifications_ = compactNotifications;
   previews_ = previews || replies;
   replies_ = replies;
   privileged_ = privileged;
   if (humanSeat && (*humanSeat < 0 || *humanSeat > 1)) throw std::runtime_error("humanSeat must be 0 or 1");
   humanSeat_ = humanSeat;
+  if (humanSeat) {
+    notifications_ = std::make_unique<NotificationSink>(*humanSeat, [this](JsonValue notification) {
+      sendNotification(std::move(notification));
+    });
+  }
   replySeed_ = seed;
-  game_->enablePreview = previews_;
+  game_->enablePreview = previews_ || humanSeat.has_value();  // a person's board shows previews (game_session.mjs)
   for (int who : {0, 1}) {
     if (!replies) replyViews_[who] = {};
     else if (replyViews && !replyViews->isNull()) replyViews_[who] = replyViews->asArray().at(who);
@@ -46,8 +53,17 @@ void GameSession::configure(bool previews, bool replies, const JsonValue* replyV
   }
 }
 
+void GameSession::recordInitialEntities(const std::vector<std::pair<EntityArea, int>>& created) {
+  if (!notifications_) return;
+  NotificationSink* saved = notificationSink;
+  notificationSink = notifications_.get();
+  for (const auto& [area, id] : created) recordEntityCreated(game_->state(), area, id);
+  notificationSink = saved;
+}
+
 void GameSession::start() {
-  scheduler_.spawn([this] { run(); });
+  Scheduler::Task* task = scheduler_.spawn([this] { run(); });
+  task->notifications = notifications_.get();
 }
 
 std::unique_ptr<GameSession> GameSession::copy(int copyId, int who, const JsonValue& response, double seed,
@@ -85,7 +101,6 @@ void GameSession::run() {
     message["reactions"] = combatLog_.reactionsJson();
     message["reactionCauses"] = combatLog_.reactionCausesJson();
     message["damageDealt"] = combatLog_.damageDealtJson();
-    if (auto notification = notificationMessage()) emit_(*notification);  // the person's board shows the final position
     finish(std::move(message));
   } catch (const FiberCancelled&) {
     done_ = true;
@@ -103,7 +118,46 @@ void GameSession::run() {
 
 void GameSession::finish(JsonValue message) {
   done_ = true;
+  flushHeldNotification();
   emit_(message);
+}
+
+// In compact mode a notification whose mutations only open and close events (handleEvent, which the board uses for
+// the indentation of its history, nothing it animates) is held; its mutations go in front of the
+// next notification's, whose state is newer. Anything held is sent before a decision and at the end.
+void GameSession::sendNotification(JsonValue notification) {
+  if (compactNotifications_) {
+    auto& mutations = notification["mutation"].asArray();
+    // A notification without mutations is a plain state the board compares the next one against (the first one at
+    // the game's start above all): never held.
+    bool onlyMarkers = !mutations.empty() && std::all_of(mutations.begin(), mutations.end(), [](const JsonValue& entry) {
+      return entry.at("mutation").at("$case").asString() == "handleEvent";
+    });
+    if (heldNotification_) {
+      auto& held = (*heldNotification_)["mutation"].asArray();
+      mutations.insert(mutations.begin(), held.begin(), held.end());
+      heldNotification_.reset();
+    }
+    if (onlyMarkers) {
+      heldNotification_ = std::move(notification);
+      return;
+    }
+  }
+  JsonValue message = JsonValue::object();
+  message["type"] = "notify";
+  message["game"] = gameId_;
+  message["who"] = *humanSeat_;
+  message["notification"] = std::move(notification);
+  emit_(message);
+}
+
+void GameSession::flushHeldNotification() {
+  if (!heldNotification_) return;
+  JsonValue held = std::move(*heldNotification_);
+  heldNotification_.reset();
+  compactNotifications_ = false;  // sent as it is
+  sendNotification(std::move(held));
+  compactNotifications_ = true;
 }
 
 JsonValue GameSession::askPlayer(int who, JsonValue request) {
@@ -141,20 +195,24 @@ JsonValue GameSession::askPlayer(int who, JsonValue request) {
   const auto& view = replyViews_[who];
   bool wanted = replies_ && !view.isNull() && choices > 1 && stepStartState_ && stepStartState_->phase == Phase::Action;
   JsonValue replies, roundEnd;
-  if (wanted) {
-    const auto* onDemand = view.find("onDemand");
-    if (onDemand && onDemand->asBool()) {
-      replyContext_[who] = ReplyContext{stepStartState_, pendingActions_[who], view, replySeed_++};
-    } else {
-      replies = opponentReplies(stepStartState_, who, pendingActions_[who], replySeed_++, view, playedCards_[1 - who]);
+  {
+    NotificationsPaused searchesOnCopies;  // replies and the end of round play copies, not the real game
+    if (wanted) {
+      const auto* onDemand = view.find("onDemand");
+      if (onDemand && onDemand->asBool()) {
+        replyContext_[who] = ReplyContext{stepStartState_, pendingActions_[who], view, replySeed_++};
+      } else {
+        replies = opponentReplies(stepStartState_, who, pendingActions_[who], replySeed_++, view, playedCards_[1 - who]);
+      }
+    }
+    double roundEndSeed = replySeed_++;
+    if (wanted) {
+      auto cards = opponentCardsFor(stepStartState_, who, roundEndSeed, view, playedCards_[1 - who]);
+      roundEnd = endOfRound(stepStartState_, who, roundEndSeed, &cards);
     }
   }
-  double roundEndSeed = replySeed_++;
-  if (wanted) {
-    auto cards = opponentCardsFor(stepStartState_, who, roundEndSeed, view, playedCards_[1 - who]);
-    roundEnd = endOfRound(stepStartState_, who, roundEndSeed, &cards);
-  }
   pending_[who] = Pending{scheduler_.current(), std::move(request), std::nullopt, std::move(replies), std::move(roundEnd)};
+  flushHeldNotification();
   queueDecision_(*this, who);
   while (!pending_[who]->response) scheduler_.wait();
   JsonValue response = std::move(*pending_[who]->response);
@@ -191,23 +249,6 @@ JsonValue GameSession::decisionMessage(int who) const {
   return message;
 }
 
-std::optional<JsonValue> GameSession::notificationMessage() const {
-  if (!humanSeat_) return std::nullopt;
-  JsonValue state = exposeState(*humanSeat_, game_->state());
-  JsonValue canPlunging = JsonValue::array();
-  for (const PlayerPointer& player : game_->state()->players) canPlunging.push(player->canPlunging);
-  state["canPlunging"] = std::move(canPlunging);
-  JsonValue notification = JsonValue::object();
-  notification["state"] = std::move(state);
-  notification["mutation"] = JsonValue::array();
-  JsonValue message = JsonValue::object();
-  message["type"] = "notify";
-  message["game"] = gameId_;
-  message["who"] = *humanSeat_;
-  message["notification"] = std::move(notification);
-  return message;
-}
-
 bool GameSession::respond(int who, const JsonValue& response) {
   if (!pending_[who] || pending_[who]->response) return false;
   if (response.at("$case").asString() == "action") {
@@ -225,6 +266,7 @@ bool GameSession::respond(int who, const JsonValue& response) {
 
 void GameSession::stop() {
   stopped_ = true;
+  if (notifications_) notifications_->stop();
   game_->terminate();
   for (int who : {0, 1}) {
     if (pending_[who] && pending_[who]->waiter) scheduler_.cancel(pending_[who]->waiter);

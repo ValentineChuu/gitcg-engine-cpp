@@ -115,7 +115,8 @@ void SkillContext::unequip(const EntityHandle& equipment) {
   EntityPointer latest = equipment.latest();
   if (area.type != AreaType::Characters) throw GameDataError("Can only unequip from characters");
   resetVariables(mutator_.mutableState(), latest->id, false);
-  gitcg::moveEntity(mutator_.mutableState(), latest->id, EntityArea{AreaType::Hands, area.who, 0, latest->id}, std::nullopt, MoveReason::Unequip);
+  gitcg::moveEntity(mutator_.mutableState(), latest->id, EntityArea{AreaType::Hands, area.who, 0, latest->id}, std::nullopt, MoveReason::Unequip,
+                    latest.get());  // the core passes the state from before the reset
 }
 
 void SkillContext::attach(int attachmentId, const EntityHandle& target, const CreateEntityOptions& options) {

@@ -64,8 +64,7 @@ int exposedMoveReason(MoveReason reason) {
     default: return 0;
   }
 }
-void observeDamage(const DamageInfo& info, Aura newAura, double oldHealth, double newHealth, Reaction reaction) {
-  if (!mutationObserver) return;
+JsonValue damageMutation(const DamageInfo& info, Aura newAura, double oldHealth, double newHealth, Reaction reaction) {
   JsonValue value = JsonValue::object();
   value["damageType"] = info.type;
   value["sourceId"] = info.source.id();
@@ -91,10 +90,15 @@ void observeDamage(const DamageInfo& info, Aura newAura, double oldHealth, doubl
     }
   }
   value["healKind"] = healKind;
-  observeMutation("damage", std::move(value));
+  JsonValue mutation = JsonValue::object();
+  mutation["$case"] = "damage";
+  mutation["value"] = std::move(value);
+  return mutation;
 }
-void observeAura(int element, const CharacterPointer& target, Aura newAura, Reaction reaction) {
-  if (!mutationObserver) return;
+void observeDamage(const DamageInfo& info, Aura newAura, double oldHealth, double newHealth, Reaction reaction) {
+  if (mutationObserver) (*mutationObserver)(damageMutation(info, newAura, oldHealth, newHealth, reaction));
+}
+JsonValue auraMutation(int element, const CharacterPointer& target, Aura newAura, Reaction reaction) {
   JsonValue value = JsonValue::object();
   value["elementType"] = element;
   value["targetId"] = target->id;
@@ -102,10 +106,15 @@ void observeAura(int element, const CharacterPointer& target, Aura newAura, Reac
   value["reactionType"] = reaction;
   value["oldAura"] = target->variables.valueOr(intern("aura"), 0);
   value["newAura"] = newAura;
-  observeMutation("applyAura", std::move(value));
+  JsonValue mutation = JsonValue::object();
+  mutation["$case"] = "applyAura";
+  mutation["value"] = std::move(value);
+  return mutation;
 }
-void observeSwitch(const SwitchActiveInfo& info) {
-  if (!mutationObserver) return;
+void observeAura(int element, const CharacterPointer& target, Aura newAura, Reaction reaction) {
+  if (mutationObserver) (*mutationObserver)(auraMutation(element, target, newAura, reaction));
+}
+JsonValue switchMutation(const SwitchActiveInfo& info) {
   JsonValue value = JsonValue::object();
   value["who"] = info.who;
   value["characterId"] = info.to->id;
@@ -113,6 +122,12 @@ void observeSwitch(const SwitchActiveInfo& info) {
   if (info.fromReaction) value["viaSkillDefinitionId"] = reaction::Overloaded;
   else if (info.via) value["viaSkillDefinitionId"] = std::floor(info.via->definition->id);
   value["fromAction"] = info.fast ? (*info.fast ? 2 : 1) : 0;
-  observeMutation("switchActive", std::move(value));
+  JsonValue mutation = JsonValue::object();
+  mutation["$case"] = "switchActive";
+  mutation["value"] = std::move(value);
+  return mutation;
+}
+void observeSwitch(const SwitchActiveInfo& info) {
+  if (mutationObserver) (*mutationObserver)(switchMutation(info));
 }
 }  // namespace gitcg

@@ -5,6 +5,8 @@
 //    "equipment": [{who, characterIndex, definitionId}] (optional, equipped before the game starts),
 //    "privileged": true (optional, training analysis only: every decision's state also carries opponentPrivate),
 //    "humanSeat": 0|1 (optional: that seat is a person on a web board; it gets "notify" messages and action previews),
+//    "compactNotifications": true (optional with humanSeat, C++ worker only: notifications holding only handleEvent
+//                                  markers are merged into the next one; the same mutations, fewer messages),
 //    "previews": true (optional: every action carries the engine's preview, for networks that read it; about 2x slower),
 //    "replies": true (optional: every action also carries the opponent's possible replies, opponent_replies.mjs; implies previews),
 //    "replyViews": [view or null, view or null] (optional with replies: per seat, its view of the opponent's cards, null = no replies)}

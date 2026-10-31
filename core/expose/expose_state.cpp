@@ -188,6 +188,10 @@ JsonValue exposeEntityForMutation(const EntityState& entity, bool hide) {
   return exposeEntity({}, entity, hide);
 }
 
+JsonValue exposeAttachmentForMutation(const EntityState& attachment) {
+  return exposeAttachment({}, attachment);
+}
+
 JsonValue exposeState(int who, const GameStatePointer& state) {
   JsonValue result = JsonValue::object();
   result["phase"] = static_cast<int>(state->phase);

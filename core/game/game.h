@@ -10,6 +10,7 @@
 #include "core/events/action_event_args.h"
 #include "core/game/player_io.h"
 #include "core/mutations/mutator.h"
+#include "core/mutations/notifications.h"
 #include "core/skills/skill_executor.h"
 
 namespace gitcg {
@@ -57,6 +58,9 @@ class Game : private MutatorIo {
   void handleEvents(const std::vector<EventAndArgument>& events);
   void interruptIfGameEnded();
   void checkNotTerminated() const;
+  // With a person's seat (core/mutations/notifications.h): game.ts setPlayerStatus, and notifyOne for both seats.
+  void showStatus(int who, PlayerStatus status);
+  void notifyBoth(int who, const char* kind, JsonValue ownValue, JsonValue otherValue);
 
   // MutatorIo: the mutator's player requests, checked like the core's rpc wrappers.
   std::vector<int> switchHands(int who) override;

@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <array>
 #include "core/mutations/mutation_observer.h"
+#include "core/mutations/notifications.h"
 #include "core/mutations/state_mutations.h"
 #include "core/rules/entity_lookup.h"
 #include "core/skills/skill_executor.h"
@@ -12,6 +13,8 @@ namespace gitcg {
 namespace {
 
 class PreviewCollector {
+  NotificationsPaused paused_;  // a preview plays the action on a copy; the person's board is not told
+
  public:
   explicit PreviewCollector(bool enabled) : previous_(mutationObserver), observer_([this](JsonValue mutation) { add(std::move(mutation)); }) {
     if (enabled) mutationObserver = &observer_;

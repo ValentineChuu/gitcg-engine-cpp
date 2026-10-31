@@ -212,7 +212,15 @@ Phase Game::actionPhase() {
       for (const OfferedAction& action : offered) infos.push_back(action.info);
       interruptIfGameEnded();
       checkNotTerminated();
-      ActionAnswer answer = io_.action(who, infos);
+      showStatus(who, PlayerStatus::Acting);
+      ActionAnswer answer;
+      try {
+        answer = io_.action(who, infos);
+      } catch (const GameIoError&) {
+        showStatus(who, PlayerStatus::Unspecified);
+        throw;
+      }
+      showStatus(who, PlayerStatus::Unspecified);
       checkNotTerminated();
       if (answer.chosenActionIndex < 0 || answer.chosenActionIndex >= static_cast<int>(offered.size())) {
         throw GameIoError(who, "User chosen index out of range");
@@ -258,13 +266,13 @@ void Game::performAction(int who, const OfferedAction& offered, const std::vecto
     operating.erase(found);
   }
   if (consume) {
-    resetDice(mutator_.mutableState(), who, operating);
+    resetDice(mutator_.mutableState(), who, operating, DiceReason::Consume);
     int requiredEnergy = action.cost.countOf(dice::Energy);
     if (requiredEnergy > 0) {
       const CharacterPointer& active = activeCharacter(player());
       double energy = active->variables.valueOr(ENERGY, 0);
       if (energy < requiredEnergy) throw GameIoError(who, "Active character does not have enough energy");
-      modifyEntityVariable(mutator_.mutableState(), active->id, ENERGY, energy - requiredEnergy);
+      modifyEntityVariable(mutator_.mutableState(), active->id, ENERGY, energy - requiredEnergy, 2);
     }
     if (action.cost.countOf(dice::Legend) > 0) {
       if (player().legendUsed) throw GameIoError(who, "Player has already used legend");
@@ -305,7 +313,7 @@ void Game::performAction(int who, const OfferedAction& offered, const std::vecto
       removeEntity(mutator_.mutableState(), action.card->id, who, RemoveReason::ElementalTuning);
       std::vector<DiceType> dice = player().dice;
       dice.push_back(action.result);
-      resetDice(mutator_.mutableState(), who, sortDice(player(), dice));
+      resetDice(mutator_.mutableState(), who, sortDice(player(), dice), DiceReason::ElementalTuning, action.result);
       handleEvent(EventName::OnDispose, tuned);
       break;
     }

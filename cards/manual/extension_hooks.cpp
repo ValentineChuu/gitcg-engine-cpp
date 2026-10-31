@@ -5,6 +5,7 @@
 #include <algorithm>
 
 #include "cards/translated/translated_card_support.h"
+#include "core/mutations/state_mutations.h"
 
 namespace gitcg {
 
@@ -56,6 +57,7 @@ void bindExtensionHooks(LambdaSlots& slots) {
   // other.gts:1316 onRoundEnd: c.first = [true, true]
   slots.bind(676, [](LambdaInvocation& call) -> JsonValue {
     (*call.extensionState)["first"] = JsonValue(JsonValue::Array{JsonValue(true), JsonValue(true)});
+    noteExtensionContainerReplaced();  // a new array: a change to immer even when it was already [true, true]
     return JsonValue();
   });
   // other.gts:1317 onPlayCard: c.first[e.who] = false

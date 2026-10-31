@@ -4,7 +4,8 @@
 // answers. Replaying the "in" messages into the C++ worker must reproduce every "out" message exactly.
 //
 // Usage: node tests/record_reference.mjs --games 200 --seed 1 [--sources tournament,npc,stage,synergy]
-//        [--previews] [--output tests/generated/reference_<seed>.jsonl.gz]
+//        [--previews] [--human-seat 0|1] [--output tests/generated/reference_<seed>.jsonl.gz]
+// --human-seat: that seat is a person's, so the recording also holds its notify messages (and actions carry previews).
 // Decks come from export_test_decks.py.
 
 import { createWriteStream, readFileSync } from "node:fs";
@@ -22,11 +23,13 @@ const { values: options } = parseArgs({
     seed: { type: "string", default: "1" },
     sources: { type: "string", default: "tournament,npc,stage,synergy" },
     previews: { type: "boolean", default: false },
+    "human-seat": { type: "string" },
     decks: { type: "string", default: new URL("generated/test_decks.json", import.meta.url).pathname },
     output: { type: "string" },
   },
 });
 const seed = Number(options.seed);
+const humanSeat = options["human-seat"] === undefined ? null : Number(options["human-seat"]);
 const output = options.output ?? new URL(`generated/reference_${seed}.jsonl.gz`, import.meta.url).pathname;
 const decks = JSON.parse(readFileSync(options.decks, "utf8"));
 const sources = options.sources.split(",");
@@ -37,7 +40,7 @@ function recordGame(gameIndex) {
   const random = seededRandom(seed * 1_000_003 + gameIndex);
   const { decks: deckPair, equipment, origins } = pairDecks(decks, sources, random);
   const create = { type: "create", game: gameIndex, decks: deckPair, seed: Math.floor(random() * 2 ** 31), equipment,
-                   ...(options.previews ? { previews: true } : {}) };
+                   ...(options.previews ? { previews: true } : {}), ...(humanSeat === null ? {} : { humanSeat }) };
   const messages = [{ create, origins }];
   return new Promise((resolve) => {
     let session;
@@ -47,13 +50,15 @@ function recordGame(gameIndex) {
         const response = randomResponse(message, random);
         const answer = { type: "respond", game: gameIndex, who: message.who, response };
         messages.push({ in: answer });
-        queueMicrotask(() => session.respond(message.who, response));
+        // One answer per event-loop turn, as the worker reads one stdin line at a time: the engine finishes what an
+        // answer sets off before the next arrives (the order of a person's notifications depends on it).
+        setImmediate(() => session.respond(message.who, response));
       } else if (message.type === "finished" || message.type === "failed") {
         resolve(messages);
       }
     };
     try {
-      session = GameSession.create(gameIndex, deckPair, create.seed, data, emit, equipment, null, options.previews);
+      session = GameSession.create(gameIndex, deckPair, create.seed, data, emit, equipment, humanSeat, options.previews);
     } catch (error) {
       messages.push({ out: { type: "failed", game: gameIndex, message: String(error?.stack ?? error) } });
       resolve(messages);

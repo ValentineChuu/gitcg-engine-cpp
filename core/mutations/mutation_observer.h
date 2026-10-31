@@ -25,6 +25,11 @@ class ObservedSkill {
   bool finished_ = false;
 };
 void observeMutation(const char* kind, JsonValue value);
+// The exposed mutations of a damage or heal, an aura applied without damage, and a switch ({"$case", "value"}),
+// shared by preview observation and notifications (core/mutations/notifications.h).
+JsonValue damageMutation(const DamageInfo& info, Aura newAura, double oldHealth, double newHealth, Reaction reaction);
+JsonValue auraMutation(int element, const CharacterPointer& target, Aura newAura, Reaction reaction);
+JsonValue switchMutation(const SwitchActiveInfo& info);
 void observeDamage(const DamageInfo& info, Aura newAura, double oldHealth, double newHealth, Reaction reaction);
 void observeAura(int element, const CharacterPointer& target, Aura newAura, Reaction reaction);
 void observeSwitch(const SwitchActiveInfo& info);

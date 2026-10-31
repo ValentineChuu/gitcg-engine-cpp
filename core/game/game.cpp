@@ -4,6 +4,7 @@
 
 #include <algorithm>
 
+#include "core/definitions/character_definition.h"
 #include "core/mutations/state_mutations.h"
 #include "core/rules/dice_order.h"
 #include "core/rules/entity_lookup.h"
@@ -51,7 +52,18 @@ void Game::handleEvents(const std::vector<EventAndArgument>& events) {
   interruptIfGameEnded();
 }
 
+void Game::showStatus(int who, PlayerStatus status) {
+  if (notificationSink) notificationSink->setStatus(who, status, mutator_.state());
+}
+
+void Game::notifyBoth(int who, const char* kind, JsonValue ownValue, JsonValue otherValue) {
+  if (!notificationSink) return;
+  notificationSink->notifyOne(who, mutator_.state(), {exposedMutation(kind, std::move(ownValue))});
+  notificationSink->notifyOne(1 - who, mutator_.state(), {exposedMutation(kind, std::move(otherValue))});
+}
+
 std::optional<int> Game::start() {
+  if (notificationSink) notificationSink->notify(mutator_.state(), {}, true);
   try {
     while (!terminated_) {
       if (onStepStart) onStepStart(mutator_.state());
@@ -72,6 +84,7 @@ std::optional<int> Game::start() {
       clearRemovedEntities(mutator_.mutableState());
       if (beforeClearPhaseLogs) beforeClearPhaseLogs(mutator_.state());
       clearPhaseLogs(mutator_.mutableState());
+      if (notificationSink) notificationSink->notify(mutator_.state());
     }
   } catch (const EndInterrupt&) {
     finishGame(mutator_.state()->winner);
@@ -87,6 +100,7 @@ void Game::finishGame(std::optional<int> winner) {
   if (mutator_.state()->phase != Phase::GameEnd) {
     changePhase(mutator_.mutableState(), Phase::GameEnd);
     if (winner && winner != mutator_.state()->winner) setWinner(mutator_.mutableState(), *winner);
+    if (notificationSink) notificationSink->notify(mutator_.state());
   }
   result_ = winner;
   terminated_ = true;
@@ -94,6 +108,7 @@ void Game::finishGame(std::optional<int> winner) {
 
 Phase Game::initHands() {
   for (int who : {0, 1}) handleEvents(mutator_.drawCardsPlain(who, mutator_.state()->config.initialHandsCount).items());
+  if (notificationSink) notificationSink->notify(mutator_.state());
   EventList events[2];
   runBoth(concurrency_, [&] { events[0] = mutator_.switchHands(0); }, [&] { events[1] = mutator_.switchHands(1); });
   EventList all;
@@ -106,6 +121,7 @@ Phase Game::initHands() {
 Phase Game::initActives() {
   CharacterPointer chosen[2];
   runBoth(concurrency_, [&] { chosen[0] = mutator_.chooseActive(0); }, [&] { chosen[1] = mutator_.chooseActive(1); });
+  mutator_.postChooseActive(chosen[0], chosen[1]);
   // Patch 3: both actives are set before either player's switch events run.
   SwitchActiveOptions notAnAction;
   EventList first = mutator_.switchActive(0, chosen[0], notAnAction);
@@ -134,7 +150,8 @@ Phase Game::rollPhase() {
     int randomCount = std::max(0, mutator_.state()->config.initialDiceCount - static_cast<int>(roll.fixed.size()));
     std::vector<DiceType> rolled = mutator_.randomDice(randomCount);
     initial.insert(initial.end(), rolled.begin(), rolled.end());
-    resetDice(mutator_.mutableState(), who, sortDice(*mutator_.state()->players[who], initial));
+    resetDice(mutator_.mutableState(), who, sortDice(*mutator_.state()->players[who], initial), DiceReason::Roll);
+    if (notificationSink) notificationSink->notifyOne(who, mutator_.state());
     mutator_.reroll(who, roll.count);
   };
   runBoth(concurrency_, [&] { rollFor(0); }, [&] { rollFor(1); });
@@ -158,7 +175,21 @@ Phase Game::endPhase() {
 std::vector<int> Game::switchHands(int who) {
   interruptIfGameEnded();
   checkNotTerminated();
-  std::vector<int> removed = io_.switchHands(who);
+  showStatus(who, PlayerStatus::SwitchingHands);
+  std::vector<int> removed;
+  try {
+    removed = io_.switchHands(who);
+  } catch (const GameIoError&) {
+    showStatus(who, PlayerStatus::Unspecified);
+    throw;
+  }
+  showStatus(who, PlayerStatus::Unspecified);
+  if (notificationSink) {
+    JsonValue value = JsonValue::object();
+    value["who"] = who;
+    value["count"] = static_cast<int>(removed.size());
+    notifyBoth(who, "switchHandsDone", value, value);
+  }
   checkNotTerminated();
   std::vector<int> sorted = removed;
   std::sort(sorted.begin(), sorted.end());
@@ -169,7 +200,22 @@ std::vector<int> Game::switchHands(int who) {
 std::vector<DiceType> Game::reroll(int who) {
   interruptIfGameEnded();
   checkNotTerminated();
-  std::vector<DiceType> dice = io_.rerollDice(who);
+  showStatus(who, PlayerStatus::Rerolling);
+  std::vector<DiceType> dice;
+  try {
+    dice = io_.rerollDice(who);
+  } catch (const GameIoError&) {
+    showStatus(who, PlayerStatus::Unspecified);
+    throw;
+  }
+  showStatus(who, PlayerStatus::Unspecified);
+  if (notificationSink) {
+    JsonValue own = JsonValue::object(), other = JsonValue::object();
+    own["who"] = other["who"] = who;
+    own["count"] = static_cast<int>(dice.size());
+    other["count"] = 0;
+    notifyBoth(who, "rerollDone", std::move(own), std::move(other));
+  }
   checkNotTerminated();
   return dice;
 }
@@ -177,10 +223,25 @@ std::vector<DiceType> Game::reroll(int who) {
 int Game::selectCard(int who, const std::vector<int>& candidateDefinitionIds) {
   interruptIfGameEnded();
   checkNotTerminated();
-  int selected = io_.selectCard(who, candidateDefinitionIds);
+  showStatus(who, PlayerStatus::SelectingCards);
+  int selected = 0;
+  try {
+    selected = io_.selectCard(who, candidateDefinitionIds);
+  } catch (const GameIoError&) {
+    showStatus(who, PlayerStatus::Unspecified);
+    throw;
+  }
+  showStatus(who, PlayerStatus::Unspecified);
   checkNotTerminated();
   if (std::find(candidateDefinitionIds.begin(), candidateDefinitionIds.end(), selected) == candidateDefinitionIds.end()) {
     throw GameIoError(who, "Selected card not in candidates");
+  }
+  if (notificationSink) {
+    JsonValue own = JsonValue::object(), other = JsonValue::object();
+    own["who"] = other["who"] = who;
+    own["selectedDefinitionId"] = selected;
+    other["selectedDefinitionId"] = 0;
+    notifyBoth(who, "selectCardDone", std::move(own), std::move(other));
   }
   return selected;
 }
@@ -188,11 +249,20 @@ int Game::selectCard(int who, const std::vector<int>& candidateDefinitionIds) {
 int Game::chooseActive(int who, const std::vector<int>& candidateIds) {
   interruptIfGameEnded();
   checkNotTerminated();
-  int chosen = io_.chooseActive(who, candidateIds);
+  showStatus(who, PlayerStatus::ChoosingActive);
+  int chosen = 0;
+  try {
+    chosen = io_.chooseActive(who, candidateIds);
+  } catch (const GameIoError&) {
+    showStatus(who, PlayerStatus::Unspecified);
+    throw;
+  }
+  showStatus(who, PlayerStatus::Unspecified);
   checkNotTerminated();
   if (std::find(candidateIds.begin(), candidateIds.end(), chosen) == candidateIds.end()) {
     throw GameIoError(who, "Invalid active character id");
   }
+  if (notificationSink) notificationSink->notifyOne(who, mutator_.state());
   return chosen;
 }
 

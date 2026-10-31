@@ -10,6 +10,7 @@
 #include "bridge/session/combat_log.h"
 #include "core/game/game.h"
 #include "core/json/json_value.h"
+#include "core/mutations/notifications.h"
 
 namespace gitcg {
 
@@ -29,8 +30,14 @@ class GameSession : private PlayerIo, private Concurrency {
   ~GameSession();
 
   void start();
+  // Entities placed in the initial state before the game (a stage's starting equipment, initial_equipment.mjs): the
+  // core creates them with pending mutations, so a person's first notification shows them.
+  void recordInitialEntities(const std::vector<std::pair<EntityArea, int>>& created);
+  // compactNotifications (with humanSeat): notifications that only mark events opening and closing are merged into
+  // the next one (see sendNotification), for a browser board: the same mutations in order, about a quarter as many
+  // messages. Not part of the reference protocol.
   void configure(bool previews, bool replies, const JsonValue* replyViews, double seed, bool privileged,
-                 std::optional<int> humanSeat = std::nullopt);
+                 std::optional<int> humanSeat = std::nullopt, bool compactNotifications = false);
   void computeReplies(int who, const JsonValue& indices);
   std::unique_ptr<GameSession> copy(int copyId, int who, const JsonValue& response, double seed,
                                     const JsonValue* opponentCards = nullptr);
@@ -42,10 +49,6 @@ class GameSession : private PlayerIo, private Concurrency {
 
   // The decision message for `who`'s pending request, built from the current state (called by the worker).
   JsonValue decisionMessage(int who) const;
-  // With a person in the game (humanSeat): their view of the board now, as a notification with no mutations. Sent
-  // before every decision of either seat and at the end, so their board follows the bot's moves too. (Node sends
-  // the engine's per-mutation notifications, which also drive animations; this port has none.)
-  std::optional<JsonValue> notificationMessage() const;
 
  private:
   struct Pending {
@@ -84,6 +87,11 @@ class GameSession : private PlayerIo, private Concurrency {
   bool replies_ = false;
   bool privileged_ = false;
   std::optional<int> humanSeat_;
+  std::unique_ptr<NotificationSink> notifications_;  // with a person's seat: their board's notifications
+  bool compactNotifications_ = false;
+  std::optional<JsonValue> heldNotification_;  // compact mode: the latest held notification, with every held mutation
+  void sendNotification(JsonValue notification);
+  void flushHeldNotification();
   JsonValue replyViews_[2];
   double replySeed_ = 0;
   std::vector<int> playedCards_[2];

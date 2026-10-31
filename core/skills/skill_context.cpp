@@ -176,8 +176,10 @@ const JsonValue& SkillContext::getExtensionState() {
 
 void SkillContext::setExtensionState(const std::function<void(JsonValue&)>& setter) {
   JsonValue newState = getExtensionState();
+  takeExtensionContainerReplaced();
   setter(newState);
-  mutateExtensionState(mutator_.mutableState(), *options_.associatedExtensionId, std::move(newState));
+  bool replacedContainer = takeExtensionContainerReplaced();
+  mutateExtensionState(mutator_.mutableState(), *options_.associatedExtensionId, std::move(newState), replacedContainer);
 }
 
 int SkillContext::countOfSkill() {

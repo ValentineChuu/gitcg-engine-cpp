@@ -10,9 +10,16 @@ const { values: options, positionals } = parseArgs({ allowPositionals: true, opt
   games: { type: 'string' }, only: { type: 'string' }, worker: { type: 'string' },
   snapshots: { type: 'boolean' }, jobs: { type: 'string', default: '3' }, report: { type: 'string' }, verbose: { type: 'boolean', default: false },
   'slot-coverage': { type: 'boolean', default: false },
+  // Leaves action previews out of the comparison, to test the rest of a recording past a known preview difference.
+  'skip-previews': { type: 'boolean', default: false },
 } });
 if (options['slot-coverage']) process.env.GITCG_TRACE_SLOTS = '1';
 const jobs = Number(options.jobs);
+const withoutPreviews = (message) => {
+  if (!options['skip-previews'] || message.type !== 'decision' || message.request?.$case !== 'action') return message;
+  const actions = message.request.value.action.map(({ preview, ...action }) => action);
+  return { ...message, request: { ...message.request, value: { ...message.request.value, action: actions } } };
+};
 if (!Number.isInteger(jobs) || jobs < 1 || jobs > 3) throw new Error('--jobs must be 1, 2 or 3 (four processes including the driver)');
 for (const key of ['games', 'only']) if (options[key] !== undefined &&
   (!Number.isInteger(Number(options[key])) || Number(options[key]) < (key === 'games' ? 1 : 0))) throw new Error(`Invalid --${key}`);
@@ -44,7 +51,7 @@ async function replay(index, game) {
       const slot = got.type === 'failed' && /lambda slot (\d+) not translated/.exec(got.message);
       if (slot) { result = { status: 'untranslated', slot: Number(slot[1]), failure: got.message }; break; }
       const difference = step.out.type === 'failed' && got.type === 'failed' && step.out.game === got.game
-        ? null : firstDifference(step.out, got);
+        ? null : firstDifference(withoutPreviews(step.out), withoutPreviews(got));
       if (difference) {
         result = { status: 'different', ...difference, expectedType: step.out.type, gotType: got.type,
                    ...(got.type === 'failed' ? { failure: got.message } : got.type === 'worker ended' ? { failure: got.reason, stderr: got.stderr } : {}) };

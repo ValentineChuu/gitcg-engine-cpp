@@ -1,5 +1,6 @@
 #include "core/mutations/mutator.h"
 #include "core/mutations/mutation_observer.h"
+#include "core/mutations/notifications.h"
 
 #include <algorithm>
 #include <cmath>
@@ -64,10 +65,16 @@ std::vector<DiceType> Mutator::randomDice(int count, bool alwaysOmni) {
 
 EventsAndDefeat Mutator::executeInlineSkill(const SkillInfo& skill, SkillArgument& argument) {
   GameStatePointer before = state_;
+  NotificationSink* sink = notificationSink;
+  if (sink) {
+    sink->notify(state_);
+    sink->beginSkill();
+  }
   ObservedSkill observation;
   SkillOutcome outcome = skill.definition->action(state_, skill, argument);
   observation.finish(outcome.state != before);
   state_ = outcome.state;
+  if (sink) sink->endSkill(state_, outcome.state != before);
   if (outcome.error) std::rethrow_exception(outcome.error);
   EventsAndDefeat result;
   result.events.append(outcome.emittedEvents);
@@ -104,7 +111,10 @@ EventsAndDefeat Mutator::apply(const CharacterPointer& target, DamageType type, 
   Aura currentAura = static_cast<Aura>(variable(target, nameAura()));
   ReactionOutcome outcome = getReaction(type, currentAura, option.enabledLunarReactions);
   modifyEntityVariable(state_, target->id, nameAura(), outcome.newAura);
-  if (!fromDamage) observeAura(type, target, outcome.newAura, outcome.reaction);
+  if (!fromDamage) {
+    observeAura(type, target, outcome.newAura, outcome.reaction);
+    if (notificationSink) notificationSink->notify(state_, {auraMutation(type, target, outcome.newAura, outcome.reaction)});
+  }
   if (outcome.reaction == reaction::None) return result;
   ReactionInfo reactionInfo{outcome.reaction, option.via, target, fromDamage};
   // A damage queues its reaction before the remaining damage modifiers; only pure applications record here.
@@ -161,6 +171,11 @@ EventsAndDefeat Mutator::heal(double value, const CharacterPointer& target, std:
   modifyEntityVariable(state_, target->id, nameHealth(), newHealth, 1);
   observeDamage(healInfo, static_cast<Aura>(variable(target, nameAura())), variable(target, nameHealth()),
                 variable(target, nameHealth()) + healInfo.value, reaction::None);
+  if (notificationSink) {
+    notificationSink->notify(state_, {damageMutation(healInfo, static_cast<Aura>(variable(target, nameAura())),
+                                                     variable(target, nameHealth()), variable(target, nameHealth()) + healInfo.value,
+                                                     reaction::None)});
+  }
   result.events.push({EventName::OnDamageOrHeal, std::make_shared<DamageOrHealEventArg>(state_, healInfo, std::nullopt)});
   return result;
 }
@@ -191,6 +206,10 @@ DamageResult Mutator::damage(DamageInfo damageInfo, const DamageOption& option) 
   if (variable(target, nameAlive()) != 0) {
     ReactionOutcome predicted = getReaction(damageInfo.type, damageInfo.targetAura, option.enabledLunarReactions);
     observeDamage(damageInfo, predicted.newAura, variable(target, nameHealth()), finalHealth, predicted.reaction);
+    if (notificationSink) {
+      notificationSink->notify(state_, {damageMutation(damageInfo, predicted.newAura, variable(target, nameHealth()), finalHealth,
+                                                       predicted.reaction)});
+    }
   }
   auto damageEvent = std::make_shared<DamageOrHealEventArg>(state_, damageInfo, option);
   pushPhaseDamageLog(state_, damageEvent->sourceWho, damageEvent);
@@ -344,7 +363,7 @@ InsertEntityResult Mutator::insertEntityOnStage(const EntityDefinition* definiti
     if (limit >= 0 && present >= limit) return result;
     if (moveFrom) {
       for (const EntityPointer& attachment : moving->attachments) removeEntity(state_, attachment->id, moveFrom->who);
-      moveEntity(state_, moving->id, area, std::nullopt, moveReason.value_or(MoveReason::Other));
+      moveEntity(state_, moving->id, area, std::nullopt, moveReason.value_or(MoveReason::Other), moving.get());  // with its attachments
       newStateId = moving->id;
     } else {
       EntityState created;
@@ -397,9 +416,11 @@ EventList Mutator::switchActive(int who, const CharacterPointer& target, const S
     }
   }
   setActiveCharacter(state_, who, target->id);
-  setPlayerFlag(state_, who, PlayerFlag::CanPlunging, true);
   SwitchActiveInfo info{who, from, options.via, target, options.fromReaction != reaction::None, options.fast};
   observeSwitch(info);
+  // postSwitchActive: the switch is notified before the plunging flag is set.
+  if (notificationSink) notificationSink->notify(state_, {switchMutation(info)});
+  setPlayerFlag(state_, who, PlayerFlag::CanPlunging, true);
   EventList events;
   events.push({EventName::OnSwitchActive, std::make_shared<SwitchActiveEventArg>(state_, info)});
   return events;
@@ -418,7 +439,8 @@ void Mutator::reroll(int who, int times) {
     }
     std::vector<DiceType> newDice = randomDice(static_cast<int>(toReroll.size()));
     oldDice.insert(oldDice.end(), newDice.begin(), newDice.end());
-    resetDice(state_, who, sortDice(*state_->players[who], oldDice));
+    resetDice(state_, who, sortDice(*state_->players[who], oldDice), DiceReason::Roll);
+    if (notificationSink) notificationSink->notify(state_);
   }
 }
 
@@ -451,6 +473,7 @@ EventList Mutator::switchHands(int who) {
     events.push({EventName::OnHandCardInserted,
                  std::make_shared<HandCardInsertedEventArg>(state_, who, candidate, HandInsertReason::Switch, false)});
   }
+  if (notificationSink) notificationSink->notify(state_);
   return events;
 }
 
@@ -497,6 +520,19 @@ CharacterPointer Mutator::chooseActive(int who) {
   if (candidates.empty()) throw GameInternalError("No available candidate active character");
   int chosen = io_->chooseActive(who, candidates);
   return getEntityById(*state_, chosen).character();
+}
+
+void Mutator::postChooseActive(const CharacterPointer& first, const CharacterPointer& second) {
+  if (!notificationSink) return;
+  const CharacterPointer* chosen[2] = {&first, &second};
+  for (int who : {0, 1}) {
+    if (!*chosen[who]) continue;
+    JsonValue value = JsonValue::object();
+    value["who"] = who;
+    value["characterId"] = (*chosen[who])->id;
+    value["characterDefinitionId"] = (*chosen[who])->definition->id;
+    notificationSink->notify(state_, {exposedMutation("chooseActiveDone", std::move(value))});
+  }
 }
 
 }  // namespace gitcg

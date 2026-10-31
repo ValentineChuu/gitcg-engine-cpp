@@ -79,7 +79,7 @@ void SkillContext::immune(double newHealth) {
 void SkillContext::increaseMaxHealth(double value, const std::vector<AnyHandle>& targets, bool alsoHeal) {
   for (const CharacterHandle& character : charactersOf(targets)) {
     CharacterPointer target = character.latest();
-    modifyEntityVariable(mutator_.mutableState(), target->id, nameMaxHealth(), target->variables.valueOr(nameMaxHealth(), 0) + value);
+    modifyEntityVariable(mutator_.mutableState(), target->id, nameMaxHealth(), target->variables.valueOr(nameMaxHealth(), 0) + value, 1);
     if (alsoHeal) {
       EventsAndDefeat result = mutator_.heal(value, character.latest(), sharedSkillInfo(), HealKind::IncreaseMaxHealth);
       callAndEmit(result.events);
@@ -149,7 +149,7 @@ void SkillContext::cleanAura(Aura what, const std::vector<AnyHandle>& targets) {
       if (what == aura::Cryo) newAura = aura::Dendro;
       if (what == aura::Dendro) newAura = aura::Cryo;
     }
-    modifyEntityVariable(mutator_.mutableState(), character.id(), nameAura(), newAura);
+    modifyEntityVariable(mutator_.mutableState(), character.id(), nameAura(), newAura, 2);
   }
 }
 

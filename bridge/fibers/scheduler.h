@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "bridge/fibers/fiber.h"
+#include "core/mutations/notifications.h"
 
 namespace gitcg {
 
@@ -21,6 +22,9 @@ class Scheduler {
     std::function<void(Task&)> onFinish;
     bool cancelled = false;
     bool queued = false;
+    // The game's notification sink while this fiber runs (core/mutations/notifications.h); fibers spawned from a
+    // fiber inherit it.
+    NotificationSink* notifications = nullptr;
   };
 
   // Creates a fiber and queues it to run.
